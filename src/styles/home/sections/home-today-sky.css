@@ -1,0 +1,163 @@
+.home-today-sky {
+  padding: 5.5rem 2.125rem;
+  background: #eee6d8;
+  color: #33271f;
+  font-family: "Figtree", system-ui, sans-serif;
+}
+
+.home-today-sky__inner {
+  inline-size: min(100%, 73.75rem);
+  margin-inline: auto;
+}
+
+.home-today-sky__heading {
+  gap: 1.5rem 2rem;
+}
+
+.home-today-sky__summary {
+  min-inline-size: 0;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.home-today-sky__summary p {
+  min-inline-size: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.125rem;
+  color: #6e5b4c;
+  font-size: 0.84375rem;
+  line-height: 1.45;
+  text-align: right;
+}
+
+.home-today-sky__summary time {
+  color: #33271f;
+  font-weight: 650;
+}
+
+.home-today-sky__positions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr));
+  gap: 0.875rem;
+  margin-block-start: 2.375rem;
+}
+
+.home-today-sky__unavailable {
+  margin-block-start: 2rem;
+}
+
+.home-today-sky__position {
+  min-inline-size: 0;
+  min-block-size: 7.5rem;
+  border: 1px solid rgba(51, 39, 31, 0.1);
+  border-radius: 0.875rem;
+  padding: 1.125rem 1.125rem 1rem;
+  background: #fefbf5;
+  box-shadow: 0 0.0625rem 0.125rem rgba(51, 39, 31, 0.035);
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.home-today-sky__position:hover {
+  border-color: rgba(203, 107, 78, 0.4);
+  box-shadow: 0 0.875rem 1.75rem -1.5rem rgba(51, 39, 31, 0.45);
+  transform: translateY(-0.1875rem);
+}
+
+.home-today-sky__position-header {
+  min-block-size: 1.625rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.home-today-sky__position-glyph {
+  color: #9a6a4e;
+  font: 400 1.625rem / 1 Georgia, "Times New Roman", serif;
+}
+
+.home-today-sky__position-motion {
+  color: #cb6b4e;
+  font-size: 0.625rem;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+}
+
+.home-today-sky__position-name,
+.home-today-sky__position-value {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.home-today-sky__position-name {
+  margin-block-start: 0.875rem;
+  color: #33271f;
+  font-size: 0.875rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.home-today-sky__position-value {
+  margin-block-start: 0.125rem;
+  color: #6e5b4c;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 46rem) {
+  .home-today-sky {
+    padding: 4rem 1.25rem;
+  }
+
+  .home-today-sky__summary {
+    inline-size: 100%;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .home-today-sky__summary p {
+    text-align: left;
+  }
+
+  .home-today-sky__cta {
+    inline-size: 100%;
+  }
+
+  .home-today-sky__positions {
+    grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr));
+    margin-block-start: 2rem;
+  }
+}
+
+@media (max-width: 22rem) {
+  .home-today-sky__positions {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-today-sky__position {
+    transition: none;
+  }
+
+  .home-today-sky__position:hover {
+    transform: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .home-today-sky {
+    border-block: 1px solid CanvasText;
+  }
+
+  .home-today-sky__position {
+    border-color: CanvasText;
+  }
+}

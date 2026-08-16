@@ -1,0 +1,11 @@
+.synastry-body {
+  margin: 0;
+  background: #efe8db;
+  color: #43291e;
+}
+
+.synastry-main {
+  inline-size: 100%;
+  max-inline-size: none;
+  margin: 0;
+}

@@ -1,0 +1,254 @@
+.home-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 4.75rem 2.125rem 5.75rem;
+  background: #f7f1e8;
+  color: #33271f;
+  font-family: "Figtree", system-ui, sans-serif;
+}
+
+.home-hero__inner {
+  position: relative;
+  inline-size: min(100%, 70rem);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  align-items: center;
+  gap: 2.75rem;
+}
+
+.home-hero__content {
+  min-inline-size: 0;
+}
+
+.home-hero__kicker {
+  margin: 0;
+  color: #cb6b4e;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.home-hero h1 {
+  max-inline-size: 10.25ch;
+  margin: 1rem 0 0;
+  color: #33271f;
+  font-family: "Newsreader", Georgia, "Times New Roman", serif;
+  font-size: clamp(2.875rem, 6.2vw, 5rem);
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 0.98;
+  text-wrap: balance;
+}
+
+.home-hero h1 em {
+  color: #cb6b4e;
+  font-style: italic;
+  font-weight: inherit;
+}
+
+.home-hero__body {
+  max-inline-size: 28.25rem;
+  margin: 1.5rem 0 0;
+  color: #6e5b4c;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+.home-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.875rem;
+  margin-block-start: 2rem;
+}
+
+.home-hero__proofs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  margin: 2.25rem 0 0;
+  padding: 0;
+  color: #8a7563;
+  font-size: 0.78125rem;
+  font-weight: 500;
+  line-height: 1.4;
+  list-style: none;
+}
+
+.home-hero__proofs li {
+  min-inline-size: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.home-hero__proofs li > span:first-child {
+  flex: none;
+  color: #cb6b4e;
+}
+
+.home-hero__visual {
+  min-inline-size: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.home-hero__wheel-orbit {
+  inline-size: min(100%, 27.5rem);
+}
+
+.home-hero__wheel {
+  --chart-wheel-size: 27.5rem;
+  --chart-disc-outer: transparent;
+  --chart-disc-signs: transparent;
+  --chart-disc-inner: transparent;
+  --chart-line: rgba(51, 39, 31, 0.14);
+  --chart-line-soft: rgba(51, 39, 31, 0.1);
+  --chart-accent: #cb6b4e;
+  --chart-glyph: #a56a4c;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .home-hero__content > * {
+    animation: home-hero-enter 560ms ease-out both;
+  }
+
+  .home-hero__content > :nth-child(2) {
+    animation-delay: 70ms;
+  }
+
+  .home-hero__content > :nth-child(3) {
+    animation-delay: 130ms;
+  }
+
+  .home-hero__content > :nth-child(4) {
+    animation-delay: 190ms;
+  }
+
+  .home-hero__content > :nth-child(5) {
+    animation-delay: 250ms;
+  }
+
+  .home-hero__visual {
+    animation: home-hero-float 9s ease-in-out infinite;
+  }
+
+  .home-hero__wheel-orbit {
+    animation: home-hero-spin 60s linear infinite;
+  }
+}
+
+@keyframes home-hero-enter {
+  from {
+    opacity: 0;
+    transform: translateY(0.875rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes home-hero-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-0.75rem);
+  }
+}
+
+@keyframes home-hero-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@media (max-width: 62rem) {
+  .home-hero {
+    padding-block: 4rem 4.75rem;
+  }
+
+  .home-hero__inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 3.25rem;
+  }
+
+  .home-hero__content {
+    max-inline-size: 42rem;
+  }
+
+  .home-hero h1 {
+    max-inline-size: 12ch;
+  }
+
+  .home-hero__visual {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 40rem) {
+  .home-hero {
+    padding: 3.375rem 1.25rem 4rem;
+  }
+
+  .home-hero__inner {
+    gap: 2.625rem;
+  }
+
+  .home-hero h1 {
+    max-inline-size: 11ch;
+    font-size: clamp(2.75rem, 14vw, 4.25rem);
+  }
+
+  .home-hero__body {
+    font-size: 1rem;
+  }
+
+  .home-hero__actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .home-hero__button {
+    inline-size: 100%;
+  }
+
+  .home-hero__proofs {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+
+  .home-hero__visual {
+    justify-content: center;
+  }
+
+  .home-hero__wheel-orbit,
+  .home-hero__wheel {
+    --chart-wheel-size: 20rem;
+
+    inline-size: min(100%, 20rem);
+  }
+}
+
+@media (max-width: 22.5rem) {
+  .home-hero {
+    padding-inline: 1rem;
+  }
+
+  .home-hero h1 {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (forced-colors: active) {
+  .home-hero {
+    border-block-end: 1px solid CanvasText;
+  }
+}

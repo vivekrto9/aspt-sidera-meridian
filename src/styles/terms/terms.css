@@ -1,0 +1,11 @@
+.sidera-terms-body {
+  background: #efe8db;
+  color: #43291e;
+  font-family: "Figtree", system-ui, sans-serif;
+}
+
+.sidera-terms {
+  inline-size: 100%;
+  min-inline-size: 0;
+  margin: 0;
+}

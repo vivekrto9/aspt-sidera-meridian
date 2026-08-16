@@ -1,0 +1,10 @@
+.sidera-home-body {
+  background: #f7f1e8;
+  color: #33271f;
+  font-family: "Figtree", system-ui, sans-serif;
+}
+
+.sidera-home {
+  inline-size: 100%;
+  margin: 0;
+}
