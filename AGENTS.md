@@ -2,7 +2,7 @@
 
 This repository is the Sidera Meridian astrology theme. Preserve its Meridian identity and keep the existing AstroPages runtime, Content Studio, authentication, lead, asset, and deployment contracts intact.
 
-Before cloning this repository into another Sidera theme, or debugging a freshly cloned theme, read `THEME_CLONE_NON_UI_CHECKLIST.md`. Complete its environment, Cloudflare binding, D1 schema, provider, and verification checks before treating a runtime error as a UI problem.
+Before cloning this repository into another Sidera theme, or debugging a freshly cloned theme, read `THEME_CLONE_NON_UI_CHECKLIST.md` and `THEME_CLONE_UI_CHECKLIST.md`. Complete the environment, Cloudflare binding, D1 schema, provider, asset, fallback, and visual smoke checks before treating a runtime error as a UI problem or considering the clone complete.
 
 Core rules:
 

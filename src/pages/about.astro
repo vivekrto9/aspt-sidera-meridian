@@ -9,6 +9,7 @@ import AboutStoryStatement from "../components/about/sections/AboutStoryStatemen
 import AboutTeam from "../components/about/sections/AboutTeam.astro";
 import Footer from "../components/shared/Footer.astro";
 import Header from "../components/shared/Header.astro";
+import { getAboutTeamCopy } from "../data/locale/about/sections/team.ts";
 import {
   activeLocales,
   defaultLocale,
@@ -29,6 +30,7 @@ const {
   builderEdit,
   chromeEdit,
 } = await loadPublicPageContent(Astro, "about");
+const aboutTeamDefaults = getAboutTeamCopy(locale);
 
 const seoContent = {
   seo_title: content.seo_title,
@@ -165,10 +167,12 @@ const teamMembers = Array.from({ length: 4 }, (_, index) => {
   const itemNumber = index + 1;
   const nameField = `about_team_member_${itemNumber}_name`;
   const roleField = `about_team_member_${itemNumber}_role`;
+  const defaultMember = aboutTeamDefaults.members[index];
 
   return {
     name: content[nameField],
     role: content[roleField],
+    imageSrc: defaultMember.imageSrc,
     nameEditAttributes: componentEditAttributes(builderEdit(nameField)),
     roleEditAttributes: componentEditAttributes(builderEdit(roleField)),
   };

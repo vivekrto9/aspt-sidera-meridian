@@ -7,6 +7,7 @@ import "../../../styles/about/sections/about-team.css";
 type TeamMember = {
   name: string;
   role: string;
+  imageSrc: string;
   nameEditAttributes?: Record<string, string>;
   roleEditAttributes?: Record<string, string>;
 };
@@ -68,6 +69,8 @@ const {
               layout="stacked"
               size="standard"
               nameTag="h3"
+              avatarSrc={member.imageSrc}
+              avatarAlt={member.name}
               avatarFallback="placeholder"
               avatarSize="large"
               nameEditAttributes={member.nameEditAttributes}

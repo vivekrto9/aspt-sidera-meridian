@@ -3,6 +3,7 @@ import type { SupportedLocale } from "../../../localization-contract.ts";
 export type AboutTeamMember = {
   name: string;
   role: string;
+  imageSrc: string;
 };
 
 export type AboutTeamCopy = {
@@ -13,6 +14,20 @@ export type AboutTeamCopy = {
 };
 
 const names = ["Elena Voss", "Marcus Reed", "Yuki Tanaka", "Priya Nair"] as const;
+const imageSlugs = [
+  "lena-fischer",
+  "sol-marino",
+  "yuki-tanaka",
+  "priya-nair",
+] as const;
+
+const resolveImageSrc = (slug: (typeof imageSlugs)[number]) =>
+  import.meta.env?.DEV
+    ? `/@fs${new URL(
+        `../../../../../astropages/assets/astrologers/${slug}.png`,
+        import.meta.url,
+      ).pathname}`
+    : `/_assets/aliases/astrologers-${slug}/${slug}.png`;
 
 const copyByLocale = {
   en: {
@@ -114,6 +129,7 @@ export const getAboutTeamCopy = (
     members: names.map((name, index) => ({
       name,
       role: copy.roles[index],
+      imageSrc: resolveImageSrc(imageSlugs[index]),
     })),
   };
 };
