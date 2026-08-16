@@ -126,7 +126,7 @@ test("Session summary matches the reference measure and responsive action stack"
     "src/styles/astrologers/sections/session-summary.css",
   );
   assert.match(styles, /inline-size: min\(100%, 41\.25rem\)/);
-  assert.match(styles, /background: #3b2119/);
+  assert.match(styles, /background: var\(--color-dark-strong\)/);
   assert.match(styles, /grid-template-columns: repeat\(2, minmax\(0, 1fr\)\)/);
   assert.match(styles, /@media \(max-width: 40rem\)/);
   assert.match(styles, /grid-template-columns: 1fr/);

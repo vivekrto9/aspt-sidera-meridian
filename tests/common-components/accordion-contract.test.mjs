@@ -35,7 +35,7 @@ test("Accordion styles preserve reference treatment and accessible states", asyn
   const source = await readFile(stylesheetPath, "utf8");
 
   assert.match(source, /border-radius: 0\.875rem/);
-  assert.match(source, /background: #fbf8f1/);
+  assert.match(source, /background: var\(--color-panel\)/);
   assert.match(source, /\.sidera-accordion__summary:focus-visible/);
   assert.match(source, /\.sidera-accordion\[open\] \.sidera-accordion__indicator/);
   assert.match(source, /@media \(max-width: 40rem\)/);

@@ -2,7 +2,7 @@
   min-inline-size: 0;
   display: flex;
   flex-direction: column;
-  color: #43291e;
+  color: var(--color-text);
   transition:
     transform 180ms ease,
     box-shadow 180ms ease;
@@ -28,11 +28,11 @@
   flex-direction: column;
   align-items: flex-start;
   overflow: hidden;
-  border: 1px solid rgba(67, 41, 30, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   border-radius: 1rem;
   padding: 0.875rem;
   background: #ebdeca;
-  color: #efe4cf;
+  color: var(--color-surface);
   text-decoration: none;
   isolation: isolate;
 }
@@ -87,8 +87,8 @@
 .product-card__title {
   min-inline-size: 0;
   border-radius: 0.1875rem;
-  color: #43291e;
-  font: 400 1.375rem / 1.1 "Newsreader", Georgia, serif;
+  color: var(--color-text);
+  font: 400 1.375rem / 1.1 var(--font-serif), Georgia, serif;
   text-decoration: none;
   overflow-wrap: anywhere;
   transition: color 160ms ease;
@@ -97,25 +97,25 @@
 .product-card__title--compact {
   display: block;
   margin-block-start: 0.875rem;
-  color: #33271f;
+  color: var(--color-text);
   font-size: 1.25rem;
 }
 
 .product-card__compact-link:hover .product-card__title,
 .product-card__title:hover {
-  color: #9c4f38;
+  color: var(--color-primary);
 }
 
 .product-card__compact-link:focus-visible,
 .product-card__media:focus-visible,
 .product-card__title:focus-visible {
-  outline: 0.1875rem solid rgba(203, 107, 78, 0.5);
+  outline: 0.1875rem solid rgba(var(--color-primary-rgb), 0.5);
   outline-offset: 0.1875rem;
 }
 
 .product-card__meta {
-  color: #7a6252;
-  font: 400 0.78125rem / 1.4 "Figtree", system-ui, sans-serif;
+  color: var(--color-muted);
+  font: 400 0.78125rem / 1.4 var(--font-sans), system-ui, sans-serif;
   overflow-wrap: anywhere;
 }
 

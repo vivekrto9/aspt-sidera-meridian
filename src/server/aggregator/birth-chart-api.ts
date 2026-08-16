@@ -9,7 +9,7 @@ import {
   astrologyProviderMessage,
   joinAstrologyApiUrl,
   resolveAstrologyApiBaseUrl,
-  resolveAstrologyApiKey,
+  resolveAstrologyApiRequestHeaders,
 } from "./astrology-api-config.ts";
 import type {
   BirthChartAspectResult,
@@ -293,13 +293,13 @@ export const normalizeBirthChartResult = ({
 };
 
 const postProvider = async (env: RuntimeEnv, payload: JsonRecord, fetcher: ProviderFetch) => {
-  const [token, baseUrl] = await Promise.all([
-    resolveAstrologyApiKey(env),
+  const [authHeaders, baseUrl] = await Promise.all([
+    resolveAstrologyApiRequestHeaders(env),
     resolveAstrologyApiBaseUrl(env),
   ]);
   const response = await fetcher(joinAstrologyApiUrl(baseUrl, providerEndpoint), {
     method: "POST",
-    headers: { "content-type": "application/json", "x-astrologyapi-key": token },
+    headers: { "content-type": "application/json", ...authHeaders },
     body: JSON.stringify(payload),
     signal: AbortSignal.timeout(20_000),
   });

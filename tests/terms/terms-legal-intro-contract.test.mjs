@@ -218,7 +218,7 @@ test("Terms styles retain the legal reference surface without reaching into shar
 
   assert.match(componentStyles, /min-block-size: calc\(100svh - 4\.75rem\)/);
   assert.match(componentStyles, /@supports \(min-block-size: 100dvh\)/);
-  assert.match(pageStyles, /background: #efe8db/);
+  assert.match(pageStyles, /background: var\(--color-surface\)/);
   assert.match(pageStyles, /inline-size: 100%/);
   assert.doesNotMatch(componentStyles, /\.legal-document-layout__/);
   assert.doesNotMatch(pageStyles, /\.sidera-header__/);

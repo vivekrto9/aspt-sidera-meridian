@@ -71,7 +71,7 @@ test("Moon Calendar page header preserves the literal reference geometry", async
     styles,
     /\.moon-calendar-page-header\.sidera-page-intro\s*\{[^}]*inline-size: min\(100%, 73\.75rem\)[^}]*margin-inline: auto[^}]*padding: 2\.875rem 2\.125rem 0/s,
   );
-  assert.match(styles, /background: #efe8db/);
+  assert.match(styles, /background: var\(--color-surface\)/);
   assert.match(
     styles,
     /\.moon-calendar-page-header h1\s*\{[^}]*font-size: clamp\(2\.125rem, 4\.6vw, 3\.625rem\)/s,

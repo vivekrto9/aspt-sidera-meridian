@@ -1,6 +1,6 @@
 .sidera-page-intro {
-  --sidera-page-intro-background: #efe8db;
-  --sidera-page-intro-meta: #7a6252;
+  --sidera-page-intro-background: var(--color-surface);
+  --sidera-page-intro-meta: var(--color-muted);
 
   inline-size: 100%;
   min-inline-size: 0;
@@ -9,8 +9,8 @@
 }
 
 .sidera-page-intro--inverse {
-  --sidera-page-intro-background: #3b2119;
-  --sidera-page-intro-meta: #cdb29e;
+  --sidera-page-intro-background: var(--color-dark-strong);
+  --sidera-page-intro-meta: var(--color-line);
 }
 
 .sidera-page-intro--compact {
@@ -39,7 +39,7 @@
 .sidera-page-intro__meta {
   margin: 0.75rem 0 0;
   color: var(--sidera-page-intro-meta);
-  font: 400 0.8125rem / 1.45 "Figtree", system-ui, sans-serif;
+  font: 400 0.8125rem / 1.45 var(--font-sans), system-ui, sans-serif;
   overflow-wrap: anywhere;
 }
 

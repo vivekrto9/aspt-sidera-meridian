@@ -1,7 +1,7 @@
 .sidera-rating-summary {
-  --rating-summary-value: #43291e;
-  --rating-summary-meta: #7a6252;
-  --rating-summary-label: #6b5346;
+  --rating-summary-value: var(--color-text);
+  --rating-summary-meta: var(--color-muted);
+  --rating-summary-label: var(--color-muted);
 
   max-inline-size: 100%;
   display: inline-flex;
@@ -10,7 +10,7 @@
   column-gap: 0.5rem;
   row-gap: 0.25rem;
   color: var(--rating-summary-meta);
-  font: 400 0.875rem / 1.4 "Figtree", system-ui, sans-serif;
+  font: 400 0.875rem / 1.4 var(--font-sans), system-ui, sans-serif;
 }
 
 .sidera-rating-summary--compact {
@@ -19,8 +19,8 @@
 }
 
 .sidera-rating-summary--inverse {
-  --rating-summary-value: #f5ecdd;
-  --rating-summary-meta: #cdb29e;
+  --rating-summary-value: var(--color-surface-soft);
+  --rating-summary-meta: var(--color-line);
   --rating-summary-label: #e2ccba;
 }
 

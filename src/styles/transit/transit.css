@@ -1,6 +1,6 @@
 .transit-body {
   overflow-x: hidden;
-  background: #efe8db;
+  background: var(--color-surface);
 }
 
 .transit-body > [data-transit-experience] {

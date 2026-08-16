@@ -1,5 +1,5 @@
 .faq-page-intro {
-  --sidera-page-intro-background: #efe8db;
+  --sidera-page-intro-background: var(--color-surface);
 
   overflow: clip;
 }

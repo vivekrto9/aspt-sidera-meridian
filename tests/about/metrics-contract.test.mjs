@@ -32,7 +32,7 @@ test("About Metrics matches the four-column dark reference band", async () => {
   assert.match(component, /\{\.\.\.metric\.valueEditAttributes\}/);
   assert.match(component, /\{\.\.\.metric\.labelEditAttributes\}/);
   assert.match(styles, /padding: 4\.5rem 2\.125rem/);
-  assert.match(styles, /background: #3b2119/);
+  assert.match(styles, /background: var\(--color-dark-strong\)/);
   assert.match(styles, /max-inline-size: 70rem/);
   assert.match(styles, /clamp\(2\.5rem, 5vw, 3\.75rem\)/);
   assert.doesNotMatch(styles, /border-radius/);

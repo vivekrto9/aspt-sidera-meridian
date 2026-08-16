@@ -28,7 +28,7 @@ test("About Story statement preserves the reference composition", async () => {
   assert.match(styles, /padding: 3\.125rem 2\.125rem/);
   assert.match(styles, /max-inline-size: 51\.25rem/);
   assert.match(styles, /clamp\(1\.375rem, 2\.4vw, 1\.75rem\)/);
-  assert.match(styles, /font:[\s\S]*"Newsreader"/);
+  assert.match(styles, /font:[\s\S]*var\(--font-serif\)/);
   assert.match(styles, /text-align: center/);
   assert.doesNotMatch(styles, /\.sidera-page-intro__/);
   assert.doesNotMatch(styles, /\.sidera-section-heading__/);

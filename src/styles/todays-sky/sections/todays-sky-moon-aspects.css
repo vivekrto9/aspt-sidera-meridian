@@ -6,8 +6,8 @@
   grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
   align-items: start;
   gap: 1.5rem;
-  color: #43291e;
-  font-family: "Figtree", system-ui, sans-serif;
+  color: var(--color-text);
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
 .todays-sky-moon-aspects__moon,
@@ -20,8 +20,8 @@
   position: relative;
   overflow: hidden;
   padding: 1.875rem 1.875rem 2rem;
-  background: #3b2119;
-  color: #f0e6d6;
+  background: var(--color-dark-strong);
+  color: var(--color-surface);
 }
 
 .todays-sky-moon-aspects__stars {
@@ -69,7 +69,7 @@
 
 .todays-sky-moon-aspects__eyebrow {
   margin: 0 0 1.125rem;
-  color: #d69a6a;
+  color: var(--color-primary-soft);
   font-size: 0.6875rem;
   font-weight: 600;
   letter-spacing: 0.14em;
@@ -79,7 +79,7 @@
 
 .todays-sky-moon-aspects__meaning {
   margin: 1.25rem 0 0;
-  color: #c3ac97;
+  color: var(--color-muted-soft);
   font-size: 0.875rem;
   line-height: 1.6;
   overflow-wrap: anywhere;
@@ -103,7 +103,7 @@
 }
 
 .todays-sky-moon-aspects__dates span {
-  color: #d69a6a;
+  color: var(--color-primary-soft);
   font-size: 0.625rem;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -113,17 +113,17 @@
 }
 
 .todays-sky-moon-aspects__dates strong {
-  color: #f5ecdd;
-  font-family: "Newsreader", Georgia, "Times New Roman", serif;
+  color: var(--color-surface-soft);
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.15;
 }
 
 .todays-sky-moon-aspects__aspects {
-  border: 1px solid rgba(67, 41, 30, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   padding: 1.5rem 1.625rem;
-  background: #fbf8f1;
+  background: var(--color-panel);
 }
 
 .todays-sky-moon-aspects__aspects-header {
@@ -140,8 +140,8 @@
 }
 
 .todays-sky-moon-aspects__aspects-header h2 {
-  color: #43291e;
-  font-family: "Newsreader", Georgia, "Times New Roman", serif;
+  color: var(--color-text);
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.1;
@@ -149,14 +149,14 @@
 
 .todays-sky-moon-aspects__aspects-header p {
   margin-block-start: 0.375rem;
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 0.8125rem;
   line-height: 1.45;
 }
 
 .todays-sky-moon-aspects__aspects-header > span {
   flex: none;
-  color: #9b8776;
+  color: var(--color-muted-soft);
   font-size: 0.75rem;
   line-height: 1.4;
   white-space: nowrap;
@@ -168,7 +168,7 @@
 }
 
 .todays-sky-moon-aspects__aspect {
-  border-color: rgba(67, 41, 30, 0.08);
+  border-color: rgba(var(--color-text-rgb), 0.08);
   background: #fff;
 }
 
@@ -177,7 +177,7 @@
   display: grid;
   justify-items: center;
   gap: 0.25rem;
-  color: #9b8776;
+  color: var(--color-muted-soft);
   font-size: 0.84375rem;
   line-height: 1.5;
   text-align: center;
@@ -188,7 +188,7 @@
 }
 
 .todays-sky-moon-aspects__empty strong {
-  color: #6b5346;
+  color: var(--color-muted);
   font-weight: 600;
 }
 
@@ -198,8 +198,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 1rem;
-  border-block-start: 1px solid rgba(67, 41, 30, 0.1);
-  color: #9b8776;
+  border-block-start: 1px solid rgba(var(--color-text-rgb), 0.1);
+  color: var(--color-muted-soft);
   font-size: 0.75rem;
   line-height: 1.5;
 }
@@ -210,15 +210,15 @@
 }
 
 .todays-sky-moon-aspects__legend-conjunction::before {
-  color: #b07a3c;
+  color: var(--color-primary-soft);
 }
 
 .todays-sky-moon-aspects__legend-harmonious::before {
-  color: #2f4a41;
+  color: var(--color-dark);
 }
 
 .todays-sky-moon-aspects__legend-challenging::before {
-  color: #9c4f38;
+  color: var(--color-primary);
 }
 
 @media (max-width: 52rem) {

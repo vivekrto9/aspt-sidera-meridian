@@ -6,7 +6,7 @@
   display: block;
   overflow: hidden;
   border-radius: inherit;
-  background: #e8dbc7;
+  background-color: var(--image-fallback-background);
 }
 
 .sidera-media-thumbnail--fallback {
@@ -14,13 +14,9 @@
   align-items: end;
   justify-items: center;
   padding: 0.5rem;
-  background:
-    repeating-linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.24) 0 0.625rem,
-      rgba(103, 72, 50, 0.045) 0.625rem 1.25rem
-    ),
-    #e8dbc7;
+  background-color: var(--image-fallback-background);
+  background-image: var(--image-fallback-pattern);
+  background-size: var(--image-fallback-pattern-size);
 }
 
 .sidera-media-thumbnail__image,
@@ -39,13 +35,13 @@
 .sidera-media-thumbnail__fallback-label {
   display: block;
   max-inline-size: min(100%, 8rem);
-  border: 1px solid rgba(67, 41, 30, 0.12);
+  border: 1px solid rgba(var(--color-text-rgb), 0.12);
   border-radius: 999px;
   padding: 0.3125rem 0.625rem;
-  background: rgba(251, 248, 241, 0.88);
-  box-shadow: 0 0.25rem 0.875rem rgba(67, 41, 30, 0.08);
-  color: #5b382c;
-  font: 600 0.6875rem / 1.2 "Figtree", system-ui, sans-serif;
+  background: var(--image-fallback-label-background);
+  box-shadow: 0 0.25rem 0.875rem rgba(var(--color-text-rgb), 0.08);
+  color: var(--color-dark);
+  font: 600 0.6875rem / 1.2 var(--font-sans), system-ui, sans-serif;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;

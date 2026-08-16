@@ -62,12 +62,12 @@ test("Home Moon Calendar composes the approved shared heading, button, and phase
   assert.doesNotMatch(source, /fetch\(|localStorage|sessionStorage/);
 });
 
-test("Home Moon Calendar matches the Warm Modern geometry and responsive safeguards", async () => {
+test("Home Moon Calendar matches the Meridian geometry and responsive safeguards", async () => {
   const styles = await readFile(stylesPath, "utf8");
 
-  assert.match(styles, /padding: 6rem 2\.125rem/);
-  assert.match(styles, /background: #3a241a/);
-  assert.match(styles, /inline-size: min\(100%, 73\.75rem\)/);
+  assert.match(styles, /padding: 6\.25rem 2\.125rem/);
+  assert.match(styles, /background: var\(--color-dark\)/);
+  assert.match(styles, /inline-size: min\(100%, 75rem\)/);
   assert.match(
     styles,
     /grid-template-columns: minmax\(0, 0\.9fr\) minmax\(0, 1\.1fr\)/,

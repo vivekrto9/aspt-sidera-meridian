@@ -1,11 +1,13 @@
-# Sidera Warm Modern Agent Notes
+# Sidera Meridian Agent Notes
 
-This repository is the Sidera Warm Modern astrology theme. Preserve its warm editorial identity and keep the existing AstroPages runtime, Content Studio, authentication, lead, asset, and deployment contracts intact.
+This repository is the Sidera Meridian astrology theme. Preserve its Meridian identity and keep the existing AstroPages runtime, Content Studio, authentication, lead, asset, and deployment contracts intact.
+
+Before cloning this repository into another Sidera theme, or debugging a freshly cloned theme, read `THEME_CLONE_NON_UI_CHECKLIST.md`. Complete its environment, Cloudflare binding, D1 schema, provider, and verification checks before treating a runtime error as a UI problem.
 
 Core rules:
 
 - Inspect current code before editing; old AstroConnect or Pandit assumptions may be stale.
-- Keep new public copy and visual work aligned with Sidera's warm-modern astrology direction.
+- Keep new public copy and visual work aligned with Sidera Meridian's editorial astrology direction.
 - Public render must be read-only. Do not create EmDash schema, entries, drafts, or content release rows from `GET /` or `GET /?preview=1`.
 - Content edits should go through EmDash tools/APIs: Content Studio, MCP, EmDash REST/admin, or approved content import. Do not raw-write EmDash content tables for user/agent edits.
 - Use migrations for deployed schema and runtime table changes.

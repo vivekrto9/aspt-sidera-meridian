@@ -73,11 +73,11 @@ test("Account shell is responsive and keeps one restrained rail", async () => {
   );
   assert.match(
     styles,
-    /body\[data-builder-edit-mode\][\s\S]*\.account-shell__navigation-link--active[\s\S]*\[data-builder-edit\]:hover[\s\S]*background: transparent[\s\S]*color: #f3eadb[\s\S]*caret-color: #f3eadb/,
+    /body\[data-builder-edit-mode\][\s\S]*\.account-shell__navigation-link--active[\s\S]*\[data-builder-edit\]:hover[\s\S]*background: transparent[\s\S]*color: var\(--color-surface\)[\s\S]*caret-color: var\(--color-surface\)/,
   );
   assert.match(
     styles,
-    /\.account-shell__navigation-link--active:hover \{[\s\S]*background: #5b382c[\s\S]*color: #f3eadb/,
+    /\.account-shell__navigation-link--active:hover \{[\s\S]*background: var\(--color-dark\)[\s\S]*color: var\(--color-surface\)/,
   );
   assert.match(
     styles,
@@ -92,7 +92,7 @@ test("Account shell is responsive and keeps one restrained rail", async () => {
   assert.match(styles, /overflow-x: auto/);
   assert.match(
     styles,
-    /\.account-shell__sign-out:hover:not\(:disabled\) \{[^}]*background: #f7e2dc[^}]*color: #873d2c/s,
+    /\.account-shell__sign-out:hover:not\(:disabled\) \{[^}]*background: var\(--color-danger-soft\)[^}]*color: var\(--color-primary-strong\)/s,
   );
 });
 

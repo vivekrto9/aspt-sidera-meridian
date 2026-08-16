@@ -56,6 +56,23 @@ const zodiacGlyphs = [
   "\u2653\uFE0E",
 ];
 
+const legacyPaletteAliases: Record<string, string> = {
+  "#9c4f38": "var(--chart-color-fire)",
+  "#6c6254": "var(--chart-color-earth)",
+  "#b07a3c": "var(--chart-color-air)",
+  "#2f4a41": "var(--chart-color-water)",
+  "#8c5a6a": "var(--chart-color-venus)",
+  "#426b68": "var(--chart-color-uranus)",
+  "#4a5a6b": "var(--chart-color-neptune)",
+  "#6b5346": "var(--chart-color-pluto)",
+  "#5b382c": "var(--chart-color-transit)",
+  "#9b5273": "var(--chart-color-fire)",
+  "#9b654a": "var(--chart-color-earth)",
+  "#6e88a2": "var(--chart-color-neptune)",
+};
+const themedColor = (color?: string) =>
+  color ? legacyPaletteAliases[color.toLowerCase()] || color : undefined;
+
 const {
   title,
   description,
@@ -201,9 +218,9 @@ const classes = [
               y1={aspect.fromPlanet.y}
               x2={aspect.toPlanet.x}
               y2={aspect.toPlanet.y}
-              stroke={aspect.color}
               stroke-width={aspect.weight}
               stroke-dasharray={aspect.dashed ? "5 5" : undefined}
+              style={{ "--aspect-color": themedColor(aspect.color) }}
             />
           ))}
         </g>
@@ -223,7 +240,7 @@ const classes = [
             tabindex={interactive ? 0 : undefined}
             aria-label={interactive ? planet.label : undefined}
             data-planet-index={interactive ? planet.index : undefined}
-            style={{ "--planet-color": planet.color }}
+            style={{ "--planet-color": themedColor(planet.color) }}
           >
             <circle cx={planet.x} cy={planet.y} r={planet.selected ? 18 : 14.5} />
             <text x={planet.x} y={planet.y}>{planet.glyph}</text>

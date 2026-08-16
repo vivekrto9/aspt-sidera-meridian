@@ -1,6 +1,6 @@
 .sidera-price-block {
-  --price-block-label: #9c4f38;
-  --price-block-supporting: #6b5346;
+  --price-block-label: var(--color-primary);
+  --price-block-supporting: var(--color-muted);
   --price-block-gap: 0.625rem;
 
   min-inline-size: 0;
@@ -10,12 +10,12 @@
   align-items: flex-start;
   gap: var(--price-block-gap);
   color: var(--price-block-supporting);
-  font-family: "Figtree", system-ui, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
 .sidera-price-block--inverse {
-  --price-block-label: #d69a6a;
-  --price-block-supporting: #cdb7a2;
+  --price-block-label: var(--color-primary-soft);
+  --price-block-supporting: var(--color-line);
 }
 
 .sidera-price-block--compact {

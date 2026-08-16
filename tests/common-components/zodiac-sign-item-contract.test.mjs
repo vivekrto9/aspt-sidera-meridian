@@ -56,10 +56,10 @@ test("ZodiacSignItem exposes only reference-backed variants", async () => {
 test("ZodiacSignItem styles selection and accessible interaction states", async () => {
   const styles = await readFile(stylesPath, "utf8");
 
-  assert.match(styles, /#9c4f38/);
-  assert.match(styles, /#6c6254/);
-  assert.match(styles, /#b07a3c/);
-  assert.match(styles, /#2f4a41/);
+  assert.match(styles, /var\(--color-primary\)/);
+  assert.match(styles, /var\(--color-muted\)/);
+  assert.match(styles, /var\(--color-primary-soft\)/);
+  assert.match(styles, /var\(--color-dark\)/);
   assert.match(styles, /\.sidera-zodiac-sign--selected/);
   assert.match(styles, /max-inline-size: 17rem/);
   assert.match(styles, /max-inline-size: 8rem/);

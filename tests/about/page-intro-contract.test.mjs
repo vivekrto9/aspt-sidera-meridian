@@ -43,7 +43,7 @@ test("About Page intro matches the dedicated reference through PageIntro", async
   );
   assert.match(styles, /max-inline-size: 45rem/);
   assert.match(styles, /padding: 5rem 2\.125rem 2\.5rem/);
-  assert.match(styles, /background: #efe8db/);
+  assert.match(styles, /background: var\(--color-surface\)/);
   assert.doesNotMatch(styles, /\.sidera-page-intro__/);
   assert.doesNotMatch(styles, /\.sidera-section-heading__/);
 });

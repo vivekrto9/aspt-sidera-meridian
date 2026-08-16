@@ -44,6 +44,9 @@ test("ChartWheel styles preserve responsive geometry and accessibility states", 
   assert.match(source, /\.chart-wheel--compact/);
   assert.match(source, /\.chart-wheel--large/);
   assert.match(source, /\.chart-wheel--inverse/);
+  assert.match(source, /--chart-disc-outer: var\(--color-panel\)/);
+  assert.match(source, /--chart-color-fire: var\(--color-primary\)/);
+  assert.match(source, /--aspect-color/);
   assert.match(source, /\.chart-wheel__planet:focus-visible circle/);
   assert.match(source, /@media \(max-width: 40rem\)/);
   assert.match(source, /@media \(prefers-reduced-motion: reduce\)/);

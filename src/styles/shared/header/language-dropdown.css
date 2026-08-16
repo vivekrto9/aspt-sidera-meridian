@@ -1,15 +1,15 @@
 .sidera-language-dropdown {
-  --sidera-language-ink: #43291e;
-  --sidera-language-muted: #6b5346;
-  --sidera-language-accent: #9c4f38;
-  --sidera-language-surface: #fbf8f1;
+  --sidera-language-ink: var(--color-text);
+  --sidera-language-muted: var(--color-muted);
+  --sidera-language-accent: var(--color-primary);
+  --sidera-language-surface: var(--color-panel);
 
   position: relative;
   z-index: 30;
   inline-size: max-content;
   max-inline-size: 100%;
   color: var(--sidera-language-ink);
-  font-family: "Figtree", system-ui, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
 .sidera-language-dropdown--open {
@@ -22,13 +22,13 @@
   align-items: center;
   justify-content: center;
   gap: 0.4375rem;
-  border: 1px solid rgba(67, 41, 30, 0.18);
+  border: 1px solid rgba(var(--color-text-rgb), 0.18);
   border-radius: 999px;
   padding: 0.625rem 0.875rem;
   background: transparent;
   color: var(--sidera-language-ink);
   cursor: pointer;
-  font: 600 0.8125rem / 1 "Figtree", system-ui, sans-serif;
+  font: 600 0.8125rem / 1 var(--font-sans), system-ui, sans-serif;
   text-transform: lowercase;
   transition:
     border-color 160ms ease,
@@ -39,14 +39,14 @@
 
 .sidera-language-dropdown__trigger:hover,
 .sidera-language-dropdown--open .sidera-language-dropdown__trigger {
-  border-color: rgba(156, 79, 56, 0.48);
-  background: rgba(156, 79, 56, 0.07);
+  border-color: rgba(var(--color-primary-rgb), 0.48);
+  background: rgba(var(--color-primary-rgb), 0.07);
   color: var(--sidera-language-accent);
 }
 
 .sidera-language-dropdown__trigger:focus-visible,
 .sidera-language-dropdown__option:focus-visible {
-  outline: 0.1875rem solid rgba(156, 79, 56, 0.48);
+  outline: 0.1875rem solid rgba(var(--color-primary-rgb), 0.48);
   outline-offset: 0.1875rem;
 }
 
@@ -90,11 +90,11 @@
   );
   overflow-y: auto;
   overscroll-behavior: contain;
-  border: 1px solid rgba(67, 41, 30, 0.12);
+  border: 1px solid rgba(var(--color-text-rgb), 0.12);
   border-radius: 0.875rem;
   padding: 0.375rem;
   background: var(--sidera-language-surface);
-  box-shadow: 0 1.25rem 2.75rem -1.5rem rgba(67, 41, 30, 0.48);
+  box-shadow: 0 1.25rem 2.75rem -1.5rem rgba(var(--color-text-rgb), 0.48);
   scrollbar-width: thin;
 }
 
@@ -120,7 +120,7 @@
   background: transparent;
   color: var(--sidera-language-muted);
   cursor: pointer;
-  font: 500 0.875rem / 1.25 "Figtree", system-ui, sans-serif;
+  font: 500 0.875rem / 1.25 var(--font-sans), system-ui, sans-serif;
   text-align: start;
   text-decoration: none;
   transition:
@@ -129,12 +129,12 @@
 }
 
 .sidera-language-dropdown__option:hover {
-  background: rgba(67, 41, 30, 0.06);
+  background: rgba(var(--color-text-rgb), 0.06);
   color: var(--sidera-language-ink);
 }
 
 .sidera-language-dropdown__option--selected {
-  background: #efe8db;
+  background: var(--color-surface);
   color: var(--sidera-language-ink);
   font-weight: 700;
 }

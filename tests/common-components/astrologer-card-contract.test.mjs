@@ -61,11 +61,11 @@ test("AstrologerCard models availability as one card state", async () => {
 test("AstrologerCard styles reference layout and accessible responsive states", async () => {
   const styles = await readFile(stylesPath, "utf8");
 
-  assert.match(styles, /#fbf8f1/);
-  assert.match(styles, /#fefbf5/);
-  assert.match(styles, /#3f8f5f/);
+  assert.match(styles, /var\(--color-panel\)/);
+  assert.match(styles, /var\(--color-panel\)/);
+  assert.match(styles, /var\(--color-success\)/);
   assert.match(styles, /#c8973f/);
-  assert.match(styles, /#9b8776/);
+  assert.match(styles, /var\(--color-muted-soft\)/);
   assert.match(styles, /max-inline-size: 24rem/);
   assert.match(styles, /max-inline-size: 18rem/);
   assert.match(styles, /flex-wrap: wrap/);

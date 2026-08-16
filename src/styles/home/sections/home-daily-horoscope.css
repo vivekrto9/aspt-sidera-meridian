@@ -1,14 +1,14 @@
 .home-daily-horoscope {
   scroll-margin-top: 5rem;
-  padding: 6rem 2.125rem;
+  padding: 6.25rem 2.125rem;
   overflow: hidden;
-  background: #f7f1e8;
-  color: #33271f;
-  font-family: "Figtree", system-ui, sans-serif;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-sans);
 }
 
 .home-daily-horoscope__inner {
-  inline-size: min(100%, 73.75rem);
+  inline-size: min(100%, 75rem);
   margin-inline: auto;
 }
 
@@ -18,7 +18,7 @@
 
 .home-daily-horoscope__content {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.15fr) minmax(20rem, 0.85fr);
   align-items: start;
   gap: 2.25rem;
 }
@@ -27,7 +27,7 @@
   inline-size: 100%;
   min-inline-size: 0;
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.75rem;
 }
 
@@ -44,9 +44,9 @@
   min-inline-size: 0;
   border-radius: 1.25rem;
   padding: 2rem;
-  background: #6e4433;
-  color: #faf2e6;
-  box-shadow: 0 1.5rem 3.75rem -2.125rem rgba(51, 39, 31, 0.6);
+  background: var(--color-text);
+  color: var(--color-on-dark);
+  box-shadow: 0 1.5rem 3.75rem -2.125rem rgba(var(--color-text-rgb), 0.6);
 }
 
 .home-daily-horoscope__reading-content {
@@ -74,29 +74,29 @@
   flex: none;
   display: grid;
   place-items: center;
-  border: 1px solid rgba(245, 234, 216, 0.24);
+  border: 1px solid rgba(211, 146, 170, 0.4);
   border-radius: 50%;
-  background: rgba(245, 234, 216, 0.1);
-  color: #faf2e6;
+  background: rgba(211, 146, 170, 0.16);
+  color: var(--color-primary-pale);
   font: 400 1.875rem / 1 Georgia, serif;
 }
 
 .home-daily-horoscope__identity h3 {
   margin: 0;
-  color: #fcf4e5;
-  font: 400 1.875rem / 1 "Newsreader", Georgia, serif;
+  color: var(--color-on-dark-strong);
+  font: 400 1.875rem / 1 var(--font-serif), Georgia, serif;
 }
 
 .home-daily-horoscope__identity p {
   margin: 0.125rem 0 0;
-  color: #cdb49b;
+  color: var(--color-on-dark-muted);
   font-size: 0.8125rem;
   line-height: 1.4;
 }
 
 .home-daily-horoscope__metadata {
   margin: 1.25rem 0 0;
-  color: #e0a06e;
+  color: var(--color-primary-soft);
   font-size: 0.6875rem;
   font-weight: 600;
   letter-spacing: 0.14em;
@@ -107,24 +107,28 @@
 .home-daily-horoscope__forecast {
   min-block-size: 3.1em;
   margin: 0.875rem 0 0;
-  color: #fcf4e5;
-  font: 400 1.125rem / 1.55 "Newsreader", Georgia, serif;
+  color: var(--color-on-dark-strong);
+  font: 400 1.125rem / 1.55 var(--font-serif), Georgia, serif;
   text-wrap: pretty;
 }
 
 .home-daily-horoscope__cta {
-  --sidera-button-color: #faf2e6;
-  --sidera-button-hover-color: #e0a06e;
-  --sidera-button-focus: rgba(224, 160, 110, 0.6);
+  --sidera-button-color: var(--color-primary-pale);
+  --sidera-button-hover-color: var(--color-on-dark-strong);
+  --sidera-button-focus: rgba(var(--color-primary-rgb), 0.45);
   justify-content: flex-start;
   min-block-size: auto;
   margin-block-start: 1.5rem;
   padding: 0 0 0.125rem;
-  border-block-end-color: rgba(250, 242, 230, 0.5);
+  border-block-end-color: rgba(211, 146, 170, 0.5);
   border-radius: 0;
 }
 
 @media (max-width: 58rem) {
+  .home-daily-horoscope__content {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .home-daily-horoscope__signs {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }

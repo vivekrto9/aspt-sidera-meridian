@@ -20,11 +20,11 @@
   flex: none;
   align-items: center;
   gap: 0.4rem;
-  border: 1px solid rgba(67, 41, 30, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   border-radius: 999px;
   padding: 0.5rem 0.8rem;
-  background: #fbf8f1;
-  color: #6b5346;
+  background: var(--color-panel);
+  color: var(--color-muted);
   font-size: 0.6875rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -32,7 +32,7 @@
 }
 
 .account-wallet__count strong {
-  color: #43291e;
+  color: var(--color-text);
   font-size: 0.875rem;
   letter-spacing: 0;
 }
@@ -40,16 +40,16 @@
 .account-wallet__description {
   max-inline-size: 39rem;
   margin: 0.625rem 0 1.125rem;
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 0.875rem;
   line-height: 1.55;
 }
 
 .account-wallet__summary,
 .account-wallet__activity {
-  border: 1px solid rgba(67, 41, 30, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   border-radius: 1.125rem;
-  background: #fbf8f1;
+  background: var(--color-panel);
 }
 
 .account-wallet__summary {
@@ -62,7 +62,7 @@
 
 .account-wallet__summary p {
   margin: 0;
-  color: #9c4f38;
+  color: var(--color-primary);
   font-size: 0.6875rem;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -73,14 +73,14 @@
 .account-wallet__summary strong {
   display: block;
   margin-block-start: 0.25rem;
-  color: #43291e;
-  font: 500 2.75rem / 1 "Newsreader", Georgia, serif;
+  color: var(--color-text);
+  font: 500 2.75rem / 1 var(--font-serif), Georgia, serif;
 }
 
 .account-wallet__summary > div:first-child > span {
   display: block;
   margin-block-start: 0.35rem;
-  color: #7a6252;
+  color: var(--color-muted);
   font-size: 0.75rem;
 }
 
@@ -107,8 +107,8 @@
 
 .account-wallet__activity-heading h3 {
   margin: 0;
-  color: #43291e;
-  font: 500 1.375rem / 1.1 "Newsreader", Georgia, serif;
+  color: var(--color-text);
+  font: 500 1.375rem / 1.1 var(--font-serif), Georgia, serif;
 }
 
 .account-wallet__activity-heading .sidera-button {
@@ -116,9 +116,9 @@
 }
 
 .account-wallet__list {
-  border-block-start: 1px solid rgba(67, 41, 30, 0.08);
+  border-block-start: 1px solid rgba(var(--color-text-rgb), 0.08);
   padding-inline: 1.25rem;
-  background: rgba(239, 232, 219, 0.28);
+  background: rgba(var(--color-surface-rgb), 0.28);
 }
 
 .account-wallet__transaction {
@@ -127,7 +127,7 @@
   align-items: center;
   gap: 0.75rem;
   padding-block: 0.875rem;
-  border-block-end: 1px solid rgba(67, 41, 30, 0.08);
+  border-block-end: 1px solid rgba(var(--color-text-rgb), 0.08);
 }
 
 .account-wallet__transaction:last-child { border-block-end: 0; }
@@ -139,39 +139,39 @@
   place-items: center;
   border-radius: 50%;
   background: rgba(63, 143, 95, 0.11);
-  color: #397158;
+  color: var(--color-success);
   font-weight: 700;
 }
 
 .account-wallet__transaction.is-debit > span {
-  background: rgba(156, 79, 56, 0.1);
-  color: #9c4f38;
+  background: rgba(var(--color-primary-rgb), 0.1);
+  color: var(--color-primary);
 }
 
 .account-wallet__transaction strong,
 .account-wallet__transaction small { display: block; }
-.account-wallet__transaction strong { color: #43291e; font-size: 0.84375rem; }
+.account-wallet__transaction strong { color: var(--color-text); font-size: 0.84375rem; }
 .account-wallet__transaction small { margin-block-start: 0.2rem; color: #89776e; font-size: 0.71875rem; line-height: 1.4; }
-.account-wallet__transaction > b { color: #397158; font-size: 0.84375rem; }
-.account-wallet__transaction.is-debit > b { color: #9c4f38; }
+.account-wallet__transaction > b { color: var(--color-success); font-size: 0.84375rem; }
+.account-wallet__transaction.is-debit > b { color: var(--color-primary); }
 
 .account-wallet__empty {
-  border-block-start: 1px solid rgba(67, 41, 30, 0.08);
+  border-block-start: 1px solid rgba(var(--color-text-rgb), 0.08);
   padding: 1.75rem 1.25rem 1.5rem;
-  background: rgba(239, 232, 219, 0.28);
+  background: rgba(var(--color-surface-rgb), 0.28);
   text-align: center;
 }
 
 .account-wallet__empty h3 {
   margin: 0;
-  color: #43291e;
-  font: 500 1.5rem / 1.1 "Newsreader", Georgia, serif;
+  color: var(--color-text);
+  font: 500 1.5rem / 1.1 var(--font-serif), Georgia, serif;
 }
 
 .account-wallet__empty p {
   max-inline-size: 32rem;
   margin: 0.5rem auto 1rem;
-  color: #7a6252;
+  color: var(--color-muted);
   font-size: 0.8125rem;
   line-height: 1.5;
 }

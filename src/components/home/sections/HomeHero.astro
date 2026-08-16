@@ -1,6 +1,5 @@
 ---
 import Button from "../../shared/Button.astro";
-import ChartWheel from "../../shared/ChartWheel.astro";
 import "../../../styles/home/sections/home-hero.css";
 
 type EditAttributes = Record<string, string>;
@@ -19,8 +18,6 @@ type Props = {
   secondaryCta: string;
   secondaryHref: string;
   proofs: ProofItem[];
-  chartTitle: string;
-  chartDescription?: string;
   kickerEditAttributes?: EditAttributes;
   titleEditAttributes?: EditAttributes;
   bodyEditAttributes?: EditAttributes;
@@ -37,8 +34,6 @@ const {
   secondaryCta,
   secondaryHref,
   proofs,
-  chartTitle,
-  chartDescription,
   kickerEditAttributes = {},
   titleEditAttributes = {},
   bodyEditAttributes = {},
@@ -96,18 +91,5 @@ const titleRemainder = titleWords.join(" ");
       }
     </div>
 
-    <div class="home-hero__visual">
-      <div class="home-hero__wheel-orbit">
-        <ChartWheel
-          title={chartTitle}
-          description={chartDescription}
-          mode="decorative"
-          size="large"
-          showHouses={false}
-          showAspects={false}
-          class="home-hero__wheel"
-        />
-      </div>
-    </div>
   </div>
 </section>

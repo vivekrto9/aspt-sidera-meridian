@@ -1,6 +1,6 @@
 .shop-catalog-intro-controls {
   inline-size: 100%;
-  background: #efe8db;
+  background: var(--color-surface);
 }
 
 .shop-catalog-intro-controls__intro {
@@ -45,7 +45,7 @@ body[data-builder-edit-mode]
   display: inline-flex;
   align-items: baseline;
   gap: 0.5rem;
-  color: #7a6252;
+  color: var(--color-muted);
   font-size: 0.84375rem;
   font-weight: 500;
 }

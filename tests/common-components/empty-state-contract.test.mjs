@@ -39,7 +39,7 @@ test("EmptyState matches the literal panel and plain reference variants", async 
 
   assert.match(source, /\.sidera-empty-state--panel/);
   assert.match(source, /border-radius: 1\.375rem/);
-  assert.match(source, /background: #fbf8f1/);
+  assert.match(source, /background: var\(--color-panel\)/);
   assert.match(source, /font-size: 2\.5rem/);
   assert.match(source, /font-size: 1\.625rem/);
   assert.match(source, /@media \(max-width: 40rem\)/);

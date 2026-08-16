@@ -1,11 +1,11 @@
 .sidera-text-area {
   --text-area-background: #ffffff;
-  --text-area-border: rgba(67, 41, 30, 0.18);
-  --text-area-color: #43291e;
-  --text-area-placeholder: #9b8776;
-  --text-area-hover-border: rgba(67, 41, 30, 0.34);
-  --text-area-focus-border: #9c4f38;
-  --text-area-focus-ring: rgba(156, 79, 56, 0.16);
+  --text-area-border: rgba(var(--color-text-rgb), 0.18);
+  --text-area-color: var(--color-text);
+  --text-area-placeholder: var(--color-muted-soft);
+  --text-area-hover-border: rgba(var(--color-text-rgb), 0.34);
+  --text-area-focus-border: var(--color-primary);
+  --text-area-focus-ring: rgba(var(--color-primary-rgb), 0.16);
 
   inline-size: 100%;
   min-block-size: 5.5rem;
@@ -15,7 +15,7 @@
   padding: 0.875rem 1rem;
   background: var(--text-area-background);
   color: var(--text-area-color);
-  font: 400 0.875rem / 1.55 "Figtree", system-ui, sans-serif;
+  font: 400 0.875rem / 1.55 var(--font-sans), system-ui, sans-serif;
   outline: none;
   transition:
     background-color 160ms ease,
@@ -32,10 +32,10 @@
 .sidera-text-area--inverse {
   --text-area-background: rgba(240, 230, 214, 0.05);
   --text-area-border: rgba(240, 230, 214, 0.2);
-  --text-area-color: #f5ecdd;
+  --text-area-color: var(--color-surface-soft);
   --text-area-placeholder: #cdb9a7;
   --text-area-hover-border: rgba(240, 230, 214, 0.38);
-  --text-area-focus-border: #d69a6a;
+  --text-area-focus-border: var(--color-primary-soft);
   --text-area-focus-ring: rgba(214, 154, 106, 0.2);
 }
 
@@ -54,8 +54,8 @@
 }
 
 .sidera-text-area[aria-invalid="true"] {
-  --text-area-border: #a84d36;
-  --text-area-focus-border: #8d3e2c;
+  --text-area-border: var(--color-primary);
+  --text-area-focus-border: var(--color-primary-strong);
   --text-area-focus-ring: rgba(168, 77, 54, 0.18);
 }
 
@@ -66,8 +66,8 @@
 }
 
 .sidera-text-area[readonly] {
-  --text-area-background: #fbf8f1;
-  --text-area-color: #6b5346;
+  --text-area-background: var(--color-panel);
+  --text-area-color: var(--color-muted);
 
   cursor: default;
 }
@@ -78,9 +78,9 @@
 }
 
 .sidera-text-area:disabled {
-  --text-area-background: #f2ece3;
-  --text-area-border: rgba(67, 41, 30, 0.1);
-  --text-area-color: #8d7a6b;
+  --text-area-background: var(--color-surface-soft);
+  --text-area-border: rgba(var(--color-text-rgb), 0.1);
+  --text-area-color: var(--color-muted-soft);
   --text-area-placeholder: #a89789;
 
   cursor: not-allowed;

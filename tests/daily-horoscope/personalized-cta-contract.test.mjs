@@ -36,8 +36,8 @@ test("Daily Horoscope Personalized CTA matches the reference through the approve
   assert.match(component, /surface="panel"/);
   assert.match(component, /ambience/);
   assert.match(component, /editAttributes\("titleAccent"\)/);
-  assert.match(styles, /--sidera-final-cta-background: #5b382c/);
-  assert.match(styles, /--sidera-final-cta-accent: #d69a6a/);
+  assert.match(styles, /--sidera-final-cta-background: var\(--color-dark\)/);
+  assert.match(styles, /--sidera-final-cta-accent: var\(--color-primary-soft\)/);
   assert.match(styles, /inline-size: min\(100% - 4\.25rem, 73\.75rem\)/);
   assert.match(styles, /margin: 1\.625rem auto 3\.75rem/);
   assert.match(styles, /@media \(max-width: 42rem\)/);

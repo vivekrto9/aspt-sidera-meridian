@@ -41,7 +41,7 @@ test("About Team composes the approved shared identity components", async () => 
   assert.match(component, /\{\.\.\.titleAccentEditAttributes\}/);
   assert.match(component, /\{\.\.\.titleRestEditAttributes\}/);
   assert.match(styles, /padding: 4\.5rem 2\.125rem/);
-  assert.match(styles, /background: #efe8db/);
+  assert.match(styles, /background: var\(--color-surface\)/);
   assert.match(styles, /--avatar-size: 6rem/);
   assert.match(styles, /prefers-reduced-motion: reduce/);
   assert.doesNotMatch(styles, /box-shadow/);

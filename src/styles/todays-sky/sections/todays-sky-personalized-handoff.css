@@ -1,5 +1,5 @@
 .todays-sky-personalized-handoff {
-  --sidera-final-cta-background: #2f4a41;
+  --sidera-final-cta-background: var(--color-dark);
   --sidera-final-cta-color: #f3f8f5;
   --sidera-final-cta-accent: #9ec4b3;
   --sidera-final-cta-muted: #bcd3c9;

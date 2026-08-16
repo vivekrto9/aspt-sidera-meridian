@@ -1,13 +1,13 @@
 .home-transit {
-  padding: 6rem 2.125rem;
+  padding: 6.25rem 2.125rem;
   overflow: hidden;
-  background: #fefbf5;
-  color: #33271f;
-  font-family: "Figtree", system-ui, sans-serif;
+  background: var(--color-panel);
+  color: var(--color-text);
+  font-family: var(--font-sans);
 }
 
 .home-transit__inner {
-  inline-size: min(100%, 73.75rem);
+  inline-size: min(100%, 75rem);
   margin-inline: auto;
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
@@ -39,10 +39,10 @@
 
 .home-transit__unavailable {
   min-inline-size: 0;
-  border: 1px solid rgba(51, 39, 31, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   border-radius: 0.875rem;
   padding: 2rem;
-  background: #f7f1e8;
+  background: var(--color-bg);
 }
 
 .home-transit__unavailable h3,
@@ -58,7 +58,7 @@
 
 .home-transit__unavailable p {
   margin-block-start: 0.5rem;
-  color: #6e5b4c;
+  color: var(--color-muted);
   font-size: 0.875rem;
   line-height: 1.55;
 }
@@ -68,11 +68,11 @@
   display: grid;
   grid-template-columns: 3.25rem minmax(0, 1fr);
   gap: 1.125rem;
-  border: 1px solid rgba(51, 39, 31, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   border-radius: 0.875rem;
   padding: 1rem 1.25rem;
-  background: #f7f1e8;
-  box-shadow: 0 0.0625rem 0.125rem rgba(51, 39, 31, 0.035);
+  background: var(--color-bg);
+  box-shadow: 0 0.0625rem 0.125rem rgba(var(--color-text-rgb), 0.035);
   animation: home-transit-item-in 420ms ease both;
   animation-delay: calc(var(--home-transit-item-index) * 55ms);
 }
@@ -87,7 +87,7 @@
 }
 
 .home-transit__glyph {
-  color: #9a6a4e;
+  color: var(--color-primary);
   font:
     400 1.25rem / 1 Georgia,
     "Times New Roman",
@@ -95,7 +95,7 @@
 }
 
 .home-transit__date {
-  color: #6e5b4c;
+  color: var(--color-muted);
   font-size: 0.6875rem;
   font-weight: 650;
   line-height: 1.25;
@@ -103,7 +103,7 @@
 }
 
 .home-transit__detail {
-  border-inline-start: 1px solid rgba(51, 39, 31, 0.13);
+  border-inline-start: 1px solid rgba(var(--color-text-rgb), 0.13);
   padding-inline-start: 1.125rem;
 }
 
@@ -114,7 +114,7 @@
 }
 
 .home-transit__aspect {
-  color: #33271f;
+  color: var(--color-text);
   font-size: 0.875rem;
   font-weight: 650;
   line-height: 1.4;
@@ -122,7 +122,7 @@
 
 .home-transit__note {
   margin-block-start: 0.25rem;
-  color: #6e5b4c;
+  color: var(--color-muted);
   font-size: 0.8125rem;
   line-height: 1.5;
 }

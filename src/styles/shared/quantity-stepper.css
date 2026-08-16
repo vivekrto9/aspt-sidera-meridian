@@ -8,11 +8,11 @@
   display: inline-flex;
   align-items: center;
   gap: 0.125rem;
-  border: 1px solid rgba(67, 41, 30, 0.2);
+  border: 1px solid rgba(var(--color-text-rgb), 0.2);
   border-radius: 999px;
   padding: var(--quantity-padding);
   background: #ffffff;
-  color: #43291e;
+  color: var(--color-text);
 }
 
 .quantity-stepper--compact {
@@ -32,8 +32,8 @@
 .quantity-stepper__value {
   min-inline-size: var(--quantity-value-width);
   display: inline-block;
-  color: #43291e;
-  font: 600 var(--quantity-font-size) / 1.2 "Figtree", system-ui, sans-serif;
+  color: var(--color-text);
+  font: 600 var(--quantity-font-size) / 1.2 var(--font-sans), system-ui, sans-serif;
   text-align: center;
   font-variant-numeric: tabular-nums;
 }

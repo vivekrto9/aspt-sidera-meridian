@@ -2,7 +2,7 @@
   inline-size: 100%;
   display: flex;
   flex-direction: column;
-  color: #43291e;
+  color: var(--color-text);
 }
 
 .sidera-auth-signup__intro {
@@ -11,8 +11,8 @@
 
 .sidera-auth-signup__intro h2 {
   margin: 0;
-  color: #43291e;
-  font-family: "Newsreader", Georgia, "Times New Roman", serif;
+  color: var(--color-text);
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
   font-size: 1.625rem;
   font-weight: 400;
   line-height: 1.2;
@@ -20,7 +20,7 @@
 
 .sidera-auth-signup__intro p {
   margin: 0.45rem 0 0;
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 0.84375rem;
   line-height: 1.5;
 }
@@ -42,14 +42,14 @@
   display: flex;
   align-items: baseline;
   gap: 0.25rem;
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 1.35;
 }
 
 .sidera-auth-signup__required {
-  color: #a84d36;
+  color: var(--color-primary);
 }
 
 .sidera-auth-signup__input {
@@ -77,8 +77,8 @@
 }
 
 .sidera-auth-signup__country option {
-  color: #43291e;
-  -webkit-text-fill-color: #43291e;
+  color: var(--color-text);
+  -webkit-text-fill-color: var(--color-text);
 }
 
 .sidera-auth-signup__country-code {
@@ -87,7 +87,7 @@
   inset-block-start: 50%;
   inset-inline-start: 0.625rem;
   overflow: hidden;
-  color: #43291e;
+  color: var(--color-text);
   font-size: 0.9375rem;
   line-height: 1;
   pointer-events: none;
@@ -110,7 +110,7 @@
 
 .sidera-auth-signup__field-error {
   margin: 0;
-  color: #8d3e2c;
+  color: var(--color-primary-strong);
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 1.45;
@@ -128,14 +128,14 @@
 .sidera-auth-signup__status {
   min-block-size: 1.25rem;
   margin: 0 0 0.625rem;
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 0.75rem;
   font-weight: 500;
   line-height: 1.4;
 }
 
 .sidera-auth-signup__status--error {
-  color: #8d3e2c;
+  color: var(--color-primary-strong);
 }
 
 .sidera-auth-signup__submit {
@@ -150,7 +150,7 @@
   display: flex;
   align-items: flex-start;
   gap: 0.625rem;
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 0.8125rem;
   line-height: 1.45;
 }
@@ -180,14 +180,14 @@
 }
 
 .sidera-auth-signup__consent a {
-  color: #6b5346;
+  color: var(--color-muted);
   font-weight: 700;
   text-underline-offset: 0.15em;
 }
 
 .sidera-auth-signup__consent a:hover,
 .sidera-auth-signup__consent a:focus-visible {
-  color: #9c4f38;
+  color: var(--color-primary);
 }
 
 .sidera-auth-signup__consent-glue {
@@ -203,26 +203,26 @@
 }
 
 .sidera-auth-signup__consent .sidera-checkbox__control[aria-invalid="true"] {
-  border-color: #a84d36;
-  box-shadow: 0 0 0 0.1875rem rgba(168, 77, 54, 0.12);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.1875rem rgba(var(--color-primary-rgb), 0.12);
 }
 
 .sidera-auth-signup__switch {
   margin: 0.75rem 0 0;
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 0.8125rem;
   line-height: 1.5;
   text-align: center;
 }
 
 .sidera-auth-signup__switch a {
-  color: #9c4f38;
+  color: var(--color-primary);
   font-weight: 700;
 }
 
 .sidera-auth-signup__switch a:hover,
 .sidera-auth-signup__switch a:focus-visible {
-  color: #7f3e2d;
+  color: var(--color-primary-strong);
 }
 
 @media (max-width: 40rem) {

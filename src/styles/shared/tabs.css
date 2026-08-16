@@ -1,13 +1,13 @@
 .sidera-tabs {
-  --sidera-tabs-border: rgba(67, 41, 30, 0.2);
-  --sidera-tabs-color: #6b5346;
-  --sidera-tabs-hover-background: rgba(67, 41, 30, 0.05);
-  --sidera-tabs-hover-border: rgba(67, 41, 30, 0.36);
-  --sidera-tabs-hover-color: #43291e;
-  --sidera-tabs-selected-background: #5b382c;
-  --sidera-tabs-selected-border: #5b382c;
-  --sidera-tabs-selected-color: #f3eadb;
-  --sidera-tabs-focus: rgba(156, 79, 56, 0.5);
+  --sidera-tabs-border: rgba(var(--color-text-rgb), 0.2);
+  --sidera-tabs-color: var(--color-muted);
+  --sidera-tabs-hover-background: rgba(var(--color-text-rgb), 0.05);
+  --sidera-tabs-hover-border: rgba(var(--color-text-rgb), 0.36);
+  --sidera-tabs-hover-color: var(--color-text);
+  --sidera-tabs-selected-background: var(--color-dark);
+  --sidera-tabs-selected-border: var(--color-dark);
+  --sidera-tabs-selected-color: var(--color-surface);
+  --sidera-tabs-focus: rgba(var(--color-primary-rgb), 0.5);
   --sidera-tabs-min-height: 2.625rem;
   --sidera-tabs-inline-padding: 1.125rem;
   --sidera-tabs-font-size: 0.84375rem;
@@ -15,8 +15,8 @@
   inline-size: 100%;
   min-inline-size: 0;
   max-inline-size: 100%;
-  color: #43291e;
-  font-family: "Figtree", system-ui, sans-serif;
+  color: var(--color-text);
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
 .sidera-tabs__scroller {
@@ -26,7 +26,7 @@
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   scrollbar-width: thin;
-  scrollbar-color: rgba(67, 41, 30, 0.24) transparent;
+  scrollbar-color: rgba(var(--color-text-rgb), 0.24) transparent;
 }
 
 .sidera-tabs__list {
@@ -49,7 +49,7 @@
   background: transparent;
   color: var(--sidera-tabs-color);
   cursor: pointer;
-  font: 600 var(--sidera-tabs-font-size) / 1.2 "Figtree", system-ui, sans-serif;
+  font: 600 var(--sidera-tabs-font-size) / 1.2 var(--font-sans), system-ui, sans-serif;
   white-space: nowrap;
   transition:
     border-color 150ms ease,
@@ -96,7 +96,7 @@
 }
 
 .sidera-tabs--underline .sidera-tabs__scroller {
-  border-block-end: 1px solid rgba(67, 41, 30, 0.12);
+  border-block-end: 1px solid rgba(var(--color-text-rgb), 0.12);
 }
 
 .sidera-tabs--underline .sidera-tabs__list {
@@ -137,16 +137,16 @@
 
 .sidera-tabs--tone-inverse {
   --sidera-tabs-border: rgba(240, 230, 214, 0.4);
-  --sidera-tabs-color: #f0e6d6;
+  --sidera-tabs-color: var(--color-surface);
   --sidera-tabs-hover-background: rgba(240, 230, 214, 0.08);
   --sidera-tabs-hover-border: rgba(240, 230, 214, 0.62);
   --sidera-tabs-hover-color: #ffffff;
-  --sidera-tabs-selected-background: #f3eadb;
-  --sidera-tabs-selected-border: #f3eadb;
-  --sidera-tabs-selected-color: #43291e;
+  --sidera-tabs-selected-background: var(--color-surface);
+  --sidera-tabs-selected-border: var(--color-surface);
+  --sidera-tabs-selected-color: var(--color-text);
   --sidera-tabs-focus: rgba(214, 154, 106, 0.7);
 
-  color: #f5ecdd;
+  color: var(--color-surface-soft);
 }
 
 .sidera-tabs--tone-inverse.sidera-tabs--underline .sidera-tabs__scroller {

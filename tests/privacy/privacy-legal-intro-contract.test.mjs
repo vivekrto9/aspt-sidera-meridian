@@ -183,7 +183,7 @@ test("Privacy document preserves the legal reference surface responsively", asyn
     readFile(componentStylesPath, "utf8"),
   ]);
 
-  assert.match(pageStyles, /background: #efe8db/);
+  assert.match(pageStyles, /background: var\(--color-surface\)/);
   assert.match(pageStyles, /inline-size: 100%/);
   assert.match(componentStyles, /min-block-size: calc\(100svh - 4\.75rem\)/);
   assert.match(componentStyles, /@supports \(min-block-size: 100dvh\)/);

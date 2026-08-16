@@ -89,16 +89,16 @@ test("Home Daily Horoscope owns accessible sign selection and synchronized readi
 test("Home Daily Horoscope matches reference geometry and responsive safeguards", async () => {
   const styles = await readFile(stylesPath, "utf8");
 
-  assert.match(styles, /padding: 6rem 2\.125rem/);
-  assert.match(styles, /inline-size: min\(100%, 73\.75rem\)/);
-  assert.match(styles, /grid-template-columns: minmax\(0, 1fr\)/);
-  assert.match(styles, /grid-template-columns: repeat\(6, minmax\(0, 1fr\)\)/);
-  assert.match(styles, /font: 400 1\.125rem \/ 1\.55 "Newsreader"/);
+  assert.match(styles, /padding: 6\.25rem 2\.125rem/);
+  assert.match(styles, /inline-size: min\(100%, 75rem\)/);
+  assert.match(styles, /grid-template-columns: minmax\(0, 1\.15fr\) minmax\(20rem, 0\.85fr\)/);
+  assert.match(styles, /grid-template-columns: repeat\(4, minmax\(0, 1fr\)\)/);
+  assert.match(styles, /font: 400 1\.125rem \/ 1\.55 var\(--font-serif\)/);
   assert.match(styles, /font-size: 1rem/);
   assert.match(styles, /opacity 160ms ease/);
   assert.match(styles, /transform 200ms ease/);
   assert.match(styles, /min-block-size: 3\.1em/);
-  assert.match(styles, /background: #6e4433/);
+  assert.match(styles, /background: var\(--color-text\)/);
   assert.match(styles, /border-radius: 1\.25rem/);
   assert.match(styles, /@media \(max-width: 58rem\)/);
   assert.match(styles, /@media \(max-width: 40rem\)/);

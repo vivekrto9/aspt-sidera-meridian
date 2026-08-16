@@ -2,9 +2,9 @@
   inline-size: 100%;
   min-inline-size: 0;
   padding-block-end: 6rem;
-  background: #efe8db;
-  color: #43291e;
-  font-family: "Figtree", system-ui, sans-serif;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
 .daily-horoscope-sign-picker__intro {
@@ -23,7 +23,7 @@
 .daily-horoscope-sign-picker__description {
   max-inline-size: 31.25rem;
   margin: 1.125rem auto 0;
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 1rem;
   line-height: 1.6;
   text-align: center;
@@ -50,12 +50,12 @@
 }
 
 .daily-horoscope-sign-picker .daily-horoscope-sign-picker__sign:hover {
-  border-color: rgba(156, 79, 56, 0.45);
+  border-color: rgba(var(--color-primary-rgb), 0.45);
 }
 
 .daily-horoscope-sign-picker__helper {
   margin: 2.125rem 0 0;
-  color: #7a6252;
+  color: var(--color-muted);
   font-size: 0.84375rem;
   line-height: 1.5;
   text-align: center;
@@ -63,7 +63,7 @@
 }
 
 .daily-horoscope-sign-picker__helper a {
-  color: #9c4f38;
+  color: var(--color-primary);
   font-weight: 600;
   text-decoration: none;
   text-underline-offset: 0.2em;
@@ -71,13 +71,13 @@
 }
 
 .daily-horoscope-sign-picker__helper a:hover {
-  color: #5b382c;
+  color: var(--color-dark);
   text-decoration: underline;
 }
 
 .daily-horoscope-sign-picker__helper a:focus-visible {
   border-radius: 0.2rem;
-  outline: 0.1875rem solid rgba(156, 79, 56, 0.45);
+  outline: 0.1875rem solid rgba(var(--color-primary-rgb), 0.45);
   outline-offset: 0.1875rem;
 }
 

@@ -101,11 +101,11 @@ test("Home Birth Chart creates a reading and redirects directly to its result", 
   assert.doesNotMatch(source, /localStorage|sessionStorage/);
 });
 
-test("Home Birth Chart preserves the Warm Modern workbench and responsive safeguards", async () => {
+test("Home Birth Chart preserves the Meridian workbench and responsive safeguards", async () => {
   const styles = await readFile(stylesPath, "utf8");
 
-  assert.match(styles, /padding: 6rem 2\.125rem/);
-  assert.match(styles, /inline-size: min\(100%, 73\.75rem\)/);
+  assert.match(styles, /padding: 6\.25rem 2\.125rem/);
+  assert.match(styles, /inline-size: min\(100%, 75rem\)/);
   assert.match(
     styles,
     /grid-template-columns: minmax\(0, 0\.85fr\) minmax\(0, 1\.15fr\)/,

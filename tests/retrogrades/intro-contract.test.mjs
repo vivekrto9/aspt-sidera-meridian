@@ -61,7 +61,7 @@ test("Retrogrades intro preserves the approved widened measure and restraint", a
   );
   assert.match(
     styles,
-    /\.retrogrades-intro-shell\s*\{[^}]*padding: 4\.75rem 2\.125rem 1\.25rem[^}]*background: #efe8db/s,
+    /\.retrogrades-intro-shell\s*\{[^}]*padding: 4\.75rem 2\.125rem 1\.25rem[^}]*background: var\(--color-surface\)/s,
   );
   assert.match(
     styles,

@@ -1,10 +1,10 @@
 .sidera-badge {
   --badge-background: #e8ded0;
-  --badge-border: rgba(67, 41, 30, 0.12);
-  --badge-color: #6b5346;
-  --badge-solid-background: #5b382c;
-  --badge-solid-border: #5b382c;
-  --badge-solid-color: #f3eadb;
+  --badge-border: rgba(var(--color-text-rgb), 0.12);
+  --badge-color: var(--color-muted);
+  --badge-solid-background: var(--color-dark);
+  --badge-solid-border: var(--color-dark);
+  --badge-solid-color: var(--color-surface);
 
   max-inline-size: 100%;
   display: inline-flex;
@@ -15,7 +15,7 @@
   border-radius: 999px;
   background: var(--badge-background);
   color: var(--badge-color);
-  font-family: "Figtree", system-ui, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
   font-size: 0.71875rem;
   font-weight: 600;
   letter-spacing: 0.015em;
@@ -42,18 +42,18 @@
 
 .sidera-badge--accent {
   --badge-background: #efe3d7;
-  --badge-border: rgba(156, 79, 56, 0.2);
+  --badge-border: rgba(var(--color-primary-rgb), 0.2);
   --badge-color: #8d432f;
-  --badge-solid-background: #9c4f38;
-  --badge-solid-border: #9c4f38;
+  --badge-solid-background: var(--color-primary);
+  --badge-solid-border: var(--color-primary);
 }
 
 .sidera-badge--success {
   --badge-background: #e3eee5;
   --badge-border: rgba(49, 109, 70, 0.2);
-  --badge-color: #316d46;
-  --badge-solid-background: #316d46;
-  --badge-solid-border: #316d46;
+  --badge-color: var(--color-success);
+  --badge-solid-background: var(--color-success);
+  --badge-solid-border: var(--color-success);
 }
 
 .sidera-badge--warning {
@@ -67,17 +67,17 @@
 .sidera-badge--danger {
   --badge-background: #f3dfda;
   --badge-border: rgba(154, 61, 44, 0.2);
-  --badge-color: #8d3e2c;
-  --badge-solid-background: #8d3e2c;
-  --badge-solid-border: #8d3e2c;
+  --badge-color: var(--color-primary-strong);
+  --badge-solid-background: var(--color-primary-strong);
+  --badge-solid-border: var(--color-primary-strong);
 }
 
 .sidera-badge--inverse {
   --badge-background: rgba(59, 33, 25, 0.82);
   --badge-border: rgba(240, 230, 214, 0.2);
-  --badge-color: #efe4cf;
-  --badge-solid-background: #3b2119;
-  --badge-solid-border: #3b2119;
+  --badge-color: var(--color-surface);
+  --badge-solid-background: var(--color-dark-strong);
+  --badge-solid-border: var(--color-dark-strong);
 }
 
 .sidera-badge--solid {

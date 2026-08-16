@@ -197,7 +197,7 @@ test("Session setup CSS preserves the reference rail and responsive stacking", a
     styles,
     /\.astrologer-setup__summary \{[^}]*position: sticky;[^}]*inset-block-start: 5\.5rem/s,
   );
-  assert.match(styles, /--choice-chip-background: #efe8db/);
+  assert.match(styles, /--choice-chip-background: var\(--color-surface\)/);
   assert.match(styles, /--choice-chip-checked-background: rgb\(156 79 56 \/ 8%\)/);
   assert.match(styles, /@media \(max-width: 52rem\)/);
   assert.match(styles, /@media \(max-width: 40rem\)/);
@@ -221,6 +221,6 @@ test("Session setup uses the exact reference outline icons instead of font glyph
   }
   assert.doesNotMatch(component, /["'](?:◌|⌕|▣|✉)["']/);
   assert.match(styles, /stroke-width: 1\.7/);
-  assert.match(styles, /color: #8a7361/);
-  assert.match(styles, /color: #9c4f38/);
+  assert.match(styles, /color: var\(--color-muted\)/);
+  assert.match(styles, /color: var\(--color-primary\)/);
 });

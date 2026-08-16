@@ -6,14 +6,14 @@
   min-inline-size: 0;
   display: grid;
   justify-items: end;
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 0.84375rem;
   line-height: 1.5;
   text-align: end;
 }
 
 .birth-chart-results__summary strong {
-  color: #43291e;
+  color: var(--color-text);
   font-weight: 650;
 }
 
@@ -29,9 +29,9 @@
   align-items: flex-start;
   gap: 1.125rem;
   padding: 1.5rem 1.625rem;
-  border: 1px solid rgba(67, 41, 30, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   border-radius: 1.125rem;
-  background: #fbf8f1;
+  background: var(--color-panel);
 }
 
 .birth-chart-results__orientation-glyph {
@@ -41,24 +41,24 @@
   display: inline-grid;
   place-items: center;
   border-radius: 50%;
-  color: #f3eadb;
+  color: var(--color-surface);
   font: 400 1.75rem / 1 Georgia, "Times New Roman", serif;
 }
 
 .birth-chart-results__orientation-glyph--fire {
-  background: #9c4f38;
+  background: var(--color-primary);
 }
 
 .birth-chart-results__orientation-glyph--earth {
-  background: #6c6254;
+  background: var(--color-muted);
 }
 
 .birth-chart-results__orientation-glyph--air {
-  background: #b07a3c;
+  background: var(--color-primary-soft);
 }
 
 .birth-chart-results__orientation-glyph--water {
-  background: #2f4a41;
+  background: var(--color-dark);
 }
 
 .birth-chart-results__orientation-role,
@@ -75,7 +75,7 @@
 .birth-chart-results__reading-kicker,
 .birth-chart-results__facts dt,
 .birth-chart-results__position-columns {
-  color: #9c4f38;
+  color: var(--color-primary);
   font-size: 0.6875rem;
   font-weight: 650;
   letter-spacing: 0.12em;
@@ -85,13 +85,13 @@
 
 .birth-chart-results__orientation-card h3 {
   margin: 0.1875rem 0 0;
-  color: #43291e;
-  font: 400 1.625rem / 1.05 "Newsreader", Georgia, "Times New Roman", serif;
+  color: var(--color-text);
+  font: 400 1.625rem / 1.05 var(--font-serif), Georgia, "Times New Roman", serif;
 }
 
 .birth-chart-results__orientation-blurb {
   margin-block-start: 0.375rem;
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 0.8125rem;
   line-height: 1.45;
   overflow-wrap: anywhere;
@@ -119,27 +119,27 @@
   display: inline-grid;
   place-items: center;
   border-radius: 1rem;
-  background: var(--planet-accent, #5b382c);
-  color: #f3eadb;
+  background: var(--planet-accent, var(--color-dark));
+  color: var(--color-surface);
   font: 400 2.125rem / 1 Georgia, "Times New Roman", serif;
 }
 
 .birth-chart-results__planet-identity h3 {
   margin: 0;
-  color: #43291e;
-  font: 400 1.875rem / 1 "Newsreader", Georgia, "Times New Roman", serif;
+  color: var(--color-text);
+  font: 400 1.875rem / 1 var(--font-serif), Georgia, "Times New Roman", serif;
 }
 
 .birth-chart-results__planet-identity p {
   margin-block-start: 0.25rem;
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 0.84375rem;
 }
 
 .birth-chart-results__interpretation {
   margin-block-start: 1.375rem;
-  color: #43291e;
-  font: 400 1.375rem / 1.42 "Newsreader", Georgia, "Times New Roman", serif;
+  color: var(--color-text);
+  font: 400 1.375rem / 1.42 var(--font-serif), Georgia, "Times New Roman", serif;
   overflow-wrap: anywhere;
 }
 
@@ -153,15 +153,15 @@
 .birth-chart-results__facts div {
   min-inline-size: 0;
   padding: 0.875rem 1rem;
-  border: 1px solid rgba(67, 41, 30, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   border-radius: 0.75rem;
-  background: #efe8db;
+  background: var(--color-surface);
 }
 
 .birth-chart-results__facts dd {
   margin: 0.1875rem 0 0;
-  color: #43291e;
-  font: 400 1.25rem / 1.15 "Newsreader", Georgia, "Times New Roman", serif;
+  color: var(--color-text);
+  font: 400 1.25rem / 1.15 var(--font-serif), Georgia, "Times New Roman", serif;
   overflow-wrap: anywhere;
 }
 
@@ -175,9 +175,9 @@
 .birth-chart-results__positions,
 .birth-chart-results__aspects {
   min-inline-size: 0;
-  border: 1px solid rgba(67, 41, 30, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   border-radius: 1.125rem;
-  background: #fbf8f1;
+  background: var(--color-panel);
 }
 
 .birth-chart-results__positions {
@@ -203,12 +203,12 @@
 
 .birth-chart-results__list-header h3 {
   margin: 0;
-  color: #43291e;
-  font: 400 1.375rem / 1.15 "Newsreader", Georgia, "Times New Roman", serif;
+  color: var(--color-text);
+  font: 400 1.375rem / 1.15 var(--font-serif), Georgia, "Times New Roman", serif;
 }
 
 .birth-chart-results__list-header p {
-  color: #9b8776;
+  color: var(--color-muted-soft);
   font-size: 0.75rem;
   overflow-wrap: anywhere;
 }
@@ -218,7 +218,7 @@
   grid-template-columns: 2rem minmax(5rem, 0.9fr) minmax(7rem, 1.2fr) minmax(4rem, 0.55fr) auto;
   gap: 0.6875rem;
   padding: 0 0.6875rem 0.625rem;
-  border-block-end: 1px solid rgba(67, 41, 30, 0.1);
+  border-block-end: 1px solid rgba(var(--color-text-rgb), 0.1);
 }
 
 .birth-chart-results__position-columns span:first-child {
@@ -237,8 +237,8 @@
   gap: 0.5rem 0.875rem;
   margin-block-start: 1.125rem;
   padding-block-start: 1rem;
-  border-block-start: 1px solid rgba(67, 41, 30, 0.1);
-  color: #9b8776;
+  border-block-start: 1px solid rgba(var(--color-text-rgb), 0.1);
+  color: var(--color-muted-soft);
   font-size: 0.75rem;
   line-height: 1.5;
 }
@@ -261,15 +261,15 @@
 }
 
 .birth-chart-results__legend-dot--conjunction {
-  color: #b07a3c;
+  color: var(--color-primary-soft);
 }
 
 .birth-chart-results__legend-dot--harmonious {
-  color: #2f4a41;
+  color: var(--color-dark);
 }
 
 .birth-chart-results__legend-dot--challenging {
-  color: #9c4f38;
+  color: var(--color-primary);
 }
 
 @media (max-width: 64rem) {

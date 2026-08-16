@@ -56,10 +56,10 @@ test("SectionHeading composes the shared Button for optional actions", async () 
 test("SectionHeading preserves Warm Modern hierarchy and responsive states", async () => {
   const styles = await readFile(stylesPath, "utf8");
 
-  assert.match(styles, /#33271f/);
-  assert.match(styles, /--sidera-section-heading-accent: #9c4f38/);
-  assert.match(styles, /#f5ecdd/);
-  assert.match(styles, /#d69a6a/);
+  assert.match(styles, /var\(--color-text\)/);
+  assert.match(styles, /--sidera-section-heading-accent: var\(--color-primary\)/);
+  assert.match(styles, /var\(--color-surface-soft\)/);
+  assert.match(styles, /var\(--color-primary-soft\)/);
   assert.match(styles, /font: 600 0\.75rem/);
   assert.match(styles, /letter-spacing: 0\.18em/);
   assert.match(styles, /clamp\(2\.125rem, 4\.6vw, 3\.625rem\)/);

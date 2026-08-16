@@ -1,6 +1,6 @@
 .shop-body,
 .shop-page {
-  background: #efe8db;
+  background: var(--color-surface);
 }
 
 .shop-page {

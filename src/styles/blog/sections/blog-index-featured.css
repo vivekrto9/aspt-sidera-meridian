@@ -1,7 +1,7 @@
 .blog-index-featured {
   inline-size: 100%;
   padding: 4.375rem 2.125rem 2.125rem;
-  background: #efe8db;
+  background: var(--color-surface);
 }
 
 .blog-index-featured__inner {

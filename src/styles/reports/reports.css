@@ -1,5 +1,5 @@
 .reports-body {
-  background: #efe8db;
+  background: var(--color-surface);
 }
 
 .reports-page {

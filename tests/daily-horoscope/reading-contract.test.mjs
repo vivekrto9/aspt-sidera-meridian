@@ -247,8 +247,8 @@ test("Daily Horoscope reading matches reference geometry and mobile containment"
   assert.match(styles, /inline-size: 5rem/);
   assert.match(styles, /grid-template-columns: minmax\(0, 1fr\)/);
   assert.match(styles, /grid-template-columns: repeat\(3, minmax\(0, 1fr\)\)/);
-  assert.match(styles, /background: #5b382c/);
-  assert.match(styles, /background: #2f4a41/);
+  assert.match(styles, /background: var\(--color-dark\)/);
+  assert.match(styles, /background: var\(--color-dark\)/);
   assert.match(styles, /@media \(max-width: 56rem\)/);
   assert.match(styles, /@media \(max-width: 44rem\)/);
   assert.match(styles, /@media \(max-width: 28rem\)/);

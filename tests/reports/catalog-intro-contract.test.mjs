@@ -57,7 +57,7 @@ test("Reports intro preserves the exact reference measure and restraint", async 
   );
   assert.match(
     styles,
-    /\.reports-catalog-intro-shell\s*\{[^}]*padding: 4\.75rem 2\.125rem 1\.875rem[^}]*background: #efe8db/s,
+    /\.reports-catalog-intro-shell\s*\{[^}]*padding: 4\.75rem 2\.125rem 1\.875rem[^}]*background: var\(--color-surface\)/s,
   );
   assert.match(
     styles,

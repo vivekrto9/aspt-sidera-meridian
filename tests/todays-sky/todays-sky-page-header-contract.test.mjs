@@ -39,7 +39,7 @@ test("Today's Sky page header preserves the literal reference geometry", async (
     styles,
     /\.todays-sky-page-header\.sidera-page-intro\s*\{[^}]*padding: 2\.875rem 2\.125rem 0/s,
   );
-  assert.match(styles, /background: #efe8db/);
+  assert.match(styles, /background: var\(--color-surface\)/);
   assert.match(styles, /min-inline-size: min\(100%, 20rem\)/);
   assert.match(styles, /font-size: 0\.84375rem/);
   assert.match(styles, /text-align: end/);

@@ -1,7 +1,7 @@
 .reports-catalog-grid-shell {
   inline-size: 100%;
   padding: 1.875rem 2.125rem 6rem;
-  background: #efe8db;
+  background: var(--color-surface);
 }
 
 .reports-catalog-grid {

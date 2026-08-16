@@ -67,12 +67,12 @@ test("Home Astrologers forwards exact visible-copy edit identities", async () =>
   assert.match(source, /showBrowseAction \? \(/);
 });
 
-test("Home Astrologers matches the Warm Modern measure and responsive surface", async () => {
+test("Home Astrologers matches the Meridian measure and responsive surface", async () => {
   const styles = await readFile(stylesPath, "utf8");
 
-  assert.match(styles, /padding: 6rem 2\.125rem/);
-  assert.match(styles, /background: #eee6d8/);
-  assert.match(styles, /inline-size: min\(100%, 73\.75rem\)/);
+  assert.match(styles, /padding: 6\.25rem 2\.125rem/);
+  assert.match(styles, /background: var\(--color-surface\)/);
+  assert.match(styles, /inline-size: min\(100%, 75rem\)/);
   assert.match(styles, /--sidera-card-grid-gap: 1\.25rem/);
   assert.match(styles, /@media \(max-width: 40rem\)/);
   assert.match(styles, /@media \(prefers-reduced-motion: reduce\)/);

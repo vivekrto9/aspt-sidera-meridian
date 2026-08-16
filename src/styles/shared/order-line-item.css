@@ -2,17 +2,17 @@
   min-inline-size: 0;
   display: grid;
   align-items: center;
-  color: #43291e;
-  font-family: "Figtree", system-ui, sans-serif;
+  color: var(--color-text);
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
 .sidera-order-line-item--editable {
   grid-template-columns: 6rem minmax(0, 1fr) auto;
   gap: 0 1.25rem;
-  border: 1px solid rgba(67, 41, 30, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   border-radius: 1.125rem;
   padding: 1.125rem;
-  background: #fbf8f1;
+  background: var(--color-panel);
 }
 
 .sidera-order-line-item--summary {
@@ -24,16 +24,16 @@
   grid-template-columns: 4.625rem minmax(0, 1fr) auto auto;
   gap: 1rem;
   padding: 1rem 1.25rem;
-  border-block-end: 1px solid rgba(67, 41, 30, 0.08);
-  background: #fbf8f1;
+  border-block-end: 1px solid rgba(var(--color-text-rgb), 0.08);
+  background: var(--color-panel);
 }
 
 .sidera-order-line-item__media {
   min-inline-size: 0;
   overflow: hidden;
-  border: 1px solid rgba(67, 41, 30, 0.1);
-  background: #e8dbc7;
-  color: #6b5346;
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
+  background: var(--image-fallback-background);
+  color: var(--color-muted);
 }
 
 .sidera-order-line-item--editable .sidera-order-line-item__media {
@@ -56,8 +56,8 @@
 .sidera-order-line-item__title {
   display: block;
   margin: 0;
-  color: #43291e;
-  font-family: "Newsreader", Georgia, serif;
+  color: var(--color-text);
+  font-family: var(--font-serif), Georgia, serif;
   font-size: 1.3125rem;
   font-weight: 400;
   line-height: 1.1;
@@ -67,18 +67,18 @@
 }
 
 a.sidera-order-line-item__title:hover {
-  color: #9c4f38;
+  color: var(--color-primary);
 }
 
 a.sidera-order-line-item__title:focus-visible {
   border-radius: 0.25rem;
-  outline: 0.1875rem solid rgba(203, 107, 78, 0.5);
+  outline: 0.1875rem solid rgba(var(--color-primary-rgb), 0.5);
   outline-offset: 0.1875rem;
 }
 
 .sidera-order-line-item--summary .sidera-order-line-item__title,
 .sidera-order-line-item--history .sidera-order-line-item__title {
-  font-family: "Figtree", system-ui, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.25;
@@ -88,7 +88,7 @@ a.sidera-order-line-item__title:focus-visible {
 .sidera-order-line-item__quantity-copy,
 .sidera-order-line-item__date {
   margin: 0.25rem 0 0;
-  color: #7a6252;
+  color: var(--color-muted);
   font-size: 0.78125rem;
   line-height: 1.4;
   overflow-wrap: anywhere;
@@ -125,8 +125,8 @@ a.sidera-order-line-item__title:focus-visible {
 }
 
 .sidera-order-line-item__remove .sidera-button {
-  --sidera-button-color: #7a6252;
-  --sidera-button-hover-color: #9c4f38;
+  --sidera-button-color: var(--color-muted);
+  --sidera-button-hover-color: var(--color-primary);
 }
 
 .sidera-order-line-item__status {

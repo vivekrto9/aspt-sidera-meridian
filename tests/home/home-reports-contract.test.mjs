@@ -66,12 +66,12 @@ test("Home Reports keeps editorial copy editable and operational values dynamic"
   assert.match(source, /editAttributes\("title_rest"\)/);
 });
 
-test("Home Reports matches the Warm Modern measure and responsive surface", async () => {
+test("Home Reports matches the Meridian measure and responsive surface", async () => {
   const styles = await readFile(stylesPath, "utf8");
 
-  assert.match(styles, /padding: 6rem 2\.125rem/);
-  assert.match(styles, /background: #f7f1e8/);
-  assert.match(styles, /inline-size: min\(100%, 73\.75rem\)/);
+  assert.match(styles, /padding: 6\.25rem 2\.125rem/);
+  assert.match(styles, /background: var\(--color-bg\)/);
+  assert.match(styles, /inline-size: min\(100%, 75rem\)/);
   assert.match(styles, /--sidera-card-grid-gap: 1\.5rem/);
   assert.match(styles, /margin-block-start: 2\.25rem/);
   assert.match(styles, /@media \(max-width: 40rem\)/);

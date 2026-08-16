@@ -110,16 +110,16 @@ test("wallet page and APIs keep auth, CSRF, success, cancel, and failure contrac
   assert.match(read("src/pages/api/astropages/generated-site/payments/stripe/wallet-confirm.ts"), /data: \{ wallet, transactions, recharge: paid\.recharge \}/);
   assert.match(page, /limit: walletRecentTransactionLimit/);
   assert.match(read("src/styles/wallet/wallet.css"), /grid-template-columns: repeat\(4/);
-  assert.match(read("src/styles/wallet/wallet.css"), /background: #efe8db/);
-  assert.match(read("src/styles/wallet/wallet.css"), /background: #fbf8f1/);
-  assert.match(read("src/styles/wallet/wallet.css"), /border: 1px solid rgba\(67, 41, 30, 0\.1\)/);
+  assert.match(read("src/styles/wallet/wallet.css"), /background: var\(--color-surface\)/);
+  assert.match(read("src/styles/wallet/wallet.css"), /background: var\(--color-panel\)/);
+  assert.match(read("src/styles/wallet/wallet.css"), /border: 1px solid rgba\(var\(--color-text-rgb\), 0\.1\)/);
   assert.match(page, /transactionsHref=\{localizePath\("\/account\/wallet-transactions"/);
   assert.match(component, /href=\{transactionsHref\}/);
   assert.match(transactionsPage, /listWalletTransactionsPage/);
   assert.match(transactionsPage, /rawFilter === "credit" \|\| rawFilter === "debit"/);
   assert.match(transactionsComponent, /filterHrefs\.all/);
   assert.match(transactionsComponent, /aria-current/);
-  assert.match(read("src/styles/wallet/wallet-transactions.css"), /background: #fbf8f1/);
+  assert.match(read("src/styles/wallet/wallet-transactions.css"), /background: var\(--color-panel\)/);
 });
 
 test("wallet copy is registered for every active locale", async () => {

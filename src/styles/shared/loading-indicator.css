@@ -1,6 +1,6 @@
 .sidera-loading-indicator {
-  --loading-indicator-color: #9c4f38;
-  --loading-indicator-label: #6b5346;
+  --loading-indicator-color: var(--color-primary);
+  --loading-indicator-label: var(--color-muted);
   --loading-indicator-size: 1.5rem;
   --loading-indicator-border: 0.125rem;
   --loading-indicator-font-size: 0.875rem;
@@ -11,7 +11,7 @@
   align-items: center;
   gap: var(--loading-indicator-gap);
   color: var(--loading-indicator-label);
-  font-family: "Figtree", system-ui, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
   font-size: var(--loading-indicator-font-size);
   font-weight: 600;
   line-height: 1.4;
@@ -49,12 +49,12 @@
 }
 
 .sidera-loading-indicator--accent {
-  --loading-indicator-color: #b07a3c;
+  --loading-indicator-color: var(--color-primary-soft);
 }
 
 .sidera-loading-indicator--inverse {
-  --loading-indicator-color: #d69a6a;
-  --loading-indicator-label: #c3ac97;
+  --loading-indicator-color: var(--color-primary-soft);
+  --loading-indicator-label: var(--color-muted-soft);
 }
 
 .sidera-loading-indicator--compact {

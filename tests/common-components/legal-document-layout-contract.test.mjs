@@ -40,8 +40,8 @@ test("LegalDocumentLayout preserves reference measure and type hierarchy", async
 
   assert.match(styles, /inline-size: min\(100%, 47\.5rem\)/);
   assert.match(styles, /padding: 0\.625rem 2\.125rem 5\.625rem/);
-  assert.match(styles, /font: 400 1\.5rem \/ 1\.15 "Newsreader"/);
-  assert.match(styles, /font: 400 0\.90625rem \/ 1\.7 "Figtree"/);
+  assert.match(styles, /font: 400 1\.5rem \/ 1\.15 var\(--font-serif\)/);
+  assert.match(styles, /font: 400 0\.90625rem \/ 1\.7 var\(--font-sans\)/);
   assert.match(styles, /margin-block-start: 2\.125rem/);
   assert.match(styles, /padding-block-start: 1\.375rem/);
 });

@@ -1,7 +1,7 @@
 .sidera-privacy-body {
-  background: #efe8db;
-  color: #43291e;
-  font-family: "Figtree", system-ui, sans-serif;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
 .sidera-privacy {

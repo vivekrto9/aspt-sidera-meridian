@@ -7,8 +7,8 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 0.5rem 1.5rem;
-  color: #6b5346;
-  font-family: "Figtree", system-ui, sans-serif;
+  color: var(--color-muted);
+  font-family: var(--font-sans), system-ui, sans-serif;
   font-size: 0.8125rem;
 }
 
@@ -29,11 +29,11 @@
 }
 
 .synastry-results__person-dot--a {
-  background: #9c4f38;
+  background: var(--color-primary);
 }
 
 .synastry-results__person-dot--b {
-  background: #2f4a41;
+  background: var(--color-dark);
 }
 
 .synastry-results__resonance {
@@ -48,9 +48,9 @@
   background:
     radial-gradient(circle at 88% 18%, rgba(240, 230, 214, 0.18) 0 1px, transparent 1.5px),
     radial-gradient(circle at 16% 82%, rgba(214, 154, 106, 0.3) 0 1px, transparent 1.5px),
-    #5b382c;
+    var(--color-dark);
   background-size: 13rem 13rem, 17rem 17rem, auto;
-  color: #f0e6d6;
+  color: var(--color-surface);
 }
 
 .synastry-results__score {
@@ -74,7 +74,7 @@
 }
 
 .synastry-results__score-value {
-  stroke: #d69a6a;
+  stroke: var(--color-primary-soft);
   stroke-linecap: round;
 }
 
@@ -85,14 +85,14 @@
 }
 
 .synastry-results__score-number {
-  fill: #f5ecdd;
-  font-family: "Newsreader", Georgia, serif;
+  fill: var(--color-surface-soft);
+  font-family: var(--font-serif), Georgia, serif;
   font-size: 2.875rem;
 }
 
 .synastry-results__score-label {
-  fill: #cdb29e;
-  font-family: "Figtree", system-ui, sans-serif;
+  fill: var(--color-line);
+  font-family: var(--font-sans), system-ui, sans-serif;
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -102,7 +102,7 @@
 .synastry-results__verdict-label,
 .synastry-results__aspect-kicker {
   margin: 0;
-  color: #d69a6a;
+  color: var(--color-primary-soft);
   font-size: 0.6875rem;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -112,8 +112,8 @@
 .synastry-results__verdict h3 {
   max-inline-size: 42rem;
   margin: 0.625rem 0 0;
-  color: #f5ecdd;
-  font-family: "Newsreader", Georgia, serif;
+  color: var(--color-surface-soft);
+  font-family: var(--font-serif), Georgia, serif;
   font-size: clamp(1.4rem, 3vw, 1.9rem);
   font-weight: 400;
   line-height: 1.35;
@@ -121,7 +121,7 @@
 
 .synastry-results__score-note {
   margin: 0.65rem 0 0;
-  color: #cdb29e;
+  color: var(--color-line);
   font-size: 0.75rem;
   line-height: 1.45;
 }
@@ -144,7 +144,7 @@
 }
 
 .synastry-results__category strong {
-  color: #d69a6a;
+  color: var(--color-primary-soft);
 }
 
 .synastry-results__category-track {
@@ -161,7 +161,7 @@
   block-size: 100%;
   display: block;
   border-radius: inherit;
-  background: #d69a6a;
+  background: var(--color-primary-soft);
 }
 
 .synastry-results__inspector {
@@ -187,28 +187,28 @@
   display: grid;
   place-items: center;
   border-radius: 0.875rem;
-  color: #f3eadb;
+  color: var(--color-surface);
   font-family: Georgia, serif;
   font-size: 1.7rem;
 }
 
 .synastry-results__planet-tile--a {
-  background: #9c4f38;
+  background: var(--color-primary);
 }
 
 .synastry-results__planet-tile--b {
-  background: #2f4a41;
+  background: var(--color-dark);
 }
 
 .synastry-results__aspect-glyph {
-  color: #7a6252;
+  color: var(--color-muted);
   font-family: Georgia, serif;
   font-size: 1.5rem;
 }
 
 .synastry-results__aspect-identity h3 {
   margin: 0;
-  font-family: "Newsreader", Georgia, serif;
+  font-family: var(--font-serif), Georgia, serif;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.1;
@@ -216,13 +216,13 @@
 
 .synastry-results__aspect-identity p {
   margin: 0.2rem 0 0;
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 0.8rem;
 }
 
 .synastry-results__aspect-reading {
   margin: 1.25rem 0 0;
-  font-family: "Newsreader", Georgia, serif;
+  font-family: var(--font-serif), Georgia, serif;
   font-size: 1.3rem;
   line-height: 1.42;
 }
@@ -236,14 +236,14 @@
 
 .synastry-results__aspect-facts div {
   min-inline-size: 0;
-  border: 1px solid rgba(67, 41, 30, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   border-radius: 0.75rem;
   padding: 0.8rem 0.9rem;
-  background: #efe8db;
+  background: var(--color-surface);
 }
 
 .synastry-results__aspect-facts dt {
-  color: #9c4f38;
+  color: var(--color-primary);
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -252,7 +252,7 @@
 
 .synastry-results__aspect-facts dd {
   margin: 0.2rem 0 0;
-  font-family: "Newsreader", Georgia, serif;
+  font-family: var(--font-serif), Georgia, serif;
   font-size: 1.15rem;
   overflow-wrap: anywhere;
 }
@@ -266,16 +266,16 @@
 
 .synastry-results__contacts {
   overflow: hidden;
-  border: 1px solid rgba(67, 41, 30, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   border-radius: 1.125rem;
   padding: 0.5rem;
-  background: #fbf8f1;
+  background: var(--color-panel);
 }
 
 .synastry-results__contacts h3 {
   margin: 0;
   padding: 1rem 1.1rem 0.75rem;
-  font-family: "Newsreader", Georgia, serif;
+  font-family: var(--font-serif), Georgia, serif;
   font-size: 1.4rem;
   font-weight: 400;
 }
@@ -289,9 +289,9 @@
   flex-wrap: wrap;
   gap: 0.5rem 1rem;
   margin: 0.65rem 0.9rem 0.25rem;
-  border-block-start: 1px solid rgba(67, 41, 30, 0.1);
+  border-block-start: 1px solid rgba(var(--color-text-rgb), 0.1);
   padding-block-start: 0.8rem;
-  color: #9b8776;
+  color: var(--color-muted-soft);
   font-size: 0.72rem;
 }
 
@@ -306,15 +306,15 @@
 }
 
 .synastry-results__legend-dot--conjunction {
-  background: #b07a3c;
+  background: var(--color-primary-soft);
 }
 
 .synastry-results__legend-dot--harmonious {
-  background: #2f4a41;
+  background: var(--color-dark);
 }
 
 .synastry-results__legend-dot--challenging {
-  background: #9c4f38;
+  background: var(--color-primary);
 }
 
 .synastry-results__narratives {
@@ -323,24 +323,24 @@
 }
 
 .synastry-results__narrative {
-  border: 1px solid rgba(67, 41, 30, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   border-radius: 1rem;
   padding: 1.25rem 1.4rem;
 }
 
 .synastry-results__narrative--terracotta {
-  background: #9c4f38;
+  background: var(--color-primary);
   color: #f8eee2;
 }
 
 .synastry-results__narrative--forest {
-  background: #2f4a41;
+  background: var(--color-dark);
   color: #edf3ee;
 }
 
 .synastry-results__narrative--parchment {
-  background: #fbf8f1;
-  color: #43291e;
+  background: var(--color-panel);
+  color: var(--color-text);
 }
 
 .synastry-results__narrative > p {
@@ -354,7 +354,7 @@
 
 .synastry-results__narrative h3 {
   margin: 0.35rem 0 0;
-  font-family: "Newsreader", Georgia, serif;
+  font-family: var(--font-serif), Georgia, serif;
   font-size: 1.5rem;
   font-weight: 400;
 }

@@ -1,12 +1,12 @@
 .sidera-button {
-  --sidera-button-background: #6e4433;
-  --sidera-button-border: #6e4433;
-  --sidera-button-color: #faf2e6;
-  --sidera-button-hover-background: #7e5040;
-  --sidera-button-hover-border: #7e5040;
-  --sidera-button-hover-color: #faf2e6;
-  --sidera-button-active-background: #5b382c;
-  --sidera-button-focus: rgba(203, 107, 78, 0.5);
+  --sidera-button-background: var(--color-primary);
+  --sidera-button-border: var(--color-primary);
+  --sidera-button-color: var(--color-white);
+  --sidera-button-hover-background: var(--color-primary-strong);
+  --sidera-button-hover-border: var(--color-primary-strong);
+  --sidera-button-hover-color: var(--color-white);
+  --sidera-button-active-background: var(--color-primary-strong);
+  --sidera-button-focus: rgba(var(--color-primary-rgb), 0.5);
   --sidera-button-block-size: 2.875rem;
   --sidera-button-inline-padding: 1.375rem;
   --sidera-button-font-size: 0.875rem;
@@ -25,9 +25,7 @@
   color: var(--sidera-button-color);
   cursor: pointer;
   font:
-    600 var(--sidera-button-font-size) / 1.2 "Figtree",
-    system-ui,
-    sans-serif;
+    600 var(--sidera-button-font-size) / 1.2 var(--font-sans);
   text-align: center;
   text-decoration: none;
   text-underline-offset: 0.2em;
@@ -69,42 +67,42 @@
 }
 
 .sidera-button--secondary {
-  --sidera-button-background: #f3eadb;
-  --sidera-button-border: #f3eadb;
-  --sidera-button-color: #43291e;
-  --sidera-button-hover-background: #ffffff;
-  --sidera-button-hover-border: #ffffff;
-  --sidera-button-hover-color: #43291e;
-  --sidera-button-active-background: #e7dac6;
+  --sidera-button-background: var(--color-surface);
+  --sidera-button-border: var(--color-surface);
+  --sidera-button-color: var(--color-text);
+  --sidera-button-hover-background: var(--color-white);
+  --sidera-button-hover-border: var(--color-white);
+  --sidera-button-hover-color: var(--color-text);
+  --sidera-button-active-background: var(--color-line);
 }
 
 .sidera-button--outline {
   --sidera-button-background: transparent;
-  --sidera-button-border: rgba(51, 39, 31, 0.26);
-  --sidera-button-color: #33271f;
-  --sidera-button-hover-background: rgba(51, 39, 31, 0.05);
-  --sidera-button-hover-border: rgba(51, 39, 31, 0.38);
-  --sidera-button-hover-color: #33271f;
-  --sidera-button-active-background: rgba(51, 39, 31, 0.09);
+  --sidera-button-border: rgba(var(--color-text-rgb), 0.26);
+  --sidera-button-color: var(--color-text);
+  --sidera-button-hover-background: rgba(var(--color-text-rgb), 0.05);
+  --sidera-button-hover-border: rgba(var(--color-text-rgb), 0.38);
+  --sidera-button-hover-color: var(--color-text);
+  --sidera-button-active-background: rgba(var(--color-text-rgb), 0.09);
 }
 
 .sidera-button--ghost {
   --sidera-button-background: transparent;
   --sidera-button-border: transparent;
-  --sidera-button-color: #584639;
-  --sidera-button-hover-background: rgba(51, 39, 31, 0.06);
+  --sidera-button-color: var(--color-muted);
+  --sidera-button-hover-background: rgba(var(--color-text-rgb), 0.06);
   --sidera-button-hover-border: transparent;
-  --sidera-button-hover-color: #9c4f38;
-  --sidera-button-active-background: rgba(51, 39, 31, 0.1);
+  --sidera-button-hover-color: var(--color-primary);
+  --sidera-button-active-background: rgba(var(--color-text-rgb), 0.1);
 }
 
 .sidera-button--link {
   --sidera-button-background: transparent;
   --sidera-button-border: transparent;
-  --sidera-button-color: #9c4f38;
+  --sidera-button-color: var(--color-primary);
   --sidera-button-hover-background: transparent;
   --sidera-button-hover-border: transparent;
-  --sidera-button-hover-color: #6e4433;
+  --sidera-button-hover-color: var(--color-dark);
   --sidera-button-active-background: transparent;
   --sidera-button-inline-padding: 0.25rem;
 
@@ -116,13 +114,13 @@
 }
 
 .sidera-button--danger {
-  --sidera-button-background: #9c4f38;
-  --sidera-button-border: #9c4f38;
-  --sidera-button-color: #fff8ef;
-  --sidera-button-hover-background: #7f3e2d;
-  --sidera-button-hover-border: #7f3e2d;
-  --sidera-button-hover-color: #ffffff;
-  --sidera-button-active-background: #663124;
+  --sidera-button-background: var(--color-primary);
+  --sidera-button-border: var(--color-primary);
+  --sidera-button-color: var(--color-white);
+  --sidera-button-hover-background: var(--color-primary-strong);
+  --sidera-button-hover-border: var(--color-primary-strong);
+  --sidera-button-hover-color: var(--color-white);
+  --sidera-button-active-background: var(--color-primary-strong);
 }
 
 .sidera-button--compact {

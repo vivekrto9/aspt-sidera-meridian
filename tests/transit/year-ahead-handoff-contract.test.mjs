@@ -36,7 +36,7 @@ test("Transit Year-ahead handoff composes the approved shared CTA", async () => 
   assert.match(section, /locale=\{locale\}/);
   assert.match(slugPage, /import TransitYearAheadHandoff/);
   assert.match(slugPage, /<TransitResults[\s\S]*<TransitYearAheadHandoff/);
-  assert.match(styles, /--sidera-final-cta-background: #2f4a41/);
+  assert.match(styles, /--sidera-final-cta-background: var\(--color-dark\)/);
   assert.match(styles, /73\.75rem/);
   assert.doesNotMatch(
     styles,

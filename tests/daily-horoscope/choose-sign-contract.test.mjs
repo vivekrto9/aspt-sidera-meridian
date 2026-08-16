@@ -98,7 +98,7 @@ test("Daily Horoscope Choose sign matches the literal reference geometry", async
   assert.doesNotMatch(styles, /--sidera-section-heading-accent/);
   assert.match(
     styles,
-    /\.daily-horoscope-sign-picker \.daily-horoscope-sign-picker__sign:hover\s*\{\s*border-color: rgba\(156, 79, 56, 0\.45\)/,
+    /\.daily-horoscope-sign-picker \.daily-horoscope-sign-picker__sign:hover\s*\{\s*border-color: rgba\(var\(--color-primary-rgb\), 0\.45\)/,
   );
   assert.match(styles, /@media \(max-width: 40rem\)/);
   assert.match(styles, /grid-template-columns: repeat\(2, minmax\(0, 1fr\)\)/);

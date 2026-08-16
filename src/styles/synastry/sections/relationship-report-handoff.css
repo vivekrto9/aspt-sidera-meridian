@@ -1,9 +1,9 @@
 .synastry-relationship-report {
-  --sidera-final-cta-background: #fbf8f1;
+  --sidera-final-cta-background: var(--color-panel);
 
   inline-size: min(100% - 4.25rem, 73.75rem);
   margin: 0 auto 3.5rem;
-  border: 1px solid rgba(67, 41, 30, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   box-shadow: none;
 }
 

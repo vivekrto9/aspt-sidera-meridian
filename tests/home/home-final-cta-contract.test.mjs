@@ -43,12 +43,12 @@ test("Home Final CTA forwards exact visible-copy edit identities", async () => {
   }
 });
 
-test("Home Final CTA preserves the Warm Modern full-bleed reference", async () => {
+test("Home Final CTA preserves the Meridian full-bleed reference", async () => {
   const styles = await readFile(stylesPath, "utf8");
 
-  assert.match(styles, /--sidera-final-cta-background: #6e4433/);
+  assert.match(styles, /--sidera-final-cta-background: var\(--color-dark\)/);
   assert.match(styles, /padding: 7\.5rem 2\.125rem/);
-  assert.match(styles, /max-inline-size: 73\.75rem/);
+  assert.match(styles, /max-inline-size: 75rem/);
   assert.match(styles, /font-size: clamp\(3\.25rem, 9vw, 7\.5rem\)/);
   assert.match(styles, /margin-block-start: 2\.125rem/);
   assert.match(styles, /@media \(max-width: 42rem\)/);

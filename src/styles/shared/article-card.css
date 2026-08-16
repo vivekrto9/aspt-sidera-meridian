@@ -22,7 +22,7 @@
 
 .sidera-article-card__link:focus-visible {
   border-radius: 1rem;
-  outline: 0.1875rem solid rgba(203, 107, 78, 0.5);
+  outline: 0.1875rem solid rgba(var(--color-primary-rgb), 0.5);
   outline-offset: 0.1875rem;
 }
 
@@ -31,14 +31,14 @@
   display: grid;
   place-items: center;
   overflow: hidden;
-  border: 1px solid rgba(51, 39, 31, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   border-radius: 1rem;
-  background: linear-gradient(140deg, #9c4f38, #6e3f2c);
+  background: linear-gradient(140deg, var(--color-primary), var(--color-dark));
   color: rgba(255, 255, 255, 0.9);
 }
 
 .sidera-article-card--ochre .sidera-article-card__cover {
-  background: linear-gradient(140deg, #b07a3c, #7d5222);
+  background: linear-gradient(140deg, var(--color-primary-soft), #7d5222);
 }
 
 .sidera-article-card--rose .sidera-article-card__cover {
@@ -54,7 +54,7 @@
 }
 
 .sidera-article-card--stone .sidera-article-card__cover {
-  background: linear-gradient(140deg, #6c6254, #443d33);
+  background: linear-gradient(140deg, var(--color-muted), #443d33);
 }
 
 .sidera-article-card__thumbnail {
@@ -85,22 +85,22 @@
   border: 0;
   border-radius: 0;
   background: transparent;
-  color: #9c4f38;
+  color: var(--color-primary);
   font-size: 0.6875rem;
   letter-spacing: 0.12em;
 }
 
 .sidera-article-card__title {
   margin: 0.375rem 0 0;
-  color: #43291e;
-  font: 400 1.5rem / 1.15 "Newsreader", Georgia, serif;
+  color: var(--color-text);
+  font: 400 1.5rem / 1.15 var(--font-serif), Georgia, serif;
   overflow-wrap: anywhere;
 }
 
 .sidera-article-card__excerpt {
   margin: 0.625rem 0 0;
-  color: #6b5346;
-  font: 400 0.875rem / 1.55 "Figtree", system-ui, sans-serif;
+  color: var(--color-muted);
+  font: 400 0.875rem / 1.55 var(--font-sans), system-ui, sans-serif;
   overflow-wrap: anywhere;
 }
 
@@ -110,23 +110,23 @@
   align-items: center;
   gap: 0.625rem;
   margin-block-start: 0.75rem;
-  color: #7a6252;
-  font: 400 0.78125rem / 1.4 "Figtree", system-ui, sans-serif;
+  color: var(--color-muted);
+  font: 400 0.78125rem / 1.4 var(--font-sans), system-ui, sans-serif;
 }
 
 .sidera-article-card__author {
-  color: #43291e;
+  color: var(--color-text);
   font-weight: 600;
 }
 
 .sidera-article-card--featured {
-  border: 1px solid rgba(67, 41, 30, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   border-radius: 1.25rem;
-  background: #fbf8f1;
+  background: var(--color-panel);
 }
 
 .sidera-article-card--featured:hover {
-  box-shadow: 0 1.5rem 3.5rem -1.875rem rgba(67, 41, 30, 0.45);
+  box-shadow: 0 1.5rem 3.5rem -1.875rem rgba(var(--color-text-rgb), 0.45);
   transform: none;
 }
 

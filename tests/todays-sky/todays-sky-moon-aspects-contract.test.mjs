@@ -85,8 +85,8 @@ test("Moon and aspects layout preserves reference geometry and containment", asy
 
   assert.match(styles, /inline-size: min\(100%, 1180px\)/);
   assert.match(styles, /grid-template-columns: minmax\(0, 0\.86fr\) minmax\(0, 1\.14fr\)/);
-  assert.match(styles, /background: #3b2119/);
-  assert.match(styles, /background: #fbf8f1/);
+  assert.match(styles, /background: var\(--color-dark-strong\)/);
+  assert.match(styles, /background: var\(--color-panel\)/);
   assert.match(styles, /@media \(max-width: 52rem\)/);
   assert.match(styles, /@media \(max-width: 40rem\)/);
   assert.match(styles, /overflow-wrap: anywhere/);

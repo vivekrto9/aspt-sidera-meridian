@@ -34,7 +34,7 @@ test("Reports detail navigation preserves the literal reference measure", async 
 
   assert.match(
     styles,
-    /\.reports-detail-navigation-shell\s*\{[^}]*padding: 2\.125rem 2\.125rem 1\.25rem[^}]*background: #efe8db/s,
+    /\.reports-detail-navigation-shell\s*\{[^}]*padding: 2\.125rem 2\.125rem 1\.25rem[^}]*background: var\(--color-surface\)/s,
   );
   assert.match(
     styles,

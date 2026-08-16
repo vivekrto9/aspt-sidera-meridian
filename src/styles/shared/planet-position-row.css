@@ -1,13 +1,13 @@
 .sidera-planet-position-row {
   --planet-row-background: transparent;
   --planet-row-hover: #f3ecdf;
-  --planet-row-selected: #f3ecdd;
-  --planet-row-border: rgba(67, 41, 30, 0.1);
-  --planet-row-text: #43291e;
-  --planet-row-muted: #6b5346;
-  --planet-row-glyph-background: rgba(67, 41, 30, 0.06);
+  --planet-row-selected: var(--color-surface-soft);
+  --planet-row-border: rgba(var(--color-text-rgb), 0.1);
+  --planet-row-text: var(--color-text);
+  --planet-row-muted: var(--color-muted);
+  --planet-row-glyph-background: rgba(var(--color-text-rgb), 0.06);
   --planet-row-glyph: #7a5142;
-  --planet-row-focus: rgba(156, 79, 56, 0.36);
+  --planet-row-focus: rgba(var(--color-primary-rgb), 0.36);
 
   inline-size: 100%;
   min-inline-size: 0;
@@ -23,7 +23,7 @@
   padding: 0.625rem 0.6875rem;
   background: var(--planet-row-background);
   color: var(--planet-row-text);
-  font: 400 0.875rem / 1.35 "Figtree", system-ui, sans-serif;
+  font: 400 0.875rem / 1.35 var(--font-sans), system-ui, sans-serif;
   text-align: start;
 }
 
@@ -39,10 +39,10 @@
   --planet-row-hover: rgba(240, 230, 214, 0.08);
   --planet-row-selected: rgba(240, 230, 214, 0.12);
   --planet-row-border: rgba(240, 230, 214, 0.14);
-  --planet-row-text: #f5ecdd;
-  --planet-row-muted: #cdb29e;
+  --planet-row-text: var(--color-surface-soft);
+  --planet-row-muted: var(--color-line);
   --planet-row-glyph-background: rgba(240, 230, 214, 0.1);
-  --planet-row-glyph: #d69a6a;
+  --planet-row-glyph: var(--color-primary-soft);
   --planet-row-focus: rgba(240, 230, 214, 0.42);
 }
 
@@ -106,8 +106,8 @@
 }
 
 .sidera-planet-position-row--selected .sidera-planet-position-row__glyph {
-  background: #5b382c;
-  color: #f3eadb;
+  background: var(--color-dark);
+  color: var(--color-surface);
 }
 
 .sidera-planet-position-row--interactive {

@@ -69,16 +69,21 @@ test("Home Today's Sky keeps copy, prepared positions, and exact edit bindings c
   assert.doesNotMatch(source, /The sky|Geocentric|Open today's sky|9° Cancer/);
 });
 
-test("Home Today's Sky preserves Warm Modern rhythm and responsive containment", async () => {
+test("Home Today's Sky preserves Meridian rhythm and responsive containment", async () => {
   const styles = await readFile(stylesPath, "utf8");
 
   assert.match(styles, /padding: 5\.5rem 2\.125rem/);
-  assert.match(styles, /background: #eee6d8/);
-  assert.match(styles, /inline-size: min\(100%, 73\.75rem\)/);
+  assert.match(styles, /background: var\(--color-surface\)/);
+  assert.match(styles, /inline-size: min\(100%, 75rem\)/);
   assert.match(
     styles,
-    /grid-template-columns: repeat\(auto-fit, minmax\(9\.375rem, 1fr\)\)/,
+    /\.home-today-sky__inner\s*\{[^}]*border-radius: 1\.5rem[^}]*background: var\(--color-panel\)/s,
   );
+  assert.match(
+    styles,
+    /grid-template-columns: repeat\(7, minmax\(0, 1fr\)\)/,
+  );
+  assert.match(styles, /@media \(max-width: 70rem\)/);
   assert.match(styles, /min-block-size: 7\.5rem/);
   assert.match(styles, /font: 400 1\.625rem \/ 1 Georgia/);
   assert.match(styles, /@media \(max-width: 46rem\)/);

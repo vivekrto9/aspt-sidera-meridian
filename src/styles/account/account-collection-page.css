@@ -16,7 +16,7 @@
 }
 .account-collection-page__count {
   margin: 0.75rem 0 1.5rem;
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 0.8125rem;
 }
 .account-collection-page .account-people__grid {

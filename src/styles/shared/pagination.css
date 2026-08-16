@@ -24,9 +24,9 @@
   display: grid;
   place-items: center;
   border-radius: 50%;
-  color: #5a4034;
+  color: var(--color-text);
   font:
-    600 0.8125rem / 1 "Figtree",
+    600 0.8125rem / 1 var(--font-sans),
     system-ui,
     sans-serif;
   text-decoration: none;
@@ -36,13 +36,13 @@
 }
 
 .sidera-pagination__page:not(.sidera-pagination__page--current):hover {
-  background: rgba(67, 41, 30, 0.07);
-  color: #9c4f38;
+  background: rgba(var(--color-text-rgb), 0.07);
+  color: var(--color-primary);
 }
 
 .sidera-pagination__page--current {
-  background: #5b382c;
-  color: #f3eadb;
+  background: var(--color-dark);
+  color: var(--color-surface);
 }
 
 .sidera-pagination__ellipsis {
@@ -50,7 +50,7 @@
   block-size: 2.5rem;
   display: grid;
   place-items: center;
-  color: #80695b;
+  color: var(--color-muted);
   font-weight: 600;
 }
 
@@ -82,7 +82,7 @@
 }
 
 .sidera-pagination__page:focus-visible {
-  outline: 0.1875rem solid rgba(156, 79, 56, 0.45);
+  outline: 0.1875rem solid rgba(var(--color-primary-rgb), 0.45);
   outline-offset: 0.125rem;
 }
 

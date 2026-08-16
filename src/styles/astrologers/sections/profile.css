@@ -1,8 +1,8 @@
 .astrologer-profile {
   min-block-size: 40rem;
   padding: 2.125rem clamp(1.25rem, 3vw, 2.125rem) 5.625rem;
-  background: #efe8db;
-  color: #43291e;
+  background: var(--color-surface);
+  color: var(--color-text);
 }
 
 .astrologer-profile__inner {
@@ -25,7 +25,7 @@
 
 .astrologer-profile__back:hover,
 .astrologer-profile__back:focus-visible {
-  color: #9c4f38;
+  color: var(--color-primary);
 }
 
 .astrologer-profile__layout {
@@ -61,14 +61,14 @@
 }
 
 .astrologer-profile__stats dt {
-  color: #43291e;
-  font-family: "Newsreader", Georgia, serif;
+  color: var(--color-text);
+  font-family: var(--font-serif), Georgia, serif;
   font-size: 1.625rem;
 }
 
 .astrologer-profile__stats dd {
   margin: 0;
-  color: #7a6252;
+  color: var(--color-muted);
   font-size: 0.75rem;
   letter-spacing: 0.04em;
 }
@@ -80,8 +80,8 @@
 .astrologer-profile__section > h2,
 .astrologer-profile__reviews-heading h2 {
   margin: 0;
-  color: #9c4f38;
-  font-family: "Figtree", system-ui, sans-serif;
+  color: var(--color-primary);
+  font-family: var(--font-sans), system-ui, sans-serif;
   font-size: 0.6875rem;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -92,7 +92,7 @@
 .astrologer-profile__section > p {
   max-inline-size: 40rem;
   margin: 0.75rem 0 0;
-  color: #5a4034;
+  color: var(--color-text);
   font-size: 0.96875rem;
   line-height: 1.7;
 }
@@ -120,14 +120,14 @@
   padding: 1rem 1.125rem;
   border: 1px solid rgb(67 41 30 / 10%);
   border-radius: 0.875rem;
-  background: #fbf8f1;
-  color: #5a4034;
+  background: var(--color-panel);
+  color: var(--color-text);
   font-size: 0.875rem;
   line-height: 1.5;
 }
 
 .astrologer-profile__expectations li > :first-child {
-  color: #9c4f38;
+  color: var(--color-primary);
 }
 
 .astrologer-profile__reviews-heading {
@@ -153,7 +153,7 @@
 
 .astrologer-profile__reviews-heading p {
   margin: 0;
-  color: #7a6252;
+  color: var(--color-muted);
   font-size: 0.8125rem;
 }
 
@@ -167,7 +167,7 @@
   padding: 1.25rem 1.375rem;
   border: 1px solid rgb(67 41 30 / 10%);
   border-radius: 1rem;
-  background: #fbf8f1;
+  background: var(--color-panel);
 }
 
 .astrologer-profile__review header {
@@ -183,13 +183,9 @@
   overflow: hidden;
   border: 1px solid rgb(67 41 30 / 12%);
   border-radius: 50%;
-  background: repeating-linear-gradient(
-    45deg,
-    #e2d7c4,
-    #e2d7c4 6px,
-    #d9cbb4 6px,
-    #d9cbb4 12px
-  );
+  background-color: var(--image-fallback-background);
+  background-image: var(--image-fallback-pattern);
+  background-size: var(--image-fallback-pattern-size);
 }
 
 .astrologer-profile__review-avatar img {
@@ -204,19 +200,19 @@
 }
 
 .astrologer-profile__review-stars {
-  color: #b07a3c;
+  color: var(--color-primary-soft);
   font-size: 0.8125rem;
   letter-spacing: 0.06em;
 }
 
 .astrologer-profile__review time {
-  color: #9b8776;
+  color: var(--color-muted-soft);
   font-size: 0.75rem;
 }
 
 .astrologer-profile__review p {
   margin: 0.75rem 0 0;
-  color: #5a4034;
+  color: var(--color-text);
   font-size: 0.875rem;
   line-height: 1.6;
 }
@@ -229,9 +225,9 @@
 .astrologer-profile__booking {
   padding: 1.75rem;
   border-radius: 1.375rem;
-  background: #5b382c;
+  background: var(--color-dark);
   box-shadow: 0 1.5rem 3.75rem -2.375rem rgb(67 41 30 / 75%);
-  color: #f0e6d6;
+  color: var(--color-surface);
 }
 
 .astrologer-profile__booking-meta {
@@ -249,7 +245,7 @@
 
 .astrologer-profile__status {
   gap: 0.5rem;
-  color: #cdb29e;
+  color: var(--color-line);
   font-size: 0.8125rem;
   font-weight: 600;
 }
@@ -258,7 +254,7 @@
   inline-size: 0.5rem;
   block-size: 0.5rem;
   border-radius: 50%;
-  background: #9b8776;
+  background: var(--color-muted-soft);
 }
 
 .astrologer-profile__status--online {
@@ -266,7 +262,7 @@
 }
 
 .astrologer-profile__status--online i {
-  background: #3f8f5f;
+  background: var(--color-success);
 }
 
 .astrologer-profile__status--busy {
@@ -282,14 +278,14 @@
 }
 
 .astrologer-profile__rate strong {
-  color: #f5ecdd;
-  font-family: "Newsreader", Georgia, serif;
+  color: var(--color-surface-soft);
+  font-family: var(--font-serif), Georgia, serif;
   font-size: 1.625rem;
   font-weight: 400;
 }
 
 .astrologer-profile__rate span {
-  color: #cdb29e;
+  color: var(--color-line);
   font-size: 0.8125rem;
 }
 
@@ -300,13 +296,13 @@
 }
 
 .astrologer-profile__actions .sidera-button--secondary {
-  --sidera-button-background: #f3eadb;
-  --sidera-button-border: #f3eadb;
-  --sidera-button-color: #5b382c;
+  --sidera-button-background: var(--color-surface);
+  --sidera-button-border: var(--color-surface);
+  --sidera-button-color: var(--color-dark);
 }
 
 .astrologer-profile__actions .sidera-button--outline {
-  --sidera-button-color: #f0e6d6;
+  --sidera-button-color: var(--color-surface);
   --sidera-button-border: rgb(240 230 214 / 40%);
   --sidera-button-hover-background: rgb(240 230 214 / 8%);
   --sidera-button-hover-border: rgb(240 230 214 / 55%);
@@ -320,13 +316,13 @@
   margin: 1.125rem 0 0;
   padding-block-start: 1rem;
   border-block-start: 1px solid rgb(240 230 214 / 16%);
-  color: #cdb29e;
+  color: var(--color-line);
   font-size: 0.78125rem;
   line-height: 1.5;
 }
 
 .astrologer-profile__free-note > :first-child {
-  color: #d69a6a;
+  color: var(--color-primary-soft);
 }
 
 .astrologer-profile__chart {
@@ -334,14 +330,14 @@
   padding: 1.25rem 1.375rem;
   border: 1px solid rgb(67 41 30 / 10%);
   border-radius: 1.125rem;
-  background: #fbf8f1;
+  background: var(--color-panel);
 }
 
 .astrologer-profile__chart h2 {
   margin: 0 0 0.75rem;
-  color: #7a6252;
+  color: var(--color-muted);
   font:
-    600 0.75rem/1.3 "Figtree",
+    600 0.75rem/1.3 var(--font-sans),
     system-ui,
     sans-serif;
 }
@@ -365,24 +361,24 @@
 }
 
 .astrologer-profile__chart-content:hover strong {
-  color: #9c4f38;
+  color: var(--color-primary);
 }
 
 .astrologer-profile__chart-content strong {
-  font-family: "Newsreader", Georgia, serif;
+  font-family: var(--font-serif), Georgia, serif;
   font-size: 1.125rem;
   font-weight: 400;
 }
 
 .astrologer-profile__chart-content p {
   margin: 0.125rem 0 0;
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 0.78125rem;
   line-height: 1.4;
 }
 
 .astrologer-profile__chart-arrow {
-  color: #9c4f38;
+  color: var(--color-primary);
   font-size: 1.125rem;
 }
 

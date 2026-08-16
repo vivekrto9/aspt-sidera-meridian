@@ -1,14 +1,47 @@
 :root {
   color-scheme: light;
-  --color-bg: #fbf8f2;
-  --color-panel: #ffffff;
-  --color-text: #231b18;
-  --color-muted: #706761;
-  --color-line: #e5d8c6;
-  --color-primary: #9f2f1f;
-  --color-primary-strong: #7f2418;
-  --font-sans: "Figtree", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --color-bg: #eef1ec;
+  --color-panel: #fbfcfa;
+  --color-surface: #e4e9e1;
+  --color-surface-soft: #f3f6f1;
+  --color-text: #1f3a34;
+  --color-muted: #4a574e;
+  --color-muted-soft: #5b6a60;
+  --color-line: #cfd8cf;
+  --color-primary: #9b5273;
+  --color-primary-strong: #80415f;
+  --color-primary-soft: #d392aa;
+  --color-primary-pale: #e9a9bf;
+  --color-dark: #16261f;
+  --color-dark-strong: #122019;
+  --color-on-dark: #e7efe7;
+  --color-on-dark-strong: #f1f5ee;
+  --color-on-dark-muted: #a9bdb0;
+  --color-success: #3f7a6e;
+  --color-info: #4a6a8a;
+  --color-danger: #9c3f52;
+  --color-danger-soft: #f5e7ec;
+  --color-white: #ffffff;
+  --color-text-rgb: 31, 58, 52;
+  --color-primary-rgb: 155, 82, 115;
+  --color-dark-rgb: 22, 38, 31;
+  --color-surface-rgb: 228, 233, 225;
+  --image-fallback-background: var(--color-surface);
+  --image-fallback-pattern:
+    linear-gradient(145deg, rgba(var(--color-primary-rgb), 0.1), transparent 58%),
+    radial-gradient(
+      circle at 0.125rem 0.125rem,
+      rgba(var(--color-primary-rgb), 0.22) 0 0.0625rem,
+      transparent 0.078125rem
+    );
+  --image-fallback-pattern-size: 100% 100%, 1.5rem 1.5rem;
+  --image-fallback-label-background: color-mix(
+    in srgb,
+    var(--color-panel) 90%,
+    transparent
+  );
+  --font-sans: "Karla", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: "DM Serif Display", Georgia, "Times New Roman", serif;
 }
 
 * {
@@ -20,6 +53,13 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-text);
+  color: var(--color-bg);
 }
 
 a {

@@ -6,7 +6,7 @@ html {
 .sidera-glossary {
   min-inline-size: 0;
   margin: 0;
-  background: #efe8db;
+  background: var(--color-surface);
 }
 
 .sidera-glossary {

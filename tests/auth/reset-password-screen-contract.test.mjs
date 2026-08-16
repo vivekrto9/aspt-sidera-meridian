@@ -198,7 +198,7 @@ test("Reset Password form keeps validation and status behavior", async () => {
   assert.match(styles, /__status/);
   assert.match(styles, /__actions/);
   assert.match(styles, /__field-error\[hidden\]/);
-  assert.match(styles, /color:\s*#43291e/);
+  assert.match(styles, /color:\s*var\(--color-text\)/);
   assert.doesNotMatch(styles, /visibility:\s*hidden/);
   assert.match(styles, /__switch/);
   assert.match(styles, /@media/);

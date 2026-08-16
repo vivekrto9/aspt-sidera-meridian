@@ -1,8 +1,8 @@
 .astrologer-setup {
   min-block-size: 45rem;
   padding: 2.125rem clamp(1.25rem, 3vw, 2.125rem) 5.625rem;
-  background: #efe8db;
-  color: #43291e;
+  background: var(--color-surface);
+  color: var(--color-text);
 }
 
 .astrologer-setup__inner {
@@ -28,7 +28,7 @@
 
 .astrologer-setup h1 {
   margin: 0.75rem 0 0;
-  font-family: "Newsreader", Georgia, serif;
+  font-family: var(--font-serif), Georgia, serif;
   font-size: clamp(2rem, 4.2vw, 3rem);
   font-weight: 400;
   line-height: 1.02;
@@ -36,7 +36,7 @@
 
 .astrologer-setup__lede {
   margin: 0.625rem 0 0;
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 0.9375rem;
 }
 
@@ -60,7 +60,7 @@
   padding: 1.625rem 1.75rem;
   border: 1px solid rgb(67 41 30 / 10%);
   border-radius: 1.25rem;
-  background: #fbf8f1;
+  background: var(--color-panel);
 }
 
 .astrologer-setup__panel > legend,
@@ -84,8 +84,8 @@
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: #5b382c;
-  color: #f3eadb;
+  background: var(--color-dark);
+  color: var(--color-surface);
   font-size: 0.8125rem;
   font-weight: 700;
 }
@@ -93,7 +93,7 @@
 .astrologer-setup__panel > legend strong,
 .astrologer-setup__step-heading h2 {
   margin: 0;
-  font-family: "Newsreader", Georgia, serif;
+  font-family: var(--font-serif), Georgia, serif;
   font-size: 1.375rem;
   font-weight: 400;
 }
@@ -139,7 +139,7 @@
 
 .astrologer-setup__type input:checked + .astrologer-setup__type-card,
 .astrologer-setup__mode input:checked + span {
-  border-color: #9c4f38;
+  border-color: var(--color-primary);
   background: rgb(156 79 56 / 6%);
 }
 
@@ -169,7 +169,7 @@
 }
 
 .astrologer-setup__type input:checked + .astrologer-setup__type-card > i {
-  color: #9c4f38;
+  color: var(--color-primary);
 }
 
 .astrologer-setup__type-card > span,
@@ -186,7 +186,7 @@
 
 .astrologer-setup__type-card small,
 .astrologer-setup__mode small {
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 0.78125rem;
   line-height: 1.35;
 }
@@ -213,7 +213,7 @@
   inline-size: 0.5625rem;
   block-size: 0.5625rem;
   border-radius: 50%;
-  background: #3f8f5f;
+  background: var(--color-success);
 }
 
 .astrologer-setup__schedule {
@@ -224,7 +224,7 @@
 
 .astrologer-setup__schedule .sidera-choice-chips__legend {
   margin-block-end: 0.625rem;
-  color: #7a6252;
+  color: var(--color-muted);
   font-size: 0.75rem;
   font-weight: 600;
 }
@@ -236,17 +236,17 @@
 
 .astrologer-setup__question > p {
   margin: 0.5rem 0 0;
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 0.8125rem;
   line-height: 1.5;
 }
 
 .astrologer-setup__question .sidera-choice-chips {
-  --choice-chip-background: #efe8db;
+  --choice-chip-background: var(--color-surface);
   --choice-chip-border: rgb(67 41 30 / 16%);
   --choice-chip-checked-background: rgb(156 79 56 / 8%);
-  --choice-chip-checked-border: #9c4f38;
-  --choice-chip-checked-color: #9c4f38;
+  --choice-chip-checked-border: var(--color-primary);
+  --choice-chip-checked-color: var(--color-primary);
 
   margin-block-start: 1rem;
 }
@@ -261,7 +261,7 @@
   gap: 1rem;
   border-radius: 1.25rem;
   padding: 1.375rem 1.625rem;
-  background: #2f4a41;
+  background: var(--color-dark);
   color: #eaf0ec;
 }
 
@@ -295,7 +295,7 @@
   display: block;
   margin-block-start: 0.25rem;
   color: #f3f8f5;
-  font-family: "Newsreader", Georgia, serif;
+  font-family: var(--font-serif), Georgia, serif;
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.35;
@@ -318,7 +318,7 @@
 
 .astrologer-setup__error {
   margin: 0.75rem 0 0;
-  color: var(--color-danger, #9c382f);
+  color: var(--color-danger);
   font-size: 0.875rem;
   line-height: 1.45;
 }

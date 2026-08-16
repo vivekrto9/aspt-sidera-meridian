@@ -39,7 +39,10 @@ test("StepProgress retains a compact responsive-safe chip treatment", async () =
   assert.match(source, /inline-size: fit-content/);
   assert.match(source, /max-inline-size: 100%/);
   assert.match(source, /border-radius: 999px/);
-  assert.match(source, /background: rgba\(156, 79, 56, 0\.07\)/);
+  assert.match(
+    source,
+    /background: rgba\(var\(--color-primary-rgb\), 0\.07\)/,
+  );
   assert.match(source, /white-space: nowrap/);
   assert.doesNotMatch(source, /step-progress__dot/);
   assert.match(source, /@media \(forced-colors: active\)/);

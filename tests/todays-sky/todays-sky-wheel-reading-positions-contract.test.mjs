@@ -91,7 +91,7 @@ test("wheel section preserves reference grid and mobile containment", async () =
     /grid-template-columns: minmax\(0, 1\.02fr\) minmax\(0, 0\.98fr\)/,
   );
   assert.match(styles, /gap: 1\.5rem/);
-  assert.match(styles, /background: #5b382c/);
+  assert.match(styles, /background: var\(--color-dark\)/);
   assert.match(styles, /transform: translateY\(0\.1em\)/);
   assert.match(styles, /@media \(max-width: 52rem\)/);
   assert.match(styles, /@media \(max-width: 40rem\)/);

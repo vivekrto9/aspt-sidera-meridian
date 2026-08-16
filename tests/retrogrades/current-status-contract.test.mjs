@@ -53,7 +53,7 @@ test("Current status uses the approved CardGrid and Badge without shared edits",
   assert.match(component, /uppercase/);
   assert.match(styles, /max-inline-size: 70rem/);
   assert.match(styles, /--sidera-card-grid-gap: 1\.125rem/);
-  assert.match(styles, /background: #3b2119/);
+  assert.match(styles, /background: var\(--color-dark-strong\)/);
   assert.match(styles, /@media \(max-width: 42rem\)/);
   assert.match(styles, /@media \(forced-colors: active\)/);
   assert.doesNotMatch(styles, /\.sidera-badge__/);

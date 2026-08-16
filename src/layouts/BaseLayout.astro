@@ -93,7 +93,7 @@ const seo = buildPublicSeo({
     <script is:inline define:vars={{ locale, defaultLocale, activeLocaleCodesJson }}>
       (() => {
         try {
-          const localeStorageKey = "sidera-warm-modern:selected-locale";
+          const localeStorageKey = "sidera-meridian:selected-locale";
           const activeLocaleSet = new Set(JSON.parse(activeLocaleCodesJson));
           const currentUrl = new URL(window.location.href);
           const requestedLocale = currentUrl.searchParams.get("locale");
@@ -122,7 +122,7 @@ const seo = buildPublicSeo({
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:wght@400;500;600;700&display=swap"
     />
     <link rel="icon" href="/_assets/aliases/logo/logo.svg" />
     <link rel="canonical" href={seo.canonicalUrl} />
@@ -144,7 +144,7 @@ const seo = buildPublicSeo({
       <script is:inline type="application/ld+json" set:html={JSON.stringify(entry).replace(/</g, "\\u003c")}></script>
     ))}
   </head>
-  <body data-runtime-substrate="cloudflare" data-site-source="sidera-warm-modern" data-locale={locale} class={bodyClass}>
+  <body data-runtime-substrate="cloudflare" data-site-source="sidera-meridian" data-locale={locale} class={bodyClass}>
     <slot />
     {builderToolbar ? <BuilderToolbar {...builderToolbar} /> : null}
   </body>

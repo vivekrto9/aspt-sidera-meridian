@@ -1,7 +1,7 @@
 .sidera-form-field {
-  --sidera-form-field-label: #6b5346;
-  --sidera-form-field-muted: #8d7767;
-  --sidera-form-field-error: #8d3e2c;
+  --sidera-form-field-label: var(--color-muted);
+  --sidera-form-field-muted: var(--color-muted-soft);
+  --sidera-form-field-error: var(--color-primary-strong);
   min-inline-size: 0;
   inline-size: 100%;
   display: grid;
@@ -9,14 +9,14 @@
   border: 0;
   padding: 0;
   margin: 0;
-  color: #43291e;
+  color: var(--color-text);
 }
 
 .sidera-form-field--inverse {
   --sidera-form-field-label: #eadfce;
   --sidera-form-field-muted: #bca58f;
   --sidera-form-field-error: #f0a28c;
-  color: #f5ecdd;
+  color: var(--color-surface-soft);
 }
 
 .sidera-form-field__label {
@@ -37,7 +37,7 @@ legend.sidera-form-field__label {
 }
 
 .sidera-form-field__required {
-  color: #a84d36;
+  color: var(--color-primary);
   font-size: 0.875rem;
   line-height: 1;
 }

@@ -11,7 +11,7 @@
 
 .account-people__header > p {
   margin: 0;
-  color: #9c4f38;
+  color: var(--color-primary);
   font-size: 0.6875rem;
   font-weight: 600;
   letter-spacing: 0.16em;
@@ -21,8 +21,8 @@
 
 .account-people__header > h2 {
   margin: 0.5rem 0 0;
-  color: #43291e;
-  font-family: "Newsreader", Georgia, "Times New Roman", serif;
+  color: var(--color-text);
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
   font-size: 2.125rem;
   font-weight: 400;
   line-height: 1;
@@ -37,10 +37,10 @@
 .account-people__card {
   position: relative;
   min-inline-size: 0;
-  border: 1px solid rgba(67, 41, 30, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   border-radius: 1rem;
   padding: 1.25rem;
-  background: #fbf8f1;
+  background: var(--color-panel);
   text-align: center;
   transition:
     transform 180ms ease,
@@ -55,7 +55,7 @@
 
 .account-people__card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1.125rem 2.5rem -1.625rem rgba(67, 41, 30, 0.45);
+  box-shadow: 0 1.125rem 2.5rem -1.625rem rgba(var(--color-text-rgb), 0.45);
 }
 
 .account-people__chart {
@@ -75,17 +75,17 @@
 }
 
 .account-people__chart--linked:focus-visible {
-  outline: 0.1875rem solid #9c4f38;
+  outline: 0.1875rem solid var(--color-primary);
   outline-offset: 0.1875rem;
 }
 
 .account-people__chart--empty {
   --sidera-button-background: rgba(239, 231, 218, 0.62);
-  --sidera-button-border: rgba(67, 41, 30, 0.16);
-  --sidera-button-color: #584639;
+  --sidera-button-border: rgba(var(--color-text-rgb), 0.16);
+  --sidera-button-color: var(--color-muted);
   --sidera-button-hover-background: #e6dbcd;
-  --sidera-button-hover-border: rgba(67, 41, 30, 0.3);
-  --sidera-button-hover-color: #9c4f38;
+  --sidera-button-hover-border: rgba(var(--color-text-rgb), 0.3);
+  --sidera-button-hover-color: var(--color-primary);
   --sidera-button-active-background: #ddd0c0;
 
   display: flex;
@@ -98,8 +98,8 @@
 
 .account-people__card h3 {
   margin: 0.75rem 0 0;
-  color: #43291e;
-  font-family: "Newsreader", Georgia, "Times New Roman", serif;
+  color: var(--color-text);
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
   font-size: 1.1875rem;
   font-weight: 400;
   line-height: 1.15;
@@ -108,7 +108,7 @@
 .account-people__card > p {
   min-block-size: 2.1em;
   margin: 0.125rem 0 0;
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 0.75rem;
   line-height: 1.4;
   overflow-wrap: anywhere;

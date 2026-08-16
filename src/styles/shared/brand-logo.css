@@ -1,7 +1,7 @@
 .brand-logo {
-  --brand-logo-name-color: #33271f;
-  --brand-logo-mark-color: #cb6b4e;
-  --brand-logo-hover-color: #a84d36;
+  --brand-logo-name-color: var(--color-text);
+  --brand-logo-mark-color: var(--color-primary);
+  --brand-logo-hover-color: var(--color-primary);
   --brand-logo-font-size: 1.6875rem;
   --brand-logo-mark-size: 1.0625rem;
 
@@ -16,8 +16,8 @@
 }
 
 .brand-logo--inverse {
-  --brand-logo-name-color: #f5ead8;
-  --brand-logo-mark-color: #e0a06e;
+  --brand-logo-name-color: var(--color-on-dark);
+  --brand-logo-mark-color: var(--color-primary-soft);
   --brand-logo-hover-color: #ffffff;
 }
 
@@ -27,9 +27,14 @@
 }
 
 .brand-logo__mark {
+  inline-size: 0.6875rem;
+  block-size: 0.6875rem;
   flex: none;
-  color: var(--brand-logo-mark-color);
-  font-size: var(--brand-logo-mark-size);
+  border-radius: 50%;
+  background: var(--brand-logo-mark-color);
+  box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--brand-logo-mark-color) 18%, transparent);
+  color: transparent;
+  font-size: 0;
   line-height: 1;
   transform-origin: center;
   transition:
@@ -40,9 +45,9 @@
 .brand-logo__name {
   min-inline-size: 0;
   color: inherit;
-  font-family: "Newsreader", Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: var(--brand-logo-font-size);
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
   letter-spacing: 0.01875rem;
   line-height: 1.05;
@@ -59,12 +64,12 @@ a.brand-logo:hover {
 }
 
 a.brand-logo:hover .brand-logo__mark {
-  color: currentColor;
-  transform: rotate(12deg) scale(1.05);
+  background: currentColor;
+  transform: scale(1.08);
 }
 
 a.brand-logo:focus-visible {
-  outline: 0.1875rem solid rgba(203, 107, 78, 0.45);
+  outline: 0.1875rem solid rgba(var(--color-primary-rgb), 0.45);
   outline-offset: 0.25rem;
 }
 

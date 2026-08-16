@@ -1,7 +1,7 @@
 .sidera-rating-stars {
-  --rating-stars-color: #b07a3c;
+  --rating-stars-color: var(--color-primary-soft);
   --rating-stars-empty-color: rgba(176, 122, 60, 0.34);
-  --rating-stars-focus-ring: rgba(156, 79, 56, 0.22);
+  --rating-stars-focus-ring: rgba(var(--color-primary-rgb), 0.22);
 
   max-inline-size: 100%;
   display: inline-flex;
@@ -28,7 +28,7 @@
 }
 
 .sidera-rating-stars--inverse {
-  --rating-stars-color: #d69a6a;
+  --rating-stars-color: var(--color-primary-soft);
   --rating-stars-empty-color: rgba(240, 230, 214, 0.28);
   --rating-stars-focus-ring: rgba(240, 230, 214, 0.34);
 }

@@ -35,8 +35,8 @@ test("PriceDisplay styles preserve reference hierarchy and mobile scaling", asyn
   const source = await readFile(stylesheetPath, "utf8");
 
   assert.match(source, /align-items: baseline/);
-  assert.match(source, /font-family: "Newsreader"/);
-  assert.match(source, /font-family: "Figtree"/);
+  assert.match(source, /font-family: var\(--font-serif\)/);
+  assert.match(source, /font-family: var\(--font-sans\)/);
   assert.match(source, /white-space: nowrap/);
   assert.match(source, /\.sidera-price-display--inverse/);
   assert.match(source, /\.sidera-price-display--compact/);

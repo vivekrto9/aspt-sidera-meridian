@@ -253,7 +253,7 @@ test("Live session CSS matches the reference desktop split and mobile stack", as
   );
   assert.match(historyStyles, /@media \(max-width: 64rem\)/);
   assert.match(historyStyles, /transform: translateX\(-102%\)/);
-  assert.match(styles, /background: #301a13/);
+  assert.match(styles, /background: var\(--color-dark\)/);
   assert.match(styles, /grid-template-columns: minmax\(0, 1\.7fr\)/);
   assert.match(styles, /min-block-size: calc\(100svh - 68px\)/);
   assert.match(

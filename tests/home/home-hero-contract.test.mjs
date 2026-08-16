@@ -17,23 +17,16 @@ const layoutPath = new URL(
 );
 const registryPath = new URL("../../src/builder/registry.ts", import.meta.url);
 
-test("Home Hero composes the approved shared actions and chart visual", async () => {
+test("Home Hero composes the approved shared actions without the decorative wheel", async () => {
   const source = await readFile(componentPath, "utf8");
 
   assert.match(
     source,
     /import Button from "\.\.\/\.\.\/shared\/Button\.astro"/,
   );
-  assert.match(
-    source,
-    /import ChartWheel from "\.\.\/\.\.\/shared\/ChartWheel\.astro"/,
-  );
   assert.match(source, /<Button[\s\S]*href=\{primaryHref\}/);
   assert.match(source, /<Button[\s\S]*href=\{secondaryHref\}/);
-  assert.match(source, /<ChartWheel/);
-  assert.match(source, /mode="decorative"/);
-  assert.match(source, /showHouses=\{false\}/);
-  assert.match(source, /showAspects=\{false\}/);
+  assert.doesNotMatch(source, /ChartWheel|home-hero__visual|home-hero__wheel/);
 });
 
 test("Home Hero keeps visible copy and edit bindings caller-owned", async () => {
@@ -46,7 +39,6 @@ test("Home Hero keeps visible copy and edit bindings caller-owned", async () => 
     "primaryCta: string",
     "secondaryCta: string",
     "proofs: ProofItem[]",
-    "chartTitle: string",
   ]) {
     assert.match(
       source,
@@ -65,16 +57,14 @@ test("Home Hero keeps visible copy and edit bindings caller-owned", async () => 
   );
 });
 
-test("Home Hero preserves the Warm Modern split, motion, and responsive safeguards", async () => {
+test("Home Hero preserves the Meridian centered field, wrapping proofs, and responsive safeguards", async () => {
   const styles = await readFile(stylesPath, "utf8");
 
-  assert.match(styles, /inline-size: min\(100%, 70rem\)/);
-  assert.match(
-    styles,
-    /grid-template-columns: minmax\(0, 1\.05fr\) minmax\(0, 0\.95fr\)/,
-  );
-  assert.match(styles, /font-size: clamp\(2\.875rem, 6\.2vw, 5rem\)/);
-  assert.match(styles, /--chart-disc-outer: transparent/);
+  assert.match(styles, /inline-size: min\(100%, 72\.5rem\)/);
+  assert.match(styles, /justify-items: center/);
+  assert.match(styles, /font-size: clamp\(3rem, 7\.4vw, 6\.125rem\)/);
+  assert.match(styles, /\.home-hero__proofs\s*\{[^}]*display: flex[^}]*flex-wrap: wrap/s);
+  assert.doesNotMatch(styles, /home-hero__visual|home-hero__wheel/);
   assert.match(styles, /@media \(prefers-reduced-motion: no-preference\)/);
   assert.match(styles, /@media \(max-width: 62rem\)/);
   assert.match(styles, /@media \(max-width: 40rem\)/);

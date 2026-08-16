@@ -2,7 +2,7 @@
   inline-size: 100%;
   min-inline-size: 0;
   padding-block-end: 2.5rem;
-  background: #efe8db;
+  background: var(--color-surface);
 }
 
 .blog-article-header__navigation,
@@ -34,16 +34,16 @@
 }
 
 .blog-article-header__category {
-  color: #9c4f38;
-  font: 600 0.6875rem / 1.4 "Figtree", system-ui, sans-serif;
+  color: var(--color-primary);
+  font: 600 0.6875rem / 1.4 var(--font-sans), system-ui, sans-serif;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
 .blog-article-header__title {
   margin-block-start: 0.875rem;
-  color: #43291e;
-  font: 400 clamp(2.125rem, 4.6vw, 3.375rem) / 1.05 "Newsreader", Georgia, serif;
+  color: var(--color-text);
+  font: 400 clamp(2.125rem, 4.6vw, 3.375rem) / 1.05 var(--font-serif), Georgia, serif;
   letter-spacing: -0.01em;
   text-wrap: balance;
   overflow-wrap: anywhere;
@@ -59,13 +59,13 @@
 
 .blog-article-header__byline-copy {
   min-inline-size: 0;
-  color: #6b5346;
-  font: 400 0.8125rem / 1.45 "Figtree", system-ui, sans-serif;
+  color: var(--color-muted);
+  font: 400 0.8125rem / 1.45 var(--font-sans), system-ui, sans-serif;
   text-align: start;
 }
 
 .blog-article-header__author {
-  color: #43291e;
+  color: var(--color-text);
   font-weight: 600;
 }
 
@@ -96,11 +96,11 @@
 }
 
 .blog-article-header__cover--terracotta {
-  background: linear-gradient(140deg, #9c4f38, #6e3f2c);
+  background: linear-gradient(140deg, var(--color-primary), var(--color-dark));
 }
 
 .blog-article-header__cover--ochre {
-  background: linear-gradient(140deg, #b07a3c, #7d5222);
+  background: linear-gradient(140deg, var(--color-primary-soft), #7d5222);
 }
 
 .blog-article-header__cover--rose {
@@ -116,7 +116,7 @@
 }
 
 .blog-article-header__cover--stone {
-  background: linear-gradient(140deg, #6c6254, #443d33);
+  background: linear-gradient(140deg, var(--color-muted), #443d33);
 }
 
 @media (max-width: 40rem) {

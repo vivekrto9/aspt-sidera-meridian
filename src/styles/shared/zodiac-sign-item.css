@@ -1,6 +1,6 @@
 .sidera-zodiac-sign {
-  --sidera-zodiac-accent: #9c4f38;
-  --sidera-zodiac-selected-text: #faf2e6;
+  --sidera-zodiac-accent: var(--color-primary);
+  --sidera-zodiac-selected-text: var(--color-on-dark);
 
   inline-size: 100%;
   min-inline-size: 0;
@@ -9,13 +9,13 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 1px solid rgba(67, 41, 30, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   border-radius: 1rem;
   padding: 1.75rem 0.75rem 1.375rem;
-  background: #fbf8f1;
-  color: #43291e;
+  background: var(--color-panel);
+  color: var(--color-text);
   cursor: pointer;
-  font-family: "Figtree", system-ui, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
   text-align: center;
   text-decoration: none;
   transition:
@@ -29,7 +29,7 @@
 
 .sidera-zodiac-sign:hover {
   border-color: color-mix(in srgb, var(--sidera-zodiac-accent) 45%, transparent);
-  box-shadow: 0 1.25rem 2.75rem -1.625rem rgba(67, 41, 30, 0.45);
+  box-shadow: 0 1.25rem 2.75rem -1.625rem rgba(var(--color-text-rgb), 0.45);
   transform: translateY(-0.25rem);
 }
 
@@ -59,23 +59,23 @@
 
 .sidera-zodiac-sign--selected:hover {
   border-color: var(--sidera-zodiac-accent);
-  background: color-mix(in srgb, var(--sidera-zodiac-accent) 88%, #33271f);
+  background: color-mix(in srgb, var(--sidera-zodiac-accent) 88%, var(--color-text));
 }
 
 .sidera-zodiac-sign--fire {
-  --sidera-zodiac-accent: #9c4f38;
+  --sidera-zodiac-accent: var(--color-primary);
 }
 
 .sidera-zodiac-sign--earth {
-  --sidera-zodiac-accent: #6c6254;
+  --sidera-zodiac-accent: var(--color-muted);
 }
 
 .sidera-zodiac-sign--air {
-  --sidera-zodiac-accent: #b07a3c;
+  --sidera-zodiac-accent: var(--color-primary-soft);
 }
 
 .sidera-zodiac-sign--water {
-  --sidera-zodiac-accent: #2f4a41;
+  --sidera-zodiac-accent: var(--color-dark);
 }
 
 .sidera-zodiac-sign__glyph {
@@ -89,13 +89,13 @@
 
 .sidera-zodiac-sign__name {
   margin-block-start: 0.75rem;
-  font: 400 1.5rem / 1.05 "Newsreader", Georgia, serif;
+  font: 400 1.5rem / 1.05 var(--font-serif), Georgia, serif;
   overflow-wrap: anywhere;
 }
 
 .sidera-zodiac-sign__dates {
   margin-block-start: 0.1875rem;
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 0.78125rem;
   line-height: 1.4;
   overflow-wrap: anywhere;
@@ -103,7 +103,7 @@
 
 .sidera-zodiac-sign__element {
   margin-block-start: 0.5625rem;
-  color: #9b8776;
+  color: var(--color-muted-soft);
   font-size: 0.65625rem;
   font-weight: 600;
   line-height: 1.35;
@@ -129,7 +129,7 @@
 
 .sidera-zodiac-sign--compact .sidera-zodiac-sign__name {
   margin-block-start: 0.5rem;
-  font: 600 0.8125rem / 1.2 "Figtree", system-ui, sans-serif;
+  font: 600 0.8125rem / 1.2 var(--font-sans), system-ui, sans-serif;
 }
 
 .sidera-zodiac-sign--compact

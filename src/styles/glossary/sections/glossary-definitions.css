@@ -1,6 +1,6 @@
 .sidera-glossary-definitions {
   padding: 1.25rem 2.125rem 5.625rem;
-  background: #efe8db;
+  background: var(--color-surface);
 }
 
 .sidera-glossary-definitions__inner {
@@ -16,12 +16,12 @@
 }
 
 .sidera-glossary-definitions__heading {
-  --sidera-section-heading-ink: #9c4f38;
+  --sidera-section-heading-ink: var(--color-primary);
   --sidera-section-heading-title-size: 2.125rem;
 
   margin-block-end: 1.125rem;
   padding-block-end: 0.5rem;
-  border-block-end: 1px solid rgba(67, 41, 30, 0.14);
+  border-block-end: 1px solid rgba(var(--color-text-rgb), 0.14);
 }
 
 .sidera-glossary-definitions__terms {
@@ -36,9 +36,9 @@
 
 .sidera-glossary-definitions__term-name {
   margin: 0;
-  color: #43291e;
+  color: var(--color-text);
   font:
-    600 1rem / 1.35 "Figtree",
+    600 1rem / 1.35 var(--font-sans),
     system-ui,
     sans-serif;
   overflow-wrap: anywhere;
@@ -46,9 +46,9 @@
 
 .sidera-glossary-definitions__term-description {
   margin: 0.3125rem 0 0;
-  color: #6b5346;
+  color: var(--color-muted);
   font:
-    400 0.90625rem / 1.6 "Figtree",
+    400 0.90625rem / 1.6 var(--font-sans),
     system-ui,
     sans-serif;
   text-wrap: pretty;
@@ -57,11 +57,11 @@
 
 .sidera-glossary-definitions__empty {
   margin: 0;
-  border-block: 1px solid rgba(67, 41, 30, 0.14);
+  border-block: 1px solid rgba(var(--color-text-rgb), 0.14);
   padding-block: 2rem;
-  color: #6b5346;
+  color: var(--color-muted);
   font:
-    500 1rem / 1.5 "Figtree",
+    500 1rem / 1.5 var(--font-sans),
     system-ui,
     sans-serif;
   text-align: center;

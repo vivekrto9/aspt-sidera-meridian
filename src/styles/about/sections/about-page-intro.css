@@ -1,7 +1,7 @@
 .about-page-intro-shell {
   inline-size: 100%;
   padding: 5rem 2.125rem 2.5rem;
-  background: #efe8db;
+  background: var(--color-surface);
   text-align: center;
 }
 

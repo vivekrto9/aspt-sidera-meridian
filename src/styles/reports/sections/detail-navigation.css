@@ -1,6 +1,6 @@
 .reports-detail-navigation-shell {
   padding: 2.125rem 2.125rem 1.25rem;
-  background: #efe8db;
+  background: var(--color-surface);
 }
 
 .reports-detail-navigation {

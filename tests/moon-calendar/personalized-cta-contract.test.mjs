@@ -35,7 +35,7 @@ test("Moon Calendar Personalized CTA composes the approved shared primitive", as
   assert.match(component, /layout="split"/);
   assert.match(component, /surface="panel"/);
   assert.match(component, /ambience/);
-  assert.match(styles, /--sidera-final-cta-background: #2f4a41/);
+  assert.match(styles, /--sidera-final-cta-background: var\(--color-dark\)/);
   assert.match(styles, /inline-size: min\(100% - 4\.25rem, 73\.75rem\)/);
   assert.match(styles, /padding: 2\.625rem 2\.5rem/);
   assert.match(styles, /@media \(max-width: 42rem\)/);

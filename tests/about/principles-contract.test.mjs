@@ -32,7 +32,7 @@ test("About Principles composes the approved CardGrid without boxed cards", asyn
   assert.match(component, /\{\.\.\.principle\.titleEditAttributes\}/);
   assert.match(component, /\{\.\.\.principle\.bodyEditAttributes\}/);
   assert.match(styles, /padding: 3\.75rem 2\.125rem/);
-  assert.match(styles, /background: #fbf8f1/);
+  assert.match(styles, /background: var\(--color-panel\)/);
   assert.match(styles, /max-inline-size: 70rem/);
   assert.match(styles, /--sidera-card-grid-gap: 1\.75rem/);
   assert.doesNotMatch(styles, /border-radius/);

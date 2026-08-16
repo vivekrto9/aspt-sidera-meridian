@@ -75,7 +75,7 @@ test("Today's Sky handoff keeps reference geometry page-scoped and responsive", 
     "src/styles/todays-sky/sections/todays-sky-personalized-handoff.css",
   );
 
-  assert.match(styles, /--sidera-final-cta-background: #2f4a41/);
+  assert.match(styles, /--sidera-final-cta-background: var\(--color-dark\)/);
   assert.match(styles, /inline-size: min\(100% - 4\.25rem, 73\.75rem\)/);
   assert.match(styles, /padding: 2\.625rem 2\.5rem/);
   assert.match(styles, /max-inline-size: 35rem/);

@@ -1,14 +1,14 @@
 .sidera-profile-summary {
-  --profile-summary-name: #43291e;
-  --profile-summary-copy: #6b5346;
-  --profile-summary-muted: #7a6252;
+  --profile-summary-name: var(--color-text);
+  --profile-summary-copy: var(--color-muted);
+  --profile-summary-muted: var(--color-muted);
 
   max-inline-size: 100%;
   display: flex;
   align-items: flex-start;
   gap: 1rem;
   color: var(--profile-summary-copy);
-  font-family: "Figtree", system-ui, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
 .sidera-profile-summary--stacked {
@@ -18,7 +18,7 @@
 }
 
 .sidera-profile-summary--inverse {
-  --profile-summary-name: #f5ecdd;
+  --profile-summary-name: var(--color-surface-soft);
   --profile-summary-copy: #cbb09b;
   --profile-summary-muted: #b99e88;
 }
@@ -41,7 +41,7 @@
   min-inline-size: 0;
   margin: 0;
   color: var(--profile-summary-name);
-  font-family: "Newsreader", Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
   font-size: 1.375rem;
   font-weight: 400;
   line-height: 1.08;

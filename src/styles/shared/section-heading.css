@@ -1,7 +1,7 @@
 .sidera-section-heading {
-  --sidera-section-heading-ink: #33271f;
-  --sidera-section-heading-muted: #6e5b4c;
-  --sidera-section-heading-accent: #9c4f38;
+  --sidera-section-heading-ink: var(--color-text);
+  --sidera-section-heading-muted: var(--color-muted);
+  --sidera-section-heading-accent: var(--color-primary);
   --sidera-section-heading-title-size: clamp(2.125rem, 4.6vw, 3.625rem);
   --sidera-section-heading-description-size: 1rem;
 
@@ -27,7 +27,7 @@
 .sidera-section-heading__eyebrow {
   margin: 0;
   color: var(--sidera-section-heading-accent);
-  font: 600 0.75rem / 1.35 "Figtree", system-ui, sans-serif;
+  font: 600 0.75rem / 1.35 var(--font-sans);
   letter-spacing: 0.18em;
   text-transform: uppercase;
   overflow-wrap: anywhere;
@@ -36,7 +36,7 @@
 .sidera-section-heading__title {
   margin: 0;
   color: var(--sidera-section-heading-ink);
-  font: 400 var(--sidera-section-heading-title-size) / 1 "Newsreader", Georgia, serif;
+  font: 400 var(--sidera-section-heading-title-size) / 1 var(--font-serif);
   letter-spacing: -0.01em;
   text-wrap: balance;
   overflow-wrap: anywhere;
@@ -59,7 +59,7 @@
   max-inline-size: 33.75rem;
   margin: 1.125rem 0 0;
   color: var(--sidera-section-heading-muted);
-  font: 400 var(--sidera-section-heading-description-size) / 1.6 "Figtree", system-ui, sans-serif;
+  font: 400 var(--sidera-section-heading-description-size) / 1.6 var(--font-sans);
   text-wrap: pretty;
   overflow-wrap: anywhere;
 }
@@ -108,9 +108,9 @@
 }
 
 .sidera-section-heading--inverse {
-  --sidera-section-heading-ink: #f5ecdd;
-  --sidera-section-heading-muted: #dcc7b6;
-  --sidera-section-heading-accent: #d69a6a;
+  --sidera-section-heading-ink: var(--color-surface-soft);
+  --sidera-section-heading-muted: var(--color-on-dark-muted);
+  --sidera-section-heading-accent: var(--color-primary-soft);
 }
 
 .sidera-section-heading--page {

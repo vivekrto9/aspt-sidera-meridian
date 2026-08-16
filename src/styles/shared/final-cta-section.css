@@ -1,8 +1,8 @@
 .sidera-final-cta {
-  --sidera-final-cta-background: #f7f1e8;
-  --sidera-final-cta-color: #43291e;
-  --sidera-final-cta-accent: #9c4f38;
-  --sidera-final-cta-muted: #6b5346;
+  --sidera-final-cta-background: var(--color-bg);
+  --sidera-final-cta-color: var(--color-text);
+  --sidera-final-cta-accent: var(--color-primary);
+  --sidera-final-cta-muted: var(--color-muted);
 
   position: relative;
   isolation: isolate;
@@ -13,10 +13,10 @@
 }
 
 .sidera-final-cta--dark {
-  --sidera-final-cta-background: #5b382c;
-  --sidera-final-cta-color: #f5ecdd;
-  --sidera-final-cta-accent: #d69a6a;
-  --sidera-final-cta-muted: #cdb29e;
+  --sidera-final-cta-background: var(--color-dark);
+  --sidera-final-cta-color: var(--color-surface-soft);
+  --sidera-final-cta-accent: var(--color-primary-soft);
+  --sidera-final-cta-muted: var(--color-line);
 }
 
 .sidera-final-cta--panel {
@@ -28,9 +28,9 @@
 }
 
 .sidera-final-cta--compact.sidera-final-cta--dark {
-  --sidera-final-cta-background: #3b2119;
-  --sidera-final-cta-color: #f5ecdd;
-  --sidera-final-cta-muted: #cdb7a2;
+  --sidera-final-cta-background: var(--color-dark-strong);
+  --sidera-final-cta-color: var(--color-surface-soft);
+  --sidera-final-cta-muted: var(--color-line);
 }
 
 .sidera-final-cta--ambience::before,
@@ -214,7 +214,7 @@
 
 .sidera-final-cta--dark .sidera-final-cta__secondary {
   --sidera-button-border: rgba(240, 230, 214, 0.4);
-  --sidera-button-color: #f0e6d6;
+  --sidera-button-color: var(--color-surface);
   --sidera-button-hover-background: rgba(240, 230, 214, 0.08);
   --sidera-button-hover-border: rgba(240, 230, 214, 0.58);
   --sidera-button-hover-color: #ffffff;

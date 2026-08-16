@@ -2,10 +2,10 @@
   position: relative;
   scroll-margin-top: 5rem;
   overflow: hidden;
-  padding: 6rem 2.125rem;
-  background: #3a241a;
-  color: #f5ead8;
-  font-family: "Figtree", system-ui, sans-serif;
+  padding: 6.25rem 2.125rem;
+  background: var(--color-dark);
+  color: var(--color-on-dark);
+  font-family: var(--font-sans);
 }
 
 .home-moon-calendar__stars {
@@ -19,7 +19,7 @@
   inline-size: 0.1875rem;
   block-size: 0.1875rem;
   border-radius: 50%;
-  background: #e0a06e;
+  background: var(--color-primary-soft);
   opacity: 0.34;
   animation: home-moon-calendar-twinkle 4.8s ease-in-out infinite;
 }
@@ -33,7 +33,7 @@
 
 .home-moon-calendar__inner {
   position: relative;
-  inline-size: min(100%, 73.75rem);
+  inline-size: min(100%, 75rem);
   margin-inline: auto;
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
@@ -82,8 +82,8 @@
 .home-moon-calendar__current-copy h3,
 .home-moon-calendar__events h3 {
   margin: 0;
-  color: #fcf4e5;
-  font-family: "Newsreader", Georgia, serif;
+  color: var(--color-on-dark-strong);
+  font-family: var(--font-serif), Georgia, serif;
   font-weight: 400;
 }
 
@@ -94,7 +94,7 @@
 
 .home-moon-calendar__meta {
   margin: 0.25rem 0 0;
-  color: #cfb69d;
+  color: var(--color-on-dark-muted);
   font-size: 0.875rem;
   line-height: 1.4;
 }
@@ -102,7 +102,7 @@
 .home-moon-calendar__description {
   max-inline-size: 17.5rem;
   margin: 0.75rem 0 0;
-  color: #c6ac94;
+  color: var(--color-on-dark-muted);
   font-size: 0.84375rem;
   line-height: 1.55;
 }
@@ -127,15 +127,15 @@
 }
 
 .home-moon-calendar__unavailable h3 {
-  color: #fcf4e5;
-  font-family: "Newsreader", Georgia, serif;
+  color: var(--color-on-dark-strong);
+  font-family: var(--font-serif), Georgia, serif;
   font-size: 1.375rem;
   font-weight: 400;
 }
 
 .home-moon-calendar__unavailable p {
   margin-block-start: 0.5rem;
-  color: #c6ac94;
+  color: var(--color-on-dark-muted);
   font-size: 0.875rem;
   line-height: 1.55;
 }
@@ -169,7 +169,7 @@
 
 .home-moon-calendar__events p {
   margin: 0;
-  color: #e0a06e;
+  color: var(--color-primary-soft);
   font-size: 0.6875rem;
   font-weight: 600;
   letter-spacing: 0.1em;

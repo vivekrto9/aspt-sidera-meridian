@@ -62,7 +62,7 @@ test("Account wallet copy is localized and physically registered for Content Stu
   }
   assert.match(migration, /CREATE TABLE IF NOT EXISTS ec_site_account_wallet/);
   assert.match(await read("src/builder/registry.ts"), /site_account_wallet/);
-  assert.match(styles, /background: #fbf8f1/);
-  assert.match(styles, /border: 1px solid rgba\(67, 41, 30, 0\.1\)/);
+  assert.match(styles, /background: var\(--color-panel\)/);
+  assert.match(styles, /border: 1px solid rgba\(var\(--color-text-rgb\), 0\.1\)/);
   assert.match(styles, /@media \(max-width: 40rem\)/);
 });

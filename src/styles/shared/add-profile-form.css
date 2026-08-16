@@ -28,8 +28,8 @@
 .sidera-add-profile-form__status {
   min-block-size: 1.4em;
   margin: 0.75rem 0 0;
-  color: #9c4f38;
-  font: 600 0.875rem / 1.4 "Figtree", system-ui, sans-serif;
+  color: var(--color-primary);
+  font: 600 0.875rem / 1.4 var(--font-sans), system-ui, sans-serif;
 }
 
 @media (max-width: 40rem) {

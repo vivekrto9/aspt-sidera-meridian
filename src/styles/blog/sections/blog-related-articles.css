@@ -3,8 +3,8 @@
   min-inline-size: 0;
   margin-block-start: 2.5rem;
   padding: 3.75rem 2.125rem;
-  border-block-start: 1px solid rgba(67, 41, 30, 0.1);
-  background: #fbf8f1;
+  border-block-start: 1px solid rgba(var(--color-text-rgb), 0.1);
+  background: var(--color-panel);
 }
 
 .blog-related-articles__inner {

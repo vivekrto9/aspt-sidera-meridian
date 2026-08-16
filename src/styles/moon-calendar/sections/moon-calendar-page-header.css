@@ -2,7 +2,7 @@
   inline-size: min(100%, 73.75rem);
   margin-inline: auto;
   padding: 2.875rem 2.125rem 0;
-  background: #efe8db;
+  background: var(--color-surface);
 }
 
 .moon-calendar-page-header h1 {
@@ -12,8 +12,8 @@
 
 .moon-calendar-page-header__context {
   min-inline-size: min(100%, 20rem);
-  color: #6b5346;
-  font-family: "Figtree", system-ui, sans-serif;
+  color: var(--color-muted);
+  font-family: var(--font-sans), system-ui, sans-serif;
   font-size: 0.84375rem;
   line-height: 1.5;
   text-align: end;
@@ -25,7 +25,7 @@
 }
 
 .moon-calendar-page-header__context-primary {
-  color: #43291e;
+  color: var(--color-text);
   font-weight: 600;
 }
 

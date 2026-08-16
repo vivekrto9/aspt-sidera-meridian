@@ -1,7 +1,7 @@
 .shop-product-grid {
   inline-size: 100%;
   padding: 1.875rem 2.125rem 5.625rem;
-  background: #efe8db;
+  background: var(--color-surface);
 }
 
 .shop-product-grid__inner {
@@ -28,20 +28,20 @@
 .shop-product-grid__perk-icon {
   flex: none;
   margin-block-start: 0.0625rem;
-  color: #9c4f38;
+  color: var(--color-primary);
   font-size: 1rem;
 }
 
 .shop-product-grid__perk h2 {
   margin: 0;
-  color: #43291e;
-  font: 600 0.875rem / 1.35 "Figtree", system-ui, sans-serif;
+  color: var(--color-text);
+  font: 600 0.875rem / 1.35 var(--font-sans), system-ui, sans-serif;
 }
 
 .shop-product-grid__perk p {
   margin: 0.1875rem 0 0;
-  color: #6b5346;
-  font: 400 0.8125rem / 1.5 "Figtree", system-ui, sans-serif;
+  color: var(--color-muted);
+  font: 400 0.8125rem / 1.5 var(--font-sans), system-ui, sans-serif;
   overflow-wrap: anywhere;
 }
 

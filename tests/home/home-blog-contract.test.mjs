@@ -59,12 +59,12 @@ test("Home Blog forwards exact visible-copy edit identities", async () => {
   }
 });
 
-test("Home Blog preserves the Warm Modern editorial measure", async () => {
+test("Home Blog preserves the Meridian editorial measure", async () => {
   const styles = await readFile(stylesPath, "utf8");
 
-  assert.match(styles, /padding: 6rem 2\.125rem/);
-  assert.match(styles, /background: #f7f1e8/);
-  assert.match(styles, /inline-size: min\(100%, 73\.75rem\)/);
+  assert.match(styles, /padding: 6\.25rem 2\.125rem/);
+  assert.match(styles, /background: var\(--color-bg\)/);
+  assert.match(styles, /inline-size: min\(100%, 75rem\)/);
   assert.match(styles, /margin-block-start: 2\.375rem/);
   assert.match(styles, /text-overflow: ellipsis/);
   assert.match(styles, /@media \(max-width: 40rem\)/);

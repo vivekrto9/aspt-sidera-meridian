@@ -1,7 +1,7 @@
 .sidera-price-display {
-  --price-display-current: #43291e;
-  --price-display-supporting: #7a6252;
-  --price-display-original: #8d7a6b;
+  --price-display-current: var(--color-text);
+  --price-display-supporting: var(--color-muted);
+  --price-display-original: var(--color-muted-soft);
   --price-display-current-size: 1.625rem;
   --price-display-supporting-size: 0.8125rem;
 
@@ -15,8 +15,8 @@
 }
 
 .sidera-price-display--inverse {
-  --price-display-current: #f5ecdd;
-  --price-display-supporting: #cdb7a2;
+  --price-display-current: var(--color-surface-soft);
+  --price-display-supporting: var(--color-line);
   --price-display-original: #b79f8b;
 }
 
@@ -37,7 +37,7 @@
 
 .sidera-price-display__current {
   color: var(--price-display-current);
-  font-family: "Newsreader", Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
   font-size: var(--price-display-current-size);
   font-weight: 400;
   line-height: 1;
@@ -47,7 +47,7 @@
 .sidera-price-display__original,
 .sidera-price-display__unit {
   color: var(--price-display-supporting);
-  font-family: "Figtree", system-ui, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
   font-size: var(--price-display-supporting-size);
   line-height: 1.35;
 }

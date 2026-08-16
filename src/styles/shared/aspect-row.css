@@ -1,8 +1,8 @@
 .sidera-aspect-row {
   --aspect-row-glyph-background: #e8ded0;
-  --aspect-row-glyph-color: #6b5346;
-  --aspect-row-border: rgba(67, 41, 30, 0.1);
-  --aspect-row-selected: rgba(156, 79, 56, 0.08);
+  --aspect-row-glyph-color: var(--color-muted);
+  --aspect-row-border: rgba(var(--color-text-rgb), 0.1);
+  --aspect-row-selected: rgba(var(--color-primary-rgb), 0.08);
 
   inline-size: 100%;
   min-inline-size: 0;
@@ -12,8 +12,8 @@
   border-radius: 0.75rem;
   padding: 0.5rem;
   background: transparent;
-  color: #43291e;
-  font-family: "Figtree", system-ui, sans-serif;
+  color: var(--color-text);
+  font-family: var(--font-sans), system-ui, sans-serif;
   font-size: 0.875rem;
   line-height: 1.4;
   text-align: start;
@@ -27,12 +27,12 @@
 
 .sidera-aspect-row--harmonious {
   --aspect-row-glyph-background: rgba(47, 74, 65, 0.13);
-  --aspect-row-glyph-color: #2f4a41;
+  --aspect-row-glyph-color: var(--color-dark);
 }
 
 .sidera-aspect-row--challenging {
-  --aspect-row-glyph-background: rgba(156, 79, 56, 0.13);
-  --aspect-row-glyph-color: #9c4f38;
+  --aspect-row-glyph-background: rgba(var(--color-primary-rgb), 0.13);
+  --aspect-row-glyph-color: var(--color-primary);
 }
 
 .sidera-aspect-row--compact {
@@ -90,14 +90,14 @@
 
 .sidera-aspect-row__planet-glyph {
   flex: none;
-  color: #7a6252;
+  color: var(--color-muted);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.0625rem;
 }
 
 .sidera-aspect-row__type,
 .sidera-aspect-row__orb {
-  color: #9b8776;
+  color: var(--color-muted-soft);
   font-size: 0.8125rem;
 }
 
@@ -122,8 +122,8 @@
   display: block;
   border-block-start: 1px solid var(--aspect-row-border);
   padding: 0.625rem 0.375rem 0.125rem 2.625rem;
-  color: #6b5346;
-  font-family: "Newsreader", Georgia, "Times New Roman", serif;
+  color: var(--color-muted);
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
   font-size: 1rem;
   line-height: 1.5;
   overflow-wrap: anywhere;
@@ -154,7 +154,7 @@
 
 .sidera-aspect-row--sky .sidera-aspect-row__participant strong,
 .sidera-aspect-row--sky .sidera-aspect-row__type {
-  color: #43291e;
+  color: var(--color-text);
   font-size: 0.90625rem;
   font-weight: 600;
   line-height: 1.35;
@@ -165,7 +165,7 @@
   flex-direction: row;
   gap: 0.25rem;
   padding-block-start: 0.125rem;
-  color: #9b8776;
+  color: var(--color-muted-soft);
   font-size: 0.6875rem;
   line-height: 1.35;
 }
@@ -183,8 +183,8 @@
   margin-inline-start: 2.875rem;
   border-block-start: 0;
   padding: 0 0 0.0625rem;
-  color: #6b5346;
-  font-family: "Figtree", system-ui, sans-serif;
+  color: var(--color-muted);
+  font-family: var(--font-sans), system-ui, sans-serif;
   font-size: 0.8125rem;
   line-height: 1.5;
 }
@@ -201,18 +201,18 @@
 
 .sidera-aspect-row--clickable:hover:not(.sidera-aspect-row--disabled) {
   border-color: var(--aspect-row-border);
-  background: rgba(67, 41, 30, 0.035);
+  background: rgba(var(--color-text-rgb), 0.035);
   transform: translateY(-0.0625rem);
 }
 
 .sidera-aspect-row--clickable:focus-visible {
-  border-color: rgba(156, 79, 56, 0.42);
-  box-shadow: 0 0 0 0.1875rem rgba(156, 79, 56, 0.16);
+  border-color: rgba(var(--color-primary-rgb), 0.42);
+  box-shadow: 0 0 0 0.1875rem rgba(var(--color-primary-rgb), 0.16);
   outline: none;
 }
 
 .sidera-aspect-row--selected {
-  border-color: rgba(156, 79, 56, 0.18);
+  border-color: rgba(var(--color-primary-rgb), 0.18);
   background: var(--aspect-row-selected);
 }
 

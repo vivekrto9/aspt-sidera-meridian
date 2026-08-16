@@ -1,7 +1,7 @@
 .retrogrades-current-status {
   inline-size: 100%;
   padding: 2.5rem 2.125rem 1.875rem;
-  background: #efe8db;
+  background: var(--color-surface);
 }
 
 .retrogrades-current-status__grid.sidera-card-grid {
@@ -18,8 +18,8 @@
   border: 1px solid rgba(240, 230, 214, 0.14);
   border-radius: 1.125rem;
   padding: 1.5rem;
-  background: #3b2119;
-  color: #f0e6d6;
+  background: var(--color-dark-strong);
+  color: var(--color-surface);
 }
 
 .retrogrades-current-status__topline {
@@ -31,7 +31,7 @@
 
 .retrogrades-current-status__glyph {
   flex: none;
-  color: #d69a6a;
+  color: var(--color-primary-soft);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 2.125rem;
   line-height: 1;
@@ -44,7 +44,7 @@
 .retrogrades-current-status__title {
   max-inline-size: none;
   margin: 0.875rem 0 0;
-  color: #f0e6d6;
+  color: var(--color-surface);
   font-family: var(--font-serif);
   font-size: 1.5rem;
   font-weight: 400;
@@ -53,14 +53,14 @@
 
 .retrogrades-current-status__position {
   margin: 0.125rem 0 0;
-  color: #cdb7a2;
+  color: var(--color-line);
   font-size: 0.8125rem;
   line-height: 1.45;
 }
 
 .retrogrades-current-status__description {
   margin: 0.875rem 0 0;
-  color: #c3ac97;
+  color: var(--color-muted-soft);
   font-size: 0.78125rem;
   line-height: 1.5;
 }
@@ -79,7 +79,7 @@
 }
 
 .retrogrades-current-status__period {
-  color: #d69a6a;
+  color: var(--color-primary-soft);
   font-weight: 600;
 }
 

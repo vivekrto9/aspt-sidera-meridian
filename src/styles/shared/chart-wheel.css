@@ -1,16 +1,25 @@
 .chart-wheel {
   --chart-wheel-size: 31.25rem;
-  --chart-disc-outer: #fbf6ec;
-  --chart-disc-signs: #f3ecdc;
-  --chart-disc-inner: #fbf6ec;
-  --chart-line: rgba(67, 41, 30, 0.14);
-  --chart-line-soft: rgba(67, 41, 30, 0.1);
-  --chart-accent: #9c4f38;
-  --chart-glyph: #8a5c47;
-  --chart-planet-fill: #fbf8f1;
-  --chart-planet-outer-fill: #5b382c;
-  --chart-planet-outer-text: #f3eadb;
-  --chart-caption: #6b5346;
+  --chart-disc-outer: var(--color-panel);
+  --chart-disc-signs: var(--color-surface-soft);
+  --chart-disc-inner: var(--color-panel);
+  --chart-line: rgba(var(--color-text-rgb), 0.14);
+  --chart-line-soft: rgba(var(--color-text-rgb), 0.1);
+  --chart-accent: var(--color-primary);
+  --chart-glyph: var(--color-muted);
+  --chart-planet-fill: var(--color-panel);
+  --chart-planet-outer-fill: var(--color-dark);
+  --chart-planet-outer-text: var(--color-surface);
+  --chart-caption: var(--color-muted);
+  --chart-color-fire: var(--color-primary);
+  --chart-color-earth: var(--color-muted);
+  --chart-color-air: var(--color-primary-soft);
+  --chart-color-water: var(--color-dark);
+  --chart-color-venus: var(--color-primary-strong);
+  --chart-color-uranus: var(--color-success);
+  --chart-color-neptune: var(--color-info);
+  --chart-color-pluto: var(--color-muted-soft);
+  --chart-color-transit: var(--color-dark-strong);
 
   inline-size: min(100%, var(--chart-wheel-size));
   margin: 0;
@@ -33,10 +42,10 @@
   --chart-disc-inner: rgba(240, 230, 214, 0.04);
   --chart-line: rgba(240, 230, 214, 0.2);
   --chart-line-soft: rgba(240, 230, 214, 0.13);
-  --chart-accent: #d69a6a;
+  --chart-accent: var(--color-primary-soft);
   --chart-glyph: #d6a37b;
-  --chart-planet-fill: #3b2119;
-  --chart-caption: #cdb7a2;
+  --chart-planet-fill: var(--color-dark-strong);
+  --chart-caption: var(--color-line);
 }
 
 .chart-wheel__svg {
@@ -75,7 +84,7 @@
 .chart-wheel__center text {
   text-anchor: middle;
   dominant-baseline: central;
-  font-family: "Newsreader", Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
 }
 
 .chart-wheel__sign-band text {
@@ -96,11 +105,11 @@
 
 .chart-wheel__houses text {
   fill: var(--chart-caption);
-  font: 400 11px / 1 "Figtree", system-ui, sans-serif;
+  font: 400 11px / 1 var(--font-sans), system-ui, sans-serif;
 }
 
 .chart-wheel__aspects line {
-  stroke: var(--chart-accent);
+  stroke: var(--aspect-color, var(--chart-accent));
   stroke-width: 1.2;
   opacity: 0.65;
 }
@@ -140,7 +149,7 @@
 .chart-wheel--interactive .chart-wheel__planet:hover circle,
 .chart-wheel__planet--selected circle {
   stroke-width: 2.5;
-  filter: drop-shadow(0 3px 5px rgba(67, 41, 30, 0.2));
+  filter: drop-shadow(0 3px 5px rgba(var(--color-text-rgb), 0.2));
 }
 
 .chart-wheel--interactive .chart-wheel__planet:focus-visible circle {
@@ -149,18 +158,18 @@
 }
 
 .chart-wheel__center circle {
-  fill: #6e4433;
+  fill: var(--color-dark);
 }
 
 .chart-wheel__center text {
-  fill: #f7f1e8;
+  fill: var(--color-bg);
   font-size: 34px;
 }
 
 .chart-wheel__caption {
   max-inline-size: 42ch;
   color: var(--chart-caption);
-  font: 400 0.8125rem / 1.5 "Figtree", system-ui, sans-serif;
+  font: 400 0.8125rem / 1.5 var(--font-sans), system-ui, sans-serif;
   text-align: center;
 }
 

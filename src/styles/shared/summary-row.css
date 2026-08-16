@@ -1,7 +1,7 @@
 .summary-row {
-  --summary-label-color: #6b5346;
-  --summary-value-color: #43291e;
-  --summary-border-color: rgba(67, 41, 30, 0.12);
+  --summary-label-color: var(--color-muted);
+  --summary-value-color: var(--color-text);
+  --summary-border-color: rgba(var(--color-text-rgb), 0.12);
 
   inline-size: 100%;
   min-inline-size: 0;
@@ -10,7 +10,7 @@
   align-items: baseline;
   gap: 0.75rem 1.25rem;
   color: var(--summary-value-color);
-  font: 400 0.84375rem / 1.45 "Figtree", system-ui, sans-serif;
+  font: 400 0.84375rem / 1.45 var(--font-sans), system-ui, sans-serif;
 }
 
 .summary-row__label {
@@ -27,12 +27,12 @@
 }
 
 .summary-row--muted {
-  --summary-label-color: #8d7a6b;
-  --summary-value-color: #7a6252;
+  --summary-label-color: var(--color-muted-soft);
+  --summary-value-color: var(--color-muted);
 }
 
 .summary-row--discount {
-  --summary-label-color: #6b5346;
+  --summary-label-color: var(--color-muted);
   --summary-value-color: #3f7c55;
 }
 
@@ -49,8 +49,8 @@
 }
 
 .summary-row--tone-inverse {
-  --summary-label-color: #cdb7a2;
-  --summary-value-color: #f5ecdd;
+  --summary-label-color: var(--color-line);
+  --summary-value-color: var(--color-surface-soft);
   --summary-border-color: rgba(240, 230, 214, 0.16);
 }
 

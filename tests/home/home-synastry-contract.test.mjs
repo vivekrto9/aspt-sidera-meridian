@@ -87,12 +87,12 @@ test("Home Synastry preserves the specialized interlocking-chart visual", async 
   assert.doesNotMatch(source, /fetch\(|localStorage|sessionStorage/);
 });
 
-test("Home Synastry matches Warm Modern geometry and responsive safeguards", async () => {
+test("Home Synastry matches Meridian geometry and responsive safeguards", async () => {
   const styles = await readFile(stylesPath, "utf8");
 
-  assert.match(styles, /padding: 6rem 2\.125rem/);
+  assert.match(styles, /padding: 6\.25rem 2\.125rem/);
   assert.match(styles, /scroll-margin-top: 5rem/);
-  assert.match(styles, /inline-size: min\(100%, 73\.75rem\)/);
+  assert.match(styles, /inline-size: min\(100%, 75rem\)/);
   assert.match(
     styles,
     /grid-template-columns: minmax\(0, 0\.92fr\) minmax\(0, 1\.08fr\)/,
@@ -104,7 +104,7 @@ test("Home Synastry matches Warm Modern geometry and responsive safeguards", asy
   );
   assert.match(
     styles,
-    /\.home-synastry__resonance\[data-builder-editing\][\s\S]*background: #6e4433[\s\S]*color: #faf2e6[\s\S]*caret-color: #faf2e6/,
+    /\.home-synastry__resonance\[data-builder-editing\][\s\S]*background: var\(--color-dark\)[\s\S]*color: var\(--color-on-dark\)[\s\S]*caret-color: var\(--color-on-dark\)/,
   );
   assert.match(styles, /@media \(max-width: 52rem\)/);
   assert.match(styles, /@media \(max-width: 40rem\)/);

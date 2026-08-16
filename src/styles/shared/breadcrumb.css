@@ -1,7 +1,7 @@
 .breadcrumb {
   max-inline-size: 100%;
-  color: #9b8776;
-  font: 500 0.8125rem / 1.45 "Figtree", system-ui, sans-serif;
+  color: var(--color-muted-soft);
+  font: 500 0.8125rem / 1.45 var(--font-sans), system-ui, sans-serif;
 }
 
 .breadcrumb__list {
@@ -24,13 +24,13 @@
 .breadcrumb__separator {
   flex: none;
   margin-inline: 0.5rem;
-  color: #9b8776;
+  color: var(--color-muted-soft);
   font-weight: 400;
 }
 
 .breadcrumb__link {
   border-radius: 0.1875rem;
-  color: #9b8776;
+  color: var(--color-muted-soft);
   font-weight: 600;
   text-decoration: none;
   text-underline-offset: 0.2em;
@@ -41,22 +41,22 @@
 }
 
 .breadcrumb__link:hover {
-  color: #9c4f38;
+  color: var(--color-primary);
   text-decoration: underline;
 }
 
 .breadcrumb__link:active {
-  color: #6e4433;
+  color: var(--color-dark);
 }
 
 .breadcrumb__link:focus-visible {
-  outline: 0.1875rem solid rgba(203, 107, 78, 0.5);
+  outline: 0.1875rem solid rgba(var(--color-primary-rgb), 0.5);
   outline-offset: 0.1875rem;
 }
 
 .breadcrumb__current {
   min-inline-size: 0;
-  color: #6b5346;
+  color: var(--color-muted);
   font-weight: 600;
   overflow: hidden;
   text-overflow: ellipsis;

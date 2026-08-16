@@ -68,7 +68,7 @@ test("Reports detail panel preserves the literal reference geometry", async () =
 
   assert.match(
     styles,
-    /\.reports-detail-panel-shell\s*\{[^}]*padding: 0\.625rem 2\.125rem 5\.625rem[^}]*background: #efe8db/s,
+    /\.reports-detail-panel-shell\s*\{[^}]*padding: 0\.625rem 2\.125rem 5\.625rem[^}]*background: var\(--color-surface\)/s,
   );
   assert.match(
     styles,

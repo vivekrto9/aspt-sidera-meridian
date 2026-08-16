@@ -1,16 +1,16 @@
 .sidera-footer {
-  --footer-background: #2a1a11;
-  --footer-color: #d0b79e;
-  --footer-strong: #f5ead8;
-  --footer-accent: #e0a06e;
-  --footer-muted: #af9581;
-  --footer-divider: rgba(208, 183, 158, 0.16);
+  --footer-background: var(--color-dark-strong);
+  --footer-color: var(--color-on-dark-muted);
+  --footer-strong: var(--color-on-dark);
+  --footer-accent: var(--color-primary-soft);
+  --footer-muted: #8ba394;
+  --footer-divider: rgba(231, 239, 231, 0.16);
 
   inline-size: 100%;
   padding: 4.5rem 2.125rem 2.5rem;
   background: var(--footer-background);
   color: var(--footer-color);
-  font-family: "Figtree", system-ui, sans-serif;
+  font-family: var(--font-sans);
 }
 
 .sidera-footer__full-inner,
@@ -89,7 +89,7 @@
 
 .sidera-footer__link:focus-visible {
   border-radius: 0.25rem;
-  outline: 0.1875rem solid rgba(224, 160, 110, 0.42);
+  outline: 0.1875rem solid rgba(var(--color-primary-rgb), 0.42);
   outline-offset: 0.25rem;
 }
 

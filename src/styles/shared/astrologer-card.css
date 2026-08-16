@@ -4,19 +4,19 @@
   min-inline-size: 0;
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(67, 41, 30, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   border-radius: 1.25rem;
   padding: 1.5rem;
-  background: #fbf8f1;
-  color: #43291e;
-  font-family: "Figtree", system-ui, sans-serif;
+  background: var(--color-panel);
+  color: var(--color-text);
+  font-family: var(--font-sans), system-ui, sans-serif;
   transition:
     box-shadow 180ms ease,
     transform 180ms ease;
 }
 
 .sidera-astrologer-card:hover {
-  box-shadow: 0 1.375rem 3rem -1.75rem rgba(67, 41, 30, 0.5);
+  box-shadow: 0 1.375rem 3rem -1.75rem rgba(var(--color-text-rgb), 0.5);
   transform: translateY(-0.25rem);
 }
 
@@ -30,14 +30,14 @@
   inset-block-end: -0.0625rem;
   inline-size: 1rem;
   block-size: 1rem;
-  border: 0.15625rem solid #fbf8f1;
+  border: 0.15625rem solid var(--color-panel);
   border-radius: 50%;
-  background: #9b8776;
+  background: var(--color-muted-soft);
   content: "";
 }
 
 .sidera-astrologer-card--online .sidera-profile-summary__avatar::after {
-  background: #3f8f5f;
+  background: var(--color-success);
 }
 
 .sidera-astrologer-card--busy .sidera-profile-summary__avatar::after {
@@ -59,11 +59,11 @@
 
 .sidera-astrologer-card__specialties li {
   max-inline-size: 100%;
-  border: 1px solid rgba(67, 41, 30, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   border-radius: 999px;
   padding: 0.25rem 0.6875rem;
-  background: #efe8db;
-  color: #6b5346;
+  background: var(--color-surface);
+  color: var(--color-muted);
   font-size: 0.71875rem;
   font-weight: 500;
   line-height: 1.35;
@@ -73,7 +73,7 @@
 .sidera-astrologer-card__description {
   flex: 1;
   margin: 1rem 0 0;
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 0.84375rem;
   line-height: 1.55;
   text-wrap: pretty;
@@ -87,21 +87,21 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin-block-start: 1.25rem;
-  border-block-start: 1px solid rgba(67, 41, 30, 0.1);
+  border-block-start: 1px solid rgba(var(--color-text-rgb), 0.1);
   padding-block-start: 1.125rem;
 }
 
 .sidera-astrologer-card__rate {
   flex: none;
   margin: 0;
-  color: #7a6252;
+  color: var(--color-muted);
   font-size: 0.78125rem;
   line-height: 1.2;
 }
 
 .sidera-astrologer-card__rate strong {
-  color: #43291e;
-  font: 400 1.375rem / 1 "Newsreader", Georgia, serif;
+  color: var(--color-text);
+  font: 400 1.375rem / 1 var(--font-serif), Georgia, serif;
 }
 
 .sidera-astrologer-card__rate span {
@@ -121,7 +121,7 @@
   max-inline-size: 18rem;
   align-items: stretch;
   border-radius: 1.125rem;
-  background: #fefbf5;
+  background: var(--color-panel);
   text-align: center;
 }
 

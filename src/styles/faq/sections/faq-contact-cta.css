@@ -1,6 +1,6 @@
 .faq-contact-cta {
   padding: 2.125rem 2.125rem 5.625rem;
-  background: #efe8db;
+  background: var(--color-surface);
 }
 
 .faq-contact-cta__inner {

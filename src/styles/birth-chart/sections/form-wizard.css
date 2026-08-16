@@ -1,8 +1,8 @@
 .birth-chart-wizard {
   min-block-size: calc(100svh - 4.625rem);
-  background: #efe8db;
-  color: #43291e;
-  font-family: "Figtree", system-ui, sans-serif;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
 .birth-chart-wizard__layout {
@@ -19,8 +19,8 @@
   flex-direction: column;
   justify-content: space-between;
   padding: clamp(2.5rem, 5vw, 3.5rem);
-  background: #3b2119;
-  color: #f0e6d6;
+  background: var(--color-dark-strong);
+  color: var(--color-surface);
 }
 
 .birth-chart-wizard__story::before {
@@ -44,7 +44,7 @@
 
 .birth-chart-wizard__eyebrow {
   margin: 0;
-  color: #9c4f38;
+  color: var(--color-primary);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.17em;
@@ -53,14 +53,14 @@
 }
 
 .birth-chart-wizard__story .birth-chart-wizard__eyebrow {
-  color: #d69a6a;
+  color: var(--color-primary-soft);
 }
 
 .birth-chart-wizard__story h1 {
   max-inline-size: 100%;
   margin: 1rem 0 0;
-  color: #f5ecdd;
-  font-family: "Newsreader", Georgia, serif;
+  color: var(--color-surface-soft);
+  font-family: var(--font-serif), Georgia, serif;
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 400;
   letter-spacing: -0.01em;
@@ -68,14 +68,14 @@
 }
 
 .birth-chart-wizard__story h1 em {
-  color: #d69a6a;
+  color: var(--color-primary-soft);
   font-weight: 400;
 }
 
 .birth-chart-wizard__story-copy > p:last-child {
   max-inline-size: 100%;
   margin: 1.125rem 0 0;
-  color: #c3ac97;
+  color: var(--color-muted-soft);
   font-size: 0.9375rem;
   line-height: 1.65;
 }
@@ -114,12 +114,12 @@
 }
 
 .birth-chart-wizard__wheel-core {
-  fill: #5b382c;
+  fill: var(--color-dark);
   stroke: rgba(240, 230, 214, 0.2);
 }
 
 .birth-chart-wizard__wheel-mark {
-  fill: #efe8db;
+  fill: var(--color-surface);
   font-family: Georgia, serif;
   font-size: 1.625rem;
   text-anchor: middle;
@@ -160,9 +160,9 @@
 }
 
 .birth-chart-wizard__steps li[data-active="true"] .birth-chart-wizard__step-badge {
-  border-color: #d69a6a;
-  background: #d69a6a;
-  color: #3b2119;
+  border-color: var(--color-primary-soft);
+  background: var(--color-primary-soft);
+  color: var(--color-dark-strong);
 }
 
 .birth-chart-wizard__steps strong,
@@ -171,7 +171,7 @@
 }
 
 .birth-chart-wizard__steps strong {
-  color: #f0e6d6;
+  color: var(--color-surface);
   font-size: 0.8125rem;
 }
 
@@ -198,7 +198,7 @@
 
 .birth-chart-wizard__form-step h2 {
   margin: 0.75rem 0 0;
-  font-family: "Newsreader", Georgia, serif;
+  font-family: var(--font-serif), Georgia, serif;
   font-size: clamp(2rem, 4vw, 2.375rem);
   font-weight: 400;
   letter-spacing: -0.01em;
@@ -207,7 +207,7 @@
 
 .birth-chart-wizard__step-copy {
   margin: 0.75rem 0 1.875rem;
-  color: #6b5346;
+  color: var(--color-muted);
   font-size: 0.90625rem;
   line-height: 1.55;
 }
@@ -231,7 +231,7 @@
 .birth-chart-wizard__status {
   min-block-size: 1.25rem;
   margin: 1rem 0 0;
-  color: #8d3e2c;
+  color: var(--color-primary-strong);
   font-size: 0.78125rem;
   font-weight: 600;
   line-height: 1.4;

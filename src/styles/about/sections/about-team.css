@@ -1,7 +1,7 @@
 .about-team {
   inline-size: 100%;
   padding: 4.5rem 2.125rem;
-  background: #efe8db;
+  background: var(--color-surface);
 }
 
 .about-team__inner {
@@ -29,7 +29,7 @@
 
 .about-team__profile .sidera-avatar {
   --avatar-size: 6rem;
-  border-color: rgba(67, 41, 30, 0.14);
+  border-color: rgba(var(--color-text-rgb), 0.14);
 }
 
 .about-team__profile .sidera-profile-summary__content {
@@ -49,7 +49,7 @@
   }
 
   .about-team__profile:hover .sidera-avatar {
-    border-color: rgba(156, 79, 56, 0.5);
+    border-color: rgba(var(--color-primary-rgb), 0.5);
     transform: translateY(-0.1875rem);
   }
 }

@@ -70,12 +70,12 @@ test("Home Shop keeps editorial copy editable and operational price dynamic", as
   }
 });
 
-test("Home Shop matches the Warm Modern measure and responsive surface", async () => {
+test("Home Shop matches the Meridian measure and responsive surface", async () => {
   const styles = await readFile(stylesPath, "utf8");
 
-  assert.match(styles, /padding: 6rem 2\.125rem/);
-  assert.match(styles, /background: #fefbf5/);
-  assert.match(styles, /inline-size: min\(100%, 73\.75rem\)/);
+  assert.match(styles, /padding: 6\.25rem 2\.125rem/);
+  assert.match(styles, /background: var\(--color-panel\)/);
+  assert.match(styles, /inline-size: min\(100%, 75rem\)/);
   assert.match(styles, /--sidera-card-grid-gap: 1\.375rem/);
   assert.match(styles, /@media \(max-width: 40rem\)/);
   assert.match(styles, /@media \(prefers-reduced-motion: reduce\)/);

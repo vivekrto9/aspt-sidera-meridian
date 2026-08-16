@@ -21,14 +21,14 @@
 
 .blog-article-body__paragraph {
   margin-block-end: 1.375rem;
-  font: 400 1.0625rem / 1.75 "Figtree", system-ui, sans-serif;
+  font: 400 1.0625rem / 1.75 var(--font-sans), system-ui, sans-serif;
 }
 
 .blog-article-body__heading {
   margin-block-end: 0.875rem;
   padding-block-start: 0.75rem;
-  color: #43291e;
-  font: 400 1.6875rem / 1.2 "Newsreader", Georgia, serif;
+  color: var(--color-text);
+  font: 400 1.6875rem / 1.2 var(--font-serif), Georgia, serif;
 }
 
 .blog-article-body__quote {
@@ -36,7 +36,7 @@
   padding-inline-start: 1.25rem;
   border-inline-start: 3px solid #cf6749;
   color: #a95039;
-  font: italic 400 1.4375rem / 1.45 "Newsreader", Georgia, serif;
+  font: italic 400 1.4375rem / 1.45 var(--font-serif), Georgia, serif;
 }
 
 .blog-article-body__author {
@@ -45,7 +45,7 @@
   gap: 0.875rem;
   margin-block-start: 2.5rem;
   padding-block-start: 1.625rem;
-  border-block-start: 1px solid rgba(67, 41, 30, 0.16);
+  border-block-start: 1px solid rgba(var(--color-text-rgb), 0.16);
 }
 
 .blog-article-body__avatar {
@@ -59,14 +59,14 @@
 
 .blog-article-body__author-name {
   margin-block-end: 0.125rem;
-  color: #43291e;
-  font: 600 0.9375rem / 1.4 "Figtree", system-ui, sans-serif;
+  color: var(--color-text);
+  font: 600 0.9375rem / 1.4 var(--font-sans), system-ui, sans-serif;
 }
 
 .blog-article-body__author-bio {
   margin-block-end: 0;
   color: #7d6658;
-  font: 400 0.84375rem / 1.5 "Figtree", system-ui, sans-serif;
+  font: 400 0.84375rem / 1.5 var(--font-sans), system-ui, sans-serif;
 }
 
 @media (max-width: 40rem) {

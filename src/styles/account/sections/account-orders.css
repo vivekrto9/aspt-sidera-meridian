@@ -11,9 +11,9 @@
 
 .account-orders__list {
   overflow: hidden;
-  border: 1px solid rgba(67, 41, 30, 0.1);
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
   border-radius: 1rem;
-  background: #fbf8f1;
+  background: var(--color-panel);
 }
 
 .account-orders__list .sidera-order-line-item:last-child {

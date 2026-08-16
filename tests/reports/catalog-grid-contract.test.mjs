@@ -47,7 +47,7 @@ test("Reports Catalog grid preserves the exact reference geometry", async () => 
 
   assert.match(
     styles,
-    /\.reports-catalog-grid-shell\s*\{[^}]*padding: 1\.875rem 2\.125rem 6rem[^}]*background: #efe8db/s,
+    /\.reports-catalog-grid-shell\s*\{[^}]*padding: 1\.875rem 2\.125rem 6rem[^}]*background: var\(--color-surface\)/s,
   );
   assert.match(
     styles,

@@ -1,6 +1,6 @@
 .faq-accordion-list {
   padding: 1.25rem 2.125rem 0;
-  background: #efe8db;
+  background: var(--color-surface);
 }
 
 .faq-accordion-list__inner {

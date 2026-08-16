@@ -1,10 +1,10 @@
 .sidera-search-field {
   --search-field-background: #ffffff;
-  --search-field-border: rgba(67, 41, 30, 0.18);
-  --search-field-hover-border: rgba(67, 41, 30, 0.34);
-  --search-field-focus-border: #9c4f38;
-  --search-field-focus-ring: rgba(156, 79, 56, 0.16);
-  --search-field-icon: #9b8776;
+  --search-field-border: rgba(var(--color-text-rgb), 0.18);
+  --search-field-hover-border: rgba(var(--color-text-rgb), 0.34);
+  --search-field-focus-border: var(--color-primary);
+  --search-field-focus-ring: rgba(var(--color-primary-rgb), 0.16);
+  --search-field-icon: var(--color-muted-soft);
 
   inline-size: 100%;
   min-inline-size: 0;
@@ -37,14 +37,14 @@
 }
 
 .sidera-search-field--invalid {
-  --search-field-border: #a84d36;
-  --search-field-focus-border: #8d3e2c;
+  --search-field-border: var(--color-primary);
+  --search-field-focus-border: var(--color-primary-strong);
   --search-field-focus-ring: rgba(168, 77, 54, 0.18);
 }
 
 .sidera-search-field--disabled {
-  --search-field-background: #f2ece3;
-  --search-field-border: rgba(67, 41, 30, 0.1);
+  --search-field-background: var(--color-surface-soft);
+  --search-field-border: rgba(var(--color-text-rgb), 0.1);
   --search-field-icon: #a89789;
 
   cursor: not-allowed;
@@ -102,7 +102,7 @@
 }
 
 .sidera-search-field__clear :where(.icon-button) {
-  --icon-button-color: #6b5346;
+  --icon-button-color: var(--color-muted);
   --icon-button-hover-background: #f3ecdf;
 }
 

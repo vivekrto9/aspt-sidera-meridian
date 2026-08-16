@@ -1,11 +1,11 @@
 .sidera-text-field {
   --text-field-background: #ffffff;
-  --text-field-border: rgba(67, 41, 30, 0.18);
-  --text-field-color: #43291e;
-  --text-field-placeholder: #9b8776;
-  --text-field-hover-border: rgba(67, 41, 30, 0.34);
-  --text-field-focus-border: #9c4f38;
-  --text-field-focus-ring: rgba(156, 79, 56, 0.16);
+  --text-field-border: rgba(var(--color-text-rgb), 0.18);
+  --text-field-color: var(--color-text);
+  --text-field-placeholder: var(--color-muted-soft);
+  --text-field-hover-border: rgba(var(--color-text-rgb), 0.34);
+  --text-field-focus-border: var(--color-primary);
+  --text-field-focus-ring: rgba(var(--color-primary-rgb), 0.16);
 
   inline-size: 100%;
   min-block-size: 2.875rem;
@@ -14,7 +14,7 @@
   padding: 0.75rem 0.875rem;
   background: var(--text-field-background);
   color: var(--text-field-color);
-  font: 400 0.9375rem / 1.4 "Figtree", system-ui, sans-serif;
+  font: 400 0.9375rem / 1.4 var(--font-sans), system-ui, sans-serif;
   outline: none;
   transition:
     background-color 160ms ease,
@@ -38,22 +38,22 @@
 }
 
 .sidera-text-field[aria-invalid="true"] {
-  --text-field-border: #a84d36;
-  --text-field-focus-border: #8d3e2c;
+  --text-field-border: var(--color-primary);
+  --text-field-focus-border: var(--color-primary-strong);
   --text-field-focus-ring: rgba(168, 77, 54, 0.18);
 }
 
 .sidera-text-field[readonly] {
-  --text-field-background: #fbf8f1;
-  --text-field-color: #6b5346;
+  --text-field-background: var(--color-panel);
+  --text-field-color: var(--color-muted);
 
   cursor: default;
 }
 
 .sidera-text-field:disabled {
-  --text-field-background: #f2ece3;
-  --text-field-border: rgba(67, 41, 30, 0.1);
-  --text-field-color: #8d7a6b;
+  --text-field-background: var(--color-surface-soft);
+  --text-field-border: rgba(var(--color-text-rgb), 0.1);
+  --text-field-color: var(--color-muted-soft);
   --text-field-placeholder: #a89789;
 
   cursor: not-allowed;

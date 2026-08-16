@@ -1,8 +1,8 @@
 .sidera-order-summary {
-  --order-summary-surface: #fbf8f1;
-  --order-summary-ink: #43291e;
-  --order-summary-muted: #7a6252;
-  --order-summary-border: rgba(67, 41, 30, 0.1);
+  --order-summary-surface: var(--color-panel);
+  --order-summary-ink: var(--color-text);
+  --order-summary-muted: var(--color-muted);
+  --order-summary-border: rgba(var(--color-text-rgb), 0.1);
 
   inline-size: min(100%, 23rem);
   min-inline-size: 0;
@@ -11,11 +11,11 @@
   padding: 1.625rem;
   background: var(--order-summary-surface);
   color: var(--order-summary-ink);
-  font-family: "Figtree", system-ui, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
 .sidera-order-summary--checkout {
-  box-shadow: 0 1.25rem 3.125rem -2.125rem rgba(67, 41, 30, 0.55);
+  box-shadow: 0 1.25rem 3.125rem -2.125rem rgba(var(--color-text-rgb), 0.55);
 }
 
 .sidera-order-summary--receipt {
@@ -24,8 +24,8 @@
 
 .sidera-order-summary--tone-inverse {
   --order-summary-surface: rgba(240, 230, 214, 0.06);
-  --order-summary-ink: #f5ecdd;
-  --order-summary-muted: #cdb29e;
+  --order-summary-ink: var(--color-surface-soft);
+  --order-summary-muted: var(--color-line);
   --order-summary-border: rgba(240, 230, 214, 0.16);
 }
 
@@ -48,7 +48,7 @@
 .sidera-order-summary__title {
   margin: 0;
   color: var(--order-summary-ink);
-  font-family: "Newsreader", Georgia, serif;
+  font-family: var(--font-serif), Georgia, serif;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.1;
@@ -99,7 +99,7 @@
   inline-size: 0.4375rem;
   block-size: 0.4375rem;
   border-radius: 50%;
-  background: #3f8f5f;
+  background: var(--color-success);
 }
 
 .sidera-order-summary--cart .sidera-order-summary__status {
@@ -125,7 +125,7 @@
   margin-block-start: 1rem;
   border-radius: 0.875rem;
   padding: 0.875rem 1rem;
-  background: #efe8db;
+  background: var(--color-surface);
 }
 
 .sidera-order-summary--booking .sidera-order-summary__total .summary-row--total {

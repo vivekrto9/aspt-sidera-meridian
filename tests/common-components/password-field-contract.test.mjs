@@ -48,7 +48,7 @@ test("PasswordField styles protect input space and mobile toggle targets", () =>
 test("PasswordField keeps the active visibility toggle unfilled until desktop hover", () => {
   assert.match(styles, /__toggle\[aria-pressed="true"\]/);
   assert.match(styles, /--icon-button-background:\s*transparent/);
-  assert.match(styles, /--icon-button-hover-background:\s*#efe8db/);
+  assert.match(styles, /--icon-button-hover-background:\s*var\(--color-surface\)/);
   assert.match(styles, /--icon-button-active-background:\s*transparent/);
 });
 

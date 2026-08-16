@@ -1,13 +1,13 @@
 .home-shop {
   scroll-margin-top: 5rem;
-  padding: 6rem 2.125rem;
+  padding: 6.25rem 2.125rem;
   overflow: hidden;
-  background: #fefbf5;
-  color: #33271f;
+  background: var(--color-panel);
+  color: var(--color-text);
 }
 
 .home-shop__inner {
-  inline-size: min(100%, 73.75rem);
+  inline-size: min(100%, 75rem);
   margin-inline: auto;
 }
 
