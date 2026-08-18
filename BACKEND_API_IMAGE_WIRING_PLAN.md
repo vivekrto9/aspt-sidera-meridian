@@ -2,7 +2,7 @@
 
 Status: `IMPLEMENTATION AUDIT`
 Audit date: `2026-08-13`
-Implementation repository: `/Users/ashutoshsingh/Desktop/astro-pages/sidera-warm-modern`
+Implementation repository: `/Users/ashutoshsingh/Desktop/astro-pages/sidera-meridian`
 Template audit root: `/Users/ashutoshsingh/Desktop/astro-pages/tempates`
 Image reference root: `/Users/ashutoshsingh/Desktop/astro-pages/sidera-references/images`
 

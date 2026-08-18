@@ -61,7 +61,7 @@ find /Users/ashutoshsingh/Desktop/astro-pages -path '*/node_modules' -prune -o -
 
 Current discovered target families include:
 
-- Workspace-root themes: `aspt-costar`, `aspt-costar-verdant`, `aspt-divyastra-Celestial-Indigo`, `aspt-divyastra-Sacred-Grove`, `aspt-divyastra-electric-Bloom`, and `sidera-warm-modern`.
+- Workspace-root themes: `aspt-costar`, `aspt-costar-verdant`, `aspt-divyastra-Celestial-Indigo`, `aspt-divyastra-Sacred-Grove`, `aspt-divyastra-electric-Bloom`, and `sidera-meridian`.
 - `tempates/` themes: Astra Guru, Astrologer Portfolio/Profile, Costar, Divyastra, Jyoti Connect, Jyotish Live, Pandit Style, Tarot Reading, Western Chani Astro, and Western Single Astrologer variants.
 - `aspt-divyastra` is the canonical completed theme and must not be overwritten from another variant.
 
@@ -293,8 +293,8 @@ Acceptance requires zero focused-test failures, zero full-suite failures, a succ
 - Each completed Divyastra target matches all four canonical hashes above and passes the focused Content Studio contract, complete test suite, typecheck, production build, safety scan, D1 schema check, Cloudflare runtime contract, and `git diff --check`.
 - All 31 discovered non-Divyastra themes received the approved implementation on 2026-08-04. Every one matches the canonical `BuilderStyles.astro` hash and the shared seven-test contract hash recorded above.
 - All 31 non-Divyastra themes pass the focused Content Studio contract, production build, project-assets contract, safety scan, D1 schema check, and Cloudflare runtime contract.
-- Thirty of the 31 non-Divyastra themes pass typecheck. `sidera-warm-modern` retains 11 pre-existing type diagnostics outside `src/builder/` (auth locale types, transit copy, and account/astrologer page props); its Content Studio tests and production build pass.
-- Thirty of the 31 non-Divyastra themes pass their complete test suite after reconciliation with remote `main`. `sidera-warm-modern` retains one unrelated transit registry/count mismatch (`46` actual versus `51` expected); its focused Content Studio tests and production build pass.
+- Thirty of the 31 non-Divyastra themes pass typecheck. `sidera-meridian` retains 11 pre-existing type diagnostics outside `src/builder/` (auth locale types, transit copy, and account/astrologer page props); its Content Studio tests and production build pass.
+- Thirty of the 31 non-Divyastra themes pass their complete test suite after reconciliation with remote `main`. `sidera-meridian` retains one unrelated transit registry/count mismatch (`46` actual versus `51` expected); its focused Content Studio tests and production build pass.
 - No public brand-logo or brand-asset file was changed by the Content Studio rollout.
 - Live desktop/mobile browser inspection is delegated to the user and is intentionally excluded from the automated rollout gate.
 - Similar appearance or shared ancestry is not completion; every discovered target was inspected and tested separately.
@@ -304,7 +304,7 @@ Acceptance requires zero focused-test failures, zero full-suite failures, a succ
 These are approved integration-preserving differences from the byte-identical canonical client/toolbar. They do not permit DOM, visual, interaction, or state-contract drift.
 
 - Co-Star family: keep its existing content endpoints, SEO field capabilities, review targets, and content-entry inputs.
-- Sidera Warm Modern: keep pending-edit session persistence/restoration, saved-draft preview hydration, reload capture, and editable-surface recovery.
+- Sidera Meridian: keep pending-edit session persistence/restoration, saved-draft preview hydration, reload capture, and editable-surface recovery.
 - Astra Guru and Pandit Style: keep their existing builder inputs and content endpoint configuration.
 - Astrologer Portfolio/Profile and Tarot Reading: keep their existing builder inputs, SEO capability, and preview metadata.
 - Jyoti Connect variants: keep each variant's endpoint/toolbar inputs. `jyoti-connect-rich-spiritual` retains its template-namespaced cookies and caches; the canonical shared launcher-position storage key is the only intentional cross-template browser key.

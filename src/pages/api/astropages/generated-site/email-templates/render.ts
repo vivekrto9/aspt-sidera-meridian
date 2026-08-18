@@ -14,7 +14,7 @@ import {
 } from "../../../../../server/generated-site/responses.ts";
 
 export const prerender = false;
-const feature = "sidera-warm-modern.generated-site-operations.email-template-preview";
+const feature = "sidera-meridian.generated-site-operations.email-template-preview";
 
 export const POST: APIRoute = async (context) => {
   const methodError = requirePost(context.request);

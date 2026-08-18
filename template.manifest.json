@@ -1,6 +1,6 @@
 {
-  "templateKey": "sidera-warm-modern",
-  "displayName": "Sidera Warm Modern",
+  "templateKey": "sidera-meridian",
+  "displayName": "Sidera Meridian",
   "stage": "starter-template",
   "runtime": {
     "type": "official-emdash-astro-cloudflare",
@@ -31,19 +31,19 @@
     "wranglerConfig": "wrangler.jsonc",
     "environments": {
       "preview": {
-        "workerName": "sidera-warm-modern-preview",
-        "d1DatabaseName": "sidera-warm-modern-preview-site",
-        "r2BucketName": "sidera-warm-modern-preview-media",
-        "kvNamespaceName": "sidera-warm-modern-preview-session",
+        "workerName": "sidera-meridian-preview",
+        "d1DatabaseName": "sidera-meridian-preview-site",
+        "r2BucketName": "sidera-meridian-preview-media",
+        "kvNamespaceName": "sidera-meridian-preview-session",
         "siteUrlVariable": "PREVIEW_SITE_URL",
         "d1DatabaseIdVariable": "PREVIEW_SITE_D1_DATABASE_ID",
         "sessionKvNamespaceIdVariable": "PREVIEW_SITE_SESSION_KV_NAMESPACE_ID"
       },
       "production": {
-        "workerName": "sidera-warm-modern-production",
-        "d1DatabaseName": "sidera-warm-modern-production-site",
-        "r2BucketName": "sidera-warm-modern-production-media",
-        "kvNamespaceName": "sidera-warm-modern-production-session",
+        "workerName": "sidera-meridian-production",
+        "d1DatabaseName": "sidera-meridian-production-site",
+        "r2BucketName": "sidera-meridian-production-media",
+        "kvNamespaceName": "sidera-meridian-production-session",
         "siteUrlVariable": "PRODUCTION_SITE_URL",
         "d1DatabaseIdVariable": "PRODUCTION_SITE_D1_DATABASE_ID",
         "sessionKvNamespaceIdVariable": "PRODUCTION_SITE_SESSION_KV_NAMESPACE_ID"
@@ -111,7 +111,7 @@
       "PRODUCTION_SITE_URL"
     ],
     "deploymentMapping": {
-      "workerSecretsFile": "sidera-warm-modern-worker-secrets.json",
+      "workerSecretsFile": "sidera-meridian-worker-secrets.json",
       "workerSecrets": [
         "EMDASH_ENCRYPTION_KEY",
         "BUILDER_MCP_TOKEN",

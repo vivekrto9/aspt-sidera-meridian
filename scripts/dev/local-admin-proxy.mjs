@@ -59,7 +59,7 @@ const server = http.createServer((incoming, outgoing) => {
 });
 
 server.listen(port, "127.0.0.1", () => {
-  console.log(`Sidera Warm Modern local admin proxy`);
+  console.log(`Sidera Meridian local admin proxy`);
   console.log(`- Target: ${target.origin}`);
   console.log(`- Proxy:  ${proxyOrigin}`);
   console.log(`- SSO:    ${subject} (${role})`);

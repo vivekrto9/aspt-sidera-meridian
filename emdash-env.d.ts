@@ -340,6 +340,12 @@ export interface AstrologerChatHistoryContent {
   live_secure_private?: string;
   live_back_to_astrologers?: string;
   live_load_more?: string;
+  live_delete_session_label?: string;
+  live_delete_session_title?: string;
+  live_delete_session_description?: string;
+  live_delete_session_confirm?: string;
+  live_delete_session_deleting?: string;
+  live_delete_session_cancel?: string;
   createdAt: Date;
   updatedAt: Date;
   publishedAt: Date | null;

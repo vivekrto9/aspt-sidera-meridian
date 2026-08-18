@@ -1,4 +1,4 @@
-# Sidera Warm Modern Page Build Tracker
+# Sidera Meridian Page Build Tracker
 
 ## Purpose
 
@@ -12,10 +12,10 @@ Related pages may also belong to a flow group. A flow group has one session owne
 
 - UI and behavior reference folder: `/Users/ashutoshsingh/Desktop/astro-pages/sidera-references/Asknova`
 - Approved visual theme: `Sidera Home - Warm Modern.dc.html`
-- Implementation repository: `/Users/ashutoshsingh/Desktop/astro-pages/sidera-warm-modern`
+- Implementation repository: `/Users/ashutoshsingh/Desktop/astro-pages/sidera-meridian`
 - Component and localization workflow: `/Users/ashutoshsingh/Desktop/astro-pages/UI_REFERENCE_WORKFLOW.md`
-- Shared component inventory: `/Users/ashutoshsingh/Desktop/astro-pages/sidera-warm-modern/COMMON_COMPONENTS_TRACKER.md`
-- Content Studio error register and save-verification workflow: `/Users/ashutoshsingh/Desktop/astro-pages/sidera-warm-modern/CONTENT_STUDIO_ERROR_LOG.md`
+- Shared component inventory: `/Users/ashutoshsingh/Desktop/astro-pages/sidera-meridian/COMMON_COMPONENTS_TRACKER.md`
+- Content Studio error register and save-verification workflow: `/Users/ashutoshsingh/Desktop/astro-pages/sidera-meridian/CONTENT_STUDIO_ERROR_LOG.md`
 - Editable-content examples:
   - `/Users/ashutoshsingh/Desktop/astro-pages/aspt-divyastra`
   - `/Users/ashutoshsingh/Desktop/astro-pages/aspt-costar`
@@ -596,7 +596,7 @@ All statuses below are page-level. Section names are ordered implementation step
 | P-23 | Sign Up `/signup`                    | Divyastra auth UI flow plus approved Sidera AuthShell | 1. Brand/value panel; 2. Signup form and states                                                                                                                       | AuthShell, BrandLogo, TextField, PasswordField, Checkbox, Button, Toast                                                                                                                                                | `DONE` | Codex · Authentication flow task | — | User approved the corrected Signup form. Final compact layout, localized inline errors, country-aware phone validation, E.164 normalization, full-width mobile row, and calling-code-only closed selector committed in `c56d6e8`. |
 | P-24 | Forgot Password `/forgot-password`   | Divyastra auth UI flow plus approved Sidera AuthShell | 1. Brand/value panel; 2. Recovery request form and states                                                                                                             | AuthShell, BrandLogo, TextField, Button, Toast                                                                                                                                                                         | `DONE` | — | — | User approved the recovery follow-up on 2026-08-11, committed as `300ae9f`. Delivery guidance, text-style resend action, accessible 60-second cooldown, repeat-resend reset, and email-edit reset are complete. |
 | P-25 | Reset Password `/reset-password`     | Divyastra auth UI flow plus approved Sidera AuthShell | 1. Brand/value panel; 2. New-password form and states                                                                                                                 | AuthShell, BrandLogo, PasswordField, Button, Toast                                                                                                                                                                     | `DONE` | — | — | User approved the corrected Reset Password flow on 2026-08-11, committed as `fe5d9bc` with shared visibility states in `73de819`. Warm-theme hierarchy, compact spacing, corrected confirmation copy, direct errors, and shared visibility-toggle states are complete. |
-| P-26 | Wallet `/wallet`, `/account/wallet-transactions` | Western Chani wallet flow adapted to Sidera Warm Modern | 1. Wallet overview and recent transactions; 2. Wallet history and All/Credits/Debits filters; 3. Stripe recharge checkout; 4. Payment success; 5. Payment failure/cancellation | Header, Footer, PageIntro, Button, Radio, PriceDisplay, OrderSummary, EmptyState, Toast | `IN PROGRESS` | Codex · Wallet Stripe flow task | Wallet overview, history, and transactions | User explicitly requested the complete authenticated wallet flow through Stripe payment success plus failure UI. Reuse the Western Chani runtime contract while adapting the page to Sidera's curved Warm Modern visual language, seven locales, Content Studio, and existing payment/security conventions. |
+| P-26 | Wallet `/wallet`, `/account/wallet-transactions` | Western Chani wallet flow adapted to Sidera Meridian | 1. Wallet overview and recent transactions; 2. Wallet history and All/Credits/Debits filters; 3. Stripe recharge checkout; 4. Payment success; 5. Payment failure/cancellation | Header, Footer, PageIntro, Button, Radio, PriceDisplay, OrderSummary, EmptyState, Toast | `IN PROGRESS` | Codex · Wallet Stripe flow task | Wallet overview, history, and transactions | User explicitly requested the complete authenticated wallet flow through Stripe payment success plus failure UI. Reuse the Western Chani runtime contract while adapting the page to Sidera's curved Warm Modern visual language, seven locales, Content Studio, and existing payment/security conventions. |
 
 ## Supporting Routes
 

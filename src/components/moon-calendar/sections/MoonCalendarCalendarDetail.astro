@@ -463,8 +463,9 @@ const phaseLabel = (phase: string) => {
           } else if (event.kind === "eclipse") {
             description.textContent = operational.eclipseDescription;
           } else {
+            const phase = event.kind as keyof typeof runtime.phaseNames;
             description.textContent = fill(operational.phaseEventDescriptionTemplate, {
-              phase: runtime.phaseNames[event.kind],
+              phase: runtime.phaseNames[phase],
             });
           }
           time.dateTime = event.moment;

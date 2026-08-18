@@ -2,7 +2,7 @@
   "version": 1,
   "contract": "sales-mcp.v1",
   "semanticModel": "commerce.v1",
-  "schemaRevision": "sidera-warm-modern-sales-2026-08-12-1",
+  "schemaRevision": "sidera-meridian-sales-2026-08-12-1",
   "paymentStatuses": ["pending", "paid", "captured", "succeeded", "completed", "failed", "cancelled", "refunded"],
   "transactionKinds": [
     {

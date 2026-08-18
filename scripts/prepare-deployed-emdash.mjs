@@ -168,7 +168,7 @@ async function configureEmDashSite() {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      title: "Sidera Warm Modern",
+      title: "Sidera Meridian",
       tagline: "Neutral AstroPages generated-site starter with EmDash content editing",
       includeContent: false,
     }),

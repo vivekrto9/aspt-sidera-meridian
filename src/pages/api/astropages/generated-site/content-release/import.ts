@@ -14,14 +14,14 @@ import { requireContentReleaseServiceAuth } from "../../../../../server/generate
 
 export const prerender = false;
 
-const feature = "sidera-warm-modern.content-release.import";
+const feature = "sidera-meridian.content-release.import";
 
 const isSnapshot = (value: unknown): value is ContentReleaseSnapshot =>
   Boolean(value) &&
   typeof value === "object" &&
   !Array.isArray(value) &&
   (value as { schemaVersion?: unknown }).schemaVersion === 1 &&
-  (value as { templateKey?: unknown }).templateKey === "sidera-warm-modern" &&
+  (value as { templateKey?: unknown }).templateKey === "sidera-meridian" &&
   Array.isArray((value as { entries?: unknown }).entries) &&
   typeof (value as { snapshotHash?: unknown }).snapshotHash === "string";
 
@@ -37,7 +37,7 @@ export const POST: APIRoute = async (context) => {
 
   const snapshot = parsed.body.snapshot ?? parsed.body;
   if (!isSnapshot(snapshot)) {
-    return errorResponse(feature, "Content release import requires a valid Sidera Warm Modern snapshot.", 400);
+    return errorResponse(feature, "Content release import requires a valid Sidera Meridian snapshot.", 400);
   }
 
   try {

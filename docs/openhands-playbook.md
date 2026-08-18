@@ -1,6 +1,6 @@
 # OpenHands Playbook
 
-Use this playbook when an AI agent edits a generated site created from the Sidera Warm Modern theme.
+Use this playbook when an AI agent edits a generated site created from the Sidera Meridian theme.
 
 ## Code Changes
 

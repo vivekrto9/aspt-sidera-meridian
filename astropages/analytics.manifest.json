@@ -1,7 +1,7 @@
 {
   "source": "d1",
   "version": 1,
-  "templateKey": "sidera-warm-modern",
+  "templateKey": "sidera-meridian",
   "queries": {
     "customer_accounts": {
       "sql": "SELECT COUNT(*) AS value FROM ap_customer_accounts",

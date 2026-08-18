@@ -52,11 +52,11 @@ test("Sidera identity is consistent across package, runtime, and deployment cont
   const publicCopy = read("src/data/public-copy.ts");
   const siteSettings = readJson("src/generated/site-settings.json");
 
-  assert.equal(packageJson.name, "@astropages/sidera-warm-modern");
-  assert.equal(packageJson.emdash.label, "Sidera Warm Modern");
-  assert.equal(manifest.templateKey, "sidera-warm-modern");
-  assert.equal(manifest.displayName, "Sidera Warm Modern");
-  assert.match(wrangler, /"name": "sidera-warm-modern"/);
+  assert.equal(packageJson.name, "@astropages/sidera-meridian");
+  assert.equal(packageJson.emdash.label, "Sidera Meridian");
+  assert.equal(manifest.templateKey, "sidera-meridian");
+  assert.equal(manifest.displayName, "Sidera Meridian");
+  assert.match(wrangler, /"name": "sidera-meridian"/);
   assert.match(publicCopy, /brand_name: "Sidera"/);
   assert.equal(siteSettings.siteSettings.brandName, "Sidera");
 });

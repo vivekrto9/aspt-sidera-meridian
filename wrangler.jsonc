@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "sidera-warm-modern",
+  "name": "sidera-meridian",
   "main": "./src/worker.ts",
   "compatibility_date": "2026-02-24",
   "compatibility_flags": ["nodejs_compat"],
@@ -12,19 +12,19 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "sidera-warm-modern-site",
+      "database_name": "sidera-meridian-site",
     },
   ],
   "r2_buckets": [
     {
       "binding": "MEDIA",
-      "bucket_name": "sidera-warm-modern-media",
+      "bucket_name": "sidera-meridian-media",
     },
   ],
   "kv_namespaces": [
     {
       "binding": "SESSION",
-      "id": "LOCAL_SIDERA_WARM_MODERN_SESSION_KV",
+      "id": "LOCAL_SIDERA_MERIDIAN_SESSION_KV",
     },
   ],
   "images": {
@@ -37,7 +37,7 @@
   ],
   "env": {
     "preview": {
-      "name": "sidera-warm-modern-preview",
+      "name": "sidera-meridian-preview",
       "assets": {
         "directory": "./dist/client",
         "binding": "ASSETS",
@@ -46,14 +46,14 @@
       "d1_databases": [
         {
           "binding": "DB",
-          "database_name": "sidera-warm-modern-preview-site",
+          "database_name": "sidera-meridian-preview-site",
           "database_id": "PREVIEW_D1_DATABASE_ID_FROM_WRANGLER_CREATE",
         },
       ],
       "r2_buckets": [
         {
           "binding": "MEDIA",
-          "bucket_name": "sidera-warm-modern-preview-media",
+          "bucket_name": "sidera-meridian-preview-media",
         },
       ],
       "kv_namespaces": [
@@ -85,7 +85,7 @@
       ],
     },
     "production": {
-      "name": "sidera-warm-modern-production",
+      "name": "sidera-meridian-production",
       "assets": {
         "directory": "./dist/client",
         "binding": "ASSETS",
@@ -94,14 +94,14 @@
       "d1_databases": [
         {
           "binding": "DB",
-          "database_name": "sidera-warm-modern-production-site",
+          "database_name": "sidera-meridian-production-site",
           "database_id": "PRODUCTION_D1_DATABASE_ID_FROM_WRANGLER_CREATE",
         },
       ],
       "r2_buckets": [
         {
           "binding": "MEDIA",
-          "bucket_name": "sidera-warm-modern-production-media",
+          "bucket_name": "sidera-meridian-production-media",
         },
       ],
       "kv_namespaces": [

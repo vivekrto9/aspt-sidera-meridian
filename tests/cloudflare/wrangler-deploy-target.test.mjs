@@ -5,17 +5,17 @@ import { databaseNameForEnvironment } from "../../scripts/wrangler-deploy-target
 
 const config = {
   d1_databases: [
-    { binding: "DB", database_name: "sidera-warm-modern-site" },
+    { binding: "DB", database_name: "sidera-meridian-site" },
   ],
   env: {
     preview: {
       d1_databases: [
-        { binding: "DB", database_name: "sidera-warm-modern-preview-site" },
+        { binding: "DB", database_name: "sidera-meridian-preview-site" },
       ],
     },
     production: {
       d1_databases: [
-        { binding: "DB", database_name: "sidera-warm-modern-production-site" },
+        { binding: "DB", database_name: "sidera-meridian-production-site" },
       ],
     },
   },
@@ -24,11 +24,11 @@ const config = {
 test("selects the D1 database from the requested deployment environment", () => {
   assert.equal(
     databaseNameForEnvironment(config, "preview"),
-    "sidera-warm-modern-preview-site",
+    "sidera-meridian-preview-site",
   );
   assert.equal(
     databaseNameForEnvironment(config, "production"),
-    "sidera-warm-modern-production-site",
+    "sidera-meridian-production-site",
   );
 });
 

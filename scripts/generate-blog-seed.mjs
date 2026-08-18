@@ -105,8 +105,8 @@ const seed = {
   $schema: "https://emdashcms.com/seed.schema.json",
   version: "1",
   meta: {
-    name: "Sidera Warm Modern",
-    description: "EmDash seed for the Sidera Warm Modern astrology experience.",
+    name: "Sidera Meridian",
+    description: "EmDash seed for the Sidera Meridian astrology experience.",
     author: "AstroPages",
   },
   settings: {

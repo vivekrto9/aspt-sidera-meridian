@@ -1,6 +1,6 @@
 # Cloudflare Runtime Contract
 
-Sidera Warm Modern supports two repository modes.
+Sidera Meridian supports two repository modes.
 
 ## Template Source Mode
 

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "contract": "users-data.v1",
-  "schemaRevision": "sidera-warm-modern-users-2026-07-27-1",
+  "schemaRevision": "sidera-meridian-users-2026-07-27-1",
   "entity": {
     "key": "customer",
     "label": "Customer",
