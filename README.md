@@ -1,4 +1,4 @@
-# Sidera Meridian
+# Sidera Meridian.
 
 `sidera-meridian` is the Warm Modern Sidera theme built on AstroPages. It combines a calm astrology-facing public experience with the reusable Astro, Cloudflare, EmDash, authentication, lead, asset, and deployment infrastructure inherited from the AstroPages base.
 
