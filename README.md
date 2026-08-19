@@ -2,7 +2,7 @@
 
 `sidera-meridian` is the Warm Modern Sidera theme built on AstroPages. It combines a calm astrology-facing public experience with the reusable Astro, Cloudflare, EmDash, authentication, lead, asset, and deployment infrastructure inherited from the AstroPages base.
 
-AstroPages Admin owns the semantic version, release notes, and changelog for every released template commit.
+AstroPages Admin owns the semantic version, release notes, and changelog for every released template commit
 
 ## Release Metadata
 
